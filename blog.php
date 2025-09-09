@@ -111,7 +111,7 @@
                                     <div class="text-xs text-slate-500 mb-3"><span>Sep 08, 2025</span> &bull; <span>5 min read</span></div>
                                     <h3 class="font-heading text-xl text-slate-800 mb-3 group-hover:text-primary transition-colors"><a href="#">Designing with depth</a></h3>
                                     <p class="text-slate-600 text-sm leading-relaxed mb-4">How shadows and layering can transform a flat design into a dynamic experience.</p>
-                                    <a href="#" class="font-semibold text-sm text-primary hover:underline">Read More &rarr;</a>
+                                    <a href="blog-details.php" class="font-semibold text-sm text-primary hover:underline">Read More &rarr;</a>
                                 </div>
                             </article>
                             <article class="card-premium group" data-aos="fade-up" data-aos-delay="100">
@@ -122,7 +122,7 @@
                                     <div class="text-xs text-slate-500 mb-3"><span>Sep 01, 2025</span> &bull; <span>4 min read</span></div>
                                     <h3 class="font-heading text-xl text-slate-800 mb-3 group-hover:text-primary transition-colors"><a href="#">Invisible gradients</a></h3>
                                     <p class="text-slate-600 text-sm leading-relaxed mb-4">Exploring the subtle art of using gradients to guide the eye without being noticed.</p>
-                                    <a href="#" class="font-semibold text-sm text-primary hover:underline">Read More &rarr;</a>
+                                    <a href="blog-details.php" class="font-semibold text-sm text-primary hover:underline">Read More &rarr;</a>
                                 </div>
                             </article>
                              </div>

@@ -32,14 +32,13 @@
             <img class="w-1/6" src="img/logo.png" alt="">
           </a>
           <ul class="hidden md:flex items-center gap-8 font-semibold">
-            <li><a href="#" class="text-sm tracking-wide hover:text-primary  transition-colors">Home</a></li>
-            <li><a href="#about" class="text-sm tracking-wide hover:text-primary  transition-colors">About</a></li>
+            <li><a href="index.php" class="text-sm tracking-wide hover:text-primary  transition-colors">Home</a></li>
+            <li><a href="about.php" class="text-sm tracking-wide hover:text-primary  transition-colors">About</a></li>
             <li><a href="#services" class="text-sm tracking-wide hover:text-primary transition-colors">Services</a></li>
-            <li><a href="#why-us" class="text-sm tracking-wide hover:text-primary transition-colors">Why Us</a></li>
-            <li><a href="#gallery" class="text-sm tracking-wide hover:text-primary transition-colors">Gallery</a></li>
-            <li><a href="#team" class="text-sm tracking-wide hover:text-primary transition-colors">Team</a></li>
-            <li><a href="#blog" class="text-sm tracking-wide hover:text-primary transition-colors">Blog</a></li>
-            <li><a href="#cta" class="text-sm tracking-wide hover:text-primary transition-colors">Contact</a></li>
+            <li><a href="gallery.php" class="text-sm tracking-wide hover:text-primary transition-colors">Gallery</a></li>
+            <li><a href="team.php" class="text-sm tracking-wide hover:text-primary transition-colors">Team</a></li>
+            <li><a href="blog.php" class="text-sm tracking-wide hover:text-primary transition-colors">Blog</a></li>
+            <li><a href="contact.php" class="text-sm tracking-wide hover:text-primary transition-colors">Contact</a></li>
           </ul>
           <div class="hidden md:flex items-center gap-3">
             <a href="#cta" class="btn-premium">Get Started</a>
@@ -49,13 +48,13 @@
         <div id="mobileMenu" class="hidden md:hidden border-t bg-white/80 backdrop-blur-xl">
           <div class="container mx-auto px-6 py-4">
             <ul class="grid gap-3">
-              <li><a href="#about" class="block px-3 py-2 rounded-md hover:bg-slate-100">About</a></li>
+              <li><a href="index.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Home</a></li>
+              <li><a href="about.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">About</a></li>
               <li><a href="#services" class="block px-3 py-2 rounded-md hover:bg-slate-100">Services</a></li>
-              <li><a href="#why-us" class="block px-3 py-2 rounded-md hover:bg-slate-100">Why Us</a></li>
-              <li><a href="#gallery" class="block px-3 py-2 rounded-md hover:bg-slate-100">Gallery</a></li>
-              <li><a href="#team" class="block px-3 py-2 rounded-md hover:bg-slate-100">Team</a></li>
-              <li><a href="#blog" class="block px-3 py-2 rounded-md hover:bg-slate-100">Blog</a></li>
-              <li><a href="#cta" class="block text-center px-3 py-2 rounded-md bg-primary text-white">Get Started</a></li>
+              <li><a href="gallery.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Gallery</a></li>
+              <li><a href="team.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Team</a></li>
+              <li><a href="blog.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Blog</a></li>
+              <li><a href="contact.php" class="block text-center px-3 py-2 rounded-md bg-primary text-white">Get Started</a></li>
             </ul>
           </div>
         </div>

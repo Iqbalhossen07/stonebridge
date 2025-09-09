@@ -743,6 +743,7 @@
                 <div class="p-5 text-center">
                   <h4 class="font-heading text-xl text-slate-800">Amelia Stone</h4>
                   <p class="text-primary text-sm mt-1">Solicitor, Barrister & FCILEX</p>
+                  <a href="team-details.php" class="font-semibold text-sm text-primary hover:underline">View Profile &rarr;</a>
                 </div>
               </div>
               <div class="social-panel">
@@ -759,11 +760,13 @@
                 <div class="p-5 text-center">
                   <h4 class="font-heading text-xl text-slate-800">Liam Hart</h4>
                   <p class="text-primary text-sm mt-1">Practice Manager</p>
+                   <a href="team-details.php" class="font-semibold text-sm text-primary hover:underline">View Profile &rarr;</a>
                 </div>
               </div>
               <div class="social-panel">
                   <a href="#" aria-label="Twitter" class="social-link"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 2.9,4.79C2.53,5.42 2.33,6.16 2.33,6.94C2.33,8.43 3.1,9.78 4.22,10.59C3.47,10.57 2.78,10.36 2.17,10.03C2.17,10.05 2.17,10.07 2.17,10.08C2.17,12.19 3.65,13.95 5.6,14.34C5.24,14.44 4.86,14.5 4.47,14.5C4.2,14.5 3.93,14.47 3.67,14.42C4.22,16.14 5.8,17.38 7.69,17.42C6.23,18.55 4.41,19.23 2.42,19.23C2.08,19.23 1.75,19.21 1.42,19.16C3.34,20.43 5.65,21.23 8.13,21.23C16,21.23 20.33,14.41 20.33,8.79C20.33,8.62 20.33,8.45 20.32,8.28C21.17,7.69 21.89,6.9 22.46,6Z"></path></svg></a>
                   <a href="#" aria-label="LinkedIn" class="social-link"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.43 12.9,11.2V10.13H10.13V18.5H12.9V13.57C12.9,12.8 13.54,12.17 14.31,12.17C15.08,12.17 15.72,12.8 15.72,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,6 8,5.19 6.88,5.19C5.76,5.19 5.19,6 5.19,6.88C5.19,7.77 5.76,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"></path></svg></a>
+                  
               </div>
             </div>
 
@@ -775,6 +778,7 @@
                 <div class="p-5 text-center">
                   <h4 class="font-heading text-xl text-slate-800">Olivia Chen</h4>
                   <p class="text-primary text-sm mt-1">Admin Assistant</p>
+                   <a href="team-details.php" class="font-semibold text-sm text-primary hover:underline">View Profile &rarr;</a>
                 </div>
               </div>
               <div class="social-panel">
@@ -791,6 +795,7 @@
                 <div class="p-5 text-center">
                   <h4 class="font-heading text-xl text-slate-800">David Lee</h4>
                   <p class="text-primary text-sm mt-1">Accounts Manager</p>
+                   <a href="team-details.php" class="font-semibold text-sm text-primary hover:underline">View Profile &rarr;</a>
                 </div>
               </div>
               <div class="social-panel">
@@ -964,7 +969,7 @@
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
             How shadows and layering can transform a flat design into a dynamic experience.
           </p>
-          <a href="#" class="font-semibold text-sm text-primary hover:underline">Read More &rarr;</a>
+          <a href="blog-details.php" class="font-semibold text-sm text-primary hover:underline">Read More &rarr;</a>
         </div>
       </article>
 
@@ -982,7 +987,7 @@
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
             Exploring the subtle art of using gradients to guide the eye without being noticed.
           </p>
-          <a href="#" class="font-semibold text-sm text-primary hover:underline">Read More &rarr;</a>
+        <a href="blog-details.php" class="font-semibold text-sm text-primary hover:underline">Read More &rarr;</a>
         </div>
       </article>
 
@@ -1000,7 +1005,7 @@
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
             How to use subtle animations to enhance user experience instead of distracting.
           </p>
-          <a href="#" class="font-semibold text-sm text-primary hover:underline">Read More &rarr;</a>
+          <a href="blog-details.php" class="font-semibold text-sm text-primary hover:underline">Read More &rarr;</a>
         </div>
       </article>
       
@@ -1018,7 +1023,7 @@
           <p class="text-slate-600 text-sm leading-relaxed mb-4">
             Simple steps to make your web projects inclusive for everyone.
           </p>
-          <a href="#" class="font-semibold text-sm text-primary hover:underline">Read More &rarr;</a>
+          <a href="blog-details.php" class="font-semibold text-sm text-primary hover:underline">Read More &rarr;</a>
         </div>
       </article>
 

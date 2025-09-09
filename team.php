@@ -102,6 +102,7 @@
                 <div class="p-5 text-center">
                   <h4 class="font-heading text-xl text-slate-800">Amelia Stone</h4>
                   <p class="text-primary text-sm mt-1">Solicitor, Barrister & FCILEX</p>
+                   <a href="team-details.php" class="font-semibold text-sm text-primary hover:underline">View Profile &rarr;</a>
                 </div>
               </div>
               <div class="social-panel">
@@ -118,6 +119,7 @@
                 <div class="p-5 text-center">
                   <h4 class="font-heading text-xl text-slate-800">Liam Hart</h4>
                   <p class="text-primary text-sm mt-1">Practice Manager</p>
+                   <a href="team-details.php" class="font-semibold text-sm text-primary hover:underline">View Profile &rarr;</a>
                 </div>
               </div>
               <div class="social-panel">
@@ -134,6 +136,7 @@
                 <div class="p-5 text-center">
                   <h4 class="font-heading text-xl text-slate-800">Olivia Chen</h4>
                   <p class="text-primary text-sm mt-1">Admin Assistant</p>
+                   <a href="team-details.php" class="font-semibold text-sm text-primary hover:underline">View Profile &rarr;</a>
                 </div>
               </div>
               <div class="social-panel">
@@ -150,6 +153,7 @@
                 <div class="p-5 text-center">
                   <h4 class="font-heading text-xl text-slate-800">David Lee</h4>
                   <p class="text-primary text-sm mt-1">Accounts Manager</p>
+                   <a href="team-details.php" class="font-semibold text-sm text-primary hover:underline">View Profile &rarr;</a>
                 </div>
               </div>
               <div class="social-panel">
