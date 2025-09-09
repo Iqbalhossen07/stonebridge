@@ -51,10 +51,7 @@
             <div class="absolute inset-0 bg-slate-900/60 z-0"></div>
             <div class="container mx-auto px-6 relative z-10 text-center text-white">
               <div class="space-y-4" data-aos="fade-up">
-                <p class="text-sm font-semibold text-slate-200">
-                  <a href="index.html" class="hover:text-primary transition-colors">Home</a> &rsaquo; 
-                  <span class="text-primary">Events</span>
-                </p>
+               
                 <h1 class="font-heading text-4xl md:text-5xl">Upcoming Events</h1>
                 <p class="max-w-2xl mx-auto text-slate-300">
                   Join us for our upcoming seminars, workshops, and community gatherings.
@@ -79,12 +76,12 @@
                                 <span>October 25, 2025</span> &bull; <span>10:00 AM - 1:00 PM</span>
                             </div>
                             <h3 class="font-heading text-2xl text-slate-800 mb-3 group-hover:text-primary transition-colors">
-                                <a href="event-details.html">Navigating Skilled Worker Visas</a>
+                                <a href="event-details.php">Navigating Skilled Worker Visas</a>
                             </h3>
                             <p class="text-slate-600 text-base leading-relaxed mb-6">
                                 A comprehensive seminar on the requirements and application process for the UK Skilled Worker visa route.
                             </p>
-                            <a href="event-details.html" class="font-semibold text-sm text-primary hover:underline">View Details &rarr;</a>
+                            <a href="event-details.php" class="font-semibold text-sm text-primary hover:underline">View Details &rarr;</a>
                         </div>
                     </article>
 
@@ -97,12 +94,12 @@
                                 <span>November 12, 2025</span> &bull; <span>2:00 PM - 4:00 PM</span>
                             </div>
                             <h3 class="font-heading text-2xl text-slate-800 mb-3 group-hover:text-primary transition-colors">
-                                <a href="event-details.html">Understanding Your Right to Work</a>
+                                <a href="event-details.php">Understanding Your Right to Work</a>
                             </h3>
                             <p class="text-slate-600 text-base leading-relaxed mb-6">
                                 An interactive workshop for employers on conducting compliant Right to Work checks and avoiding civil penalties.
                             </p>
-                            <a href="event-details.html" class="font-semibold text-sm text-primary hover:underline">View Details &rarr;</a>
+                            <a href="event-details.php" class="font-semibold text-sm text-primary hover:underline">View Details &rarr;</a>
                         </div>
                     </article>
                     <article class="card-premium group" data-aos="fade-up" data-aos-delay="100">
@@ -114,12 +111,12 @@
                                 <span>November 12, 2025</span> &bull; <span>2:00 PM - 4:00 PM</span>
                             </div>
                             <h3 class="font-heading text-2xl text-slate-800 mb-3 group-hover:text-primary transition-colors">
-                                <a href="event-details.html">Understanding Your Right to Work</a>
+                                <a href="event-details.php">Understanding Your Right to Work</a>
                             </h3>
                             <p class="text-slate-600 text-base leading-relaxed mb-6">
                                 An interactive workshop for employers on conducting compliant Right to Work checks and avoiding civil penalties.
                             </p>
-                            <a href="event-details.html" class="font-semibold text-sm text-primary hover:underline">View Details &rarr;</a>
+                            <a href="event-details.php" class="font-semibold text-sm text-primary hover:underline">View Details &rarr;</a>
                         </div>
                     </article>
 

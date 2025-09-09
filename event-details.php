@@ -45,16 +45,31 @@
     <!-- Header -->
     <?php include('header.php') ?> 
 
-    <main class="pt-32">
+    <main >
+
+     <section class="relative pt-40 pb-24 bg-cover bg-center min-h-[400px] flex items-center justify-center" 
+            style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1600&auto=format&fit=crop');">
+            <div class="absolute inset-0 bg-slate-900/60 z-0"></div>
+            <div class="container mx-auto px-6 relative z-10 text-center text-white">
+              <div class="space-y-4" data-aos="fade-up">
+               
+                <h1 class="font-heading text-4xl md:text-5xl">Events Details</h1>
+                <p class="max-w-2xl mx-auto text-slate-300">
+                  Join us for our upcoming seminars, workshops, and community gatherings.
+                </p>
+              </div>
+            </div>
+        </section>
+
         <section class="py-24">
             <div class="container mx-auto px-6">
                 <div class="grid lg:grid-cols-3 gap-12">
                     
                     <article class="lg:col-span-2 article-content">
                         <div class="rounded-xl overflow-hidden shadow-soft-2 mb-8" data-aos="fade-up">
-                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1600&auto=format&fit=crop" alt="Event image" class="w-full h-auto" />
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1600&auto=format&fit=crop" alt="Event image" class="w-full h-96" />
                         </div>
-                        <h1 class="font-heading text-4xl md:text-5xl text-slate-900 leading-tight mb-6" data-aos="fade-up">
+                        <h1 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight mb-6" data-aos="fade-up">
                             Navigating Skilled Worker Visas
                         </h1>
                         <div class="space-y-6 text-slate-700 text-lg leading-relaxed" data-aos="fade-up">

@@ -182,6 +182,7 @@
         </li>
             <li><a href="gallery.php" class="text-sm tracking-wide hover:text-primary transition-colors">Gallery</a></li>
             <li><a href="team.php" class="text-sm tracking-wide hover:text-primary transition-colors">Team</a></li>
+            <li><a href="events.php" class="text-sm tracking-wide hover:text-primary transition-colors">Events</a></li>
             <li><a href="blog.php" class="text-sm tracking-wide hover:text-primary transition-colors">Blog</a></li>
             <li><a href="contact.php" class="text-sm tracking-wide hover:text-primary transition-colors">Contact</a></li>
           </ul>
@@ -269,6 +270,7 @@
                 </div>
             </li>
               <li><a href="gallery.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Gallery</a></li>
+              <li><a href="events.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Events</a></li>
               <li><a href="team.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Team</a></li>
               <li><a href="blog.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Blog</a></li>
               <li><a href="contact.php" class="block text-center px-3 py-2 rounded-md bg-primary text-white">Get Started</a></li>
