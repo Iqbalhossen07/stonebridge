@@ -383,3 +383,25 @@
 }
 
 
+/* --- FAQ Accordion Styles --- */
+.faq-trigger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.faq-item.active .faq-trigger span {
+    color: var(--tw-color-primary, #87550D);
+}
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+.faq-icon {
+    transition: transform 0.3s ease;
+}
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
