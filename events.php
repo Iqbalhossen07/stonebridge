@@ -1,11 +1,15 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Events — Aurelia</title>
+    <title>Stonebridge Legal — Premium Studio</title>
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Merriweather:wght@700;800&display=swap" rel="stylesheet" />
+    <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -28,12 +32,18 @@
         }
       }
     </script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-white text-slate-900 font-body antialiased selection:bg-primary/20 selection:text-primary">
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-white text-slate-900 font-body antialiased selection:bg-primary/20 selection:text-primary">
+    <!-- Background FX -->
+    <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 ">
+      <div class="absolute -top-32 -left-24 h-80 w-80 rounded-full blur-3xl opacity-50 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/25 via-primary/10 to-transparent"></div>
+      <div class="absolute top-40 -right-24 h-96 w-96 rounded-full blur-3xl opacity-40 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-400/20 via-amber-400/0 to-transparent"></div>
+      <div class="absolute inset-0 noise"></div>
+    </div>
 
-    <header>
-        </header>
+    <!-- Header -->
+    <?php include('header.php') ?> 
 
     <main>
         <section class="relative pt-40 pb-24 bg-cover bg-center min-h-[400px] flex items-center justify-center" 
@@ -116,13 +126,33 @@
                     </div>
             </div>
         </section>
+
+
+      <!-- CTA -->
+      <section id="cta" class="relative mt-24 mb-24 max-w-5xl mx-auto">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/20 via-primary/0 to-transparent"></div>
+        <div class="container mx-auto px-6">
+          <div class="overflow-hidden rounded-2xl p-10 md:p-14 bg-gradient-to-br from-primary to-amber-700 text-white shadow-glow">
+            <div class="grid gap-6 md:grid-cols-2 md:items-center">
+              <div data-aos="fade-right">
+                <h3 class="font-heading text-3xl md:text-4xl">Ready to elevate your brand?</h3>
+                <p class="mt-2 text-white/85 max-w-prose">Let’s craft something exceptional together—designed to perform and built to last.</p>
+              </div>
+              <div class="flex md:justify-end items-center" data-aos="fade-left">
+                <a href="#" class="btn-premium bg-gradient-to-br from-white to-white text-primary hover:opacity-95">Start your project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        </footer>
+    <!-- Footer -->
+    <?php include('footer.php') ?>
 
+
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });</script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
