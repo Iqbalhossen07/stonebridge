@@ -34,7 +34,152 @@
           <ul class="hidden md:flex items-center gap-8 font-semibold">
             <li><a href="index.php" class="text-sm tracking-wide hover:text-primary  transition-colors">Home</a></li>
             <li><a href="about.php" class="text-sm tracking-wide hover:text-primary  transition-colors">About</a></li>
-            <li><a href="#services" class="text-sm tracking-wide hover:text-primary transition-colors">Services</a></li>
+              <li class="relative group">
+            <a href="services.html" class="text-sm tracking-wide hover:text-primary transition-colors flex items-center gap-1">
+                Services
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </a>
+            <div class="mega-menu absolute top-full left-1/2 -translate-x-1/2 w-screen max-w-7xl bg-white shadow-soft-2 rounded-lg border mt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                <div class="p-8 grid grid-cols-5 gap-8">
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">Sponsorship Licence</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">Sponsor Licence Application</a></li>
+                                <li><a href="#" class="mega-menu-link">Sponsor Licence Renewal</a></li>
+                                <li><a href="#" class="mega-menu-link">Sponsor Licence Suspension</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">Global Business Mobility</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">Graduate Trainee Visa</a></li>
+                                <li><a href="#" class="mega-menu-link">UK Expansion Worker visa</a></li>
+                                <li><a href="#" class="mega-menu-link">Specialist Worker Visa</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">UKVI Compliant HR Software</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">Compliant HR Software</a></li>
+                                <li><a href="#" class="mega-menu-link">Sponsorship Duties</a></li>
+                                <li><a href="#" class="mega-menu-link">HO Compliance Audit in UK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">Immigration Compliance</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">Civil Penalty</a></li>
+                                <li><a href="#" class="mega-menu-link">HO Compliance Visit</a></li>
+                                <li><a href="#" class="mega-menu-link">Right to Work Check</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">Standard Visitor Visa</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">Tourist Visa</a></li>
+                                <li><a href="#" class="mega-menu-link">Business Visit</a></li>
+                                <li><a href="#" class="mega-menu-link">UK Fiancé Visa</a></li>
+                            </ul>
+                        </div>
+                         <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">EU Settlement Scheme</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">EU Pre-Settled Status</a></li>
+                                <li><a href="#" class="mega-menu-link">EU Settled Status</a></li>
+                                <li><a href="#" class="mega-menu-link">EU Family Permit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">Skilled Worker Visas</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">Skilled Worker Visa</a></li>
+                                <li><a href="#" class="mega-menu-link">Minister of Religion Visa</a></li>
+                                <li><a href="#" class="mega-menu-link">Health Care Visa</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">Study Visas</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">Student Visa</a></li>
+                                <li><a href="#" class="mega-menu-link">Child Student Visa</a></li>
+                                <li><a href="#" class="mega-menu-link">Graduate Visa</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">UK Settlement Scheme</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">20 Year Private Life Route</a></li>
+                                <li><a href="#" class="mega-menu-link">ILR (5 year route)</a></li>
+                                <li><a href="#" class="mega-menu-link">ILR (10 year route)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">Temporary (Tier 5) Visas</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">Religious Worker Visa</a></li>
+                                <li><a href="#" class="mega-menu-link">Creative Worker Visa</a></li>
+                                <li><a href="#" class="mega-menu-link">Charity Worker Visa</a></li>
+                            </ul>
+                        </div>
+                         <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">Business Visas</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">Self-Sponsorship in UK</a></li>
+                                <li><a href="#" class="mega-menu-link">Innovator Founder Visa</a></li>
+                                <li><a href="#" class="mega-menu-link">Turkish Businessperson Visa</a></li>
+                            </ul>
+                        </div>
+                         <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">British Citizenship</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">Naturalisation</a></li>
+                                <li><a href="#" class="mega-menu-link">BNO Status</a></li>
+                                <li><a href="#" class="mega-menu-link">Registration</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">Partner and family Visas</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">Spouse Visa</a></li>
+                                <li><a href="#" class="mega-menu-link">Dependent Visa</a></li>
+                                <li><a href="#" class="mega-menu-link">Unmarried Partner Visa</a></li>
+                            </ul>
+                        </div>
+                         <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">Scale Up Visa</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">Scale-up Visa</a></li>
+                                <li><a href="#" class="mega-menu-link">Scale-up Sponsor Licence</a></li>
+                                <li><a href="#" class="mega-menu-link">Scale up Business</a></li>
+                            </ul>
+                        </div>
+                         <div>
+                            <h4 class="font-semibold text-slate-800 mb-3">Immigration Appeals</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="#" class="mega-menu-link">Judicial Review</a></li>
+                                <li><a href="#" class="mega-menu-link">Administrative Review</a></li>
+                                <li><a href="#" class="mega-menu-link">Appeal To The Tribunal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </li>
             <li><a href="gallery.php" class="text-sm tracking-wide hover:text-primary transition-colors">Gallery</a></li>
             <li><a href="team.php" class="text-sm tracking-wide hover:text-primary transition-colors">Team</a></li>
             <li><a href="blog.php" class="text-sm tracking-wide hover:text-primary transition-colors">Blog</a></li>
@@ -50,7 +195,79 @@
             <ul class="grid gap-3">
               <li><a href="index.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Home</a></li>
               <li><a href="about.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">About</a></li>
-              <li><a href="#services" class="block px-3 py-2 rounded-md hover:bg-slate-100">Services</a></li>
+               <li class="mobile-accordion">
+                <button class="mobile-accordion-trigger w-full flex justify-between items-center px-3 py-2 rounded-md hover:bg-slate-100">
+                    <span class="font-semibold">Services</span>
+                    <svg class="h-4 w-4 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="mobile-accordion-content pl-4 pt-2">
+                    <ul class="grid gap-1 text-slate-700">
+                        
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>Sponsorship Licence</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Sponsor Licence Application</a></li><li><a href="#" class="block py-1 hover:text-primary">Sponsor Licence Renewal</a></li><li><a href="#" class="block py-1 hover:text-primary">Sponsor Licence Suspension</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>Immigration Compliance</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Civil Penalty</a></li><li><a href="#" class="block py-1 hover:text-primary">HO Compliance Visit</a></li><li><a href="#" class="block py-1 hover:text-primary">Right to Work Check</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>Skilled Worker Visas</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Skilled Worker Visa</a></li><li><a href="#" class="block py-1 hover:text-primary">Minister of Religion Visa</a></li><li><a href="#" class="block py-1 hover:text-primary">Health Care Visa</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>Temporary (Tier 5) Visas</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Religious Worker Visa</a></li><li><a href="#" class="block py-1 hover:text-primary">Creative Worker Visa</a></li><li><a href="#" class="block py-1 hover:text-primary">Charity Worker Visa</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>Partner and family Visas</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Spouse Visa</a></li><li><a href="#" class="block py-1 hover:text-primary">Dependent Visa</a></li><li><a href="#" class="block py-1 hover:text-primary">Unmarried Partner Visa</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>Global Business Mobility</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Graduate Trainee Visa</a></li><li><a href="#" class="block py-1 hover:text-primary">UK Expansion Worker visa</a></li><li><a href="#" class="block py-1 hover:text-primary">Specialist Worker Visa</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>Standard Visitor Visa</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Tourist Visa</a></li><li><a href="#" class="block py-1 hover:text-primary">Business Visit</a></li><li><a href="#" class="block py-1 hover:text-primary">UK Fiancé Visa</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>Study Visas</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Student Visa</a></li><li><a href="#" class="block py-1 hover:text-primary">Child Student Visa</a></li><li><a href="#" class="block py-1 hover:text-primary">Graduate Visa</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>Business Visas</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Self-Sponsorship in UK</a></li><li><a href="#" class="block py-1 hover:text-primary">Innovator Founder Visa</a></li><li><a href="#" class="block py-1 hover:text-primary">Turkish Businessperson Visa</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>Scale Up Visa</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Scale-up Visa</a></li><li><a href="#" class="block py-1 hover:text-primary">Scale-up Sponsor Licence</a></li><li><a href="#" class="block py-1 hover:text-primary">Scale up Business</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>UKVI Compliant HR Software</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Compliant HR Software</a></li><li><a href="#" class="block py-1 hover:text-primary">Sponsorship Duties</a></li><li><a href="#" class="block py-1 hover:text-primary">HO Compliance Audit in UK</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>EU Settlement Scheme</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">EU Pre-Settled Status</a></li><li><a href="#" class="block py-1 hover:text-primary">EU Settled Status</a></li><li><a href="#" class="block py-1 hover:text-primary">EU Family Permit</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>UK Settlement Scheme</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">20 Year Private Life Route</a></li><li><a href="#" class="block py-1 hover:text-primary">ILR (5 year route)</a></li><li><a href="#" class="block py-1 hover:text-primary">ILR (10 year route)</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>British Citizenship</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Naturalisation</a></li><li><a href="#" class="block py-1 hover:text-primary">BNO Status</a></li><li><a href="#" class="block py-1 hover:text-primary">Registration</a></li></ul></div>
+                        </li>
+                        <li class="mobile-sub-accordion">
+                            <button class="mobile-sub-accordion-trigger w-full flex justify-between items-center py-1 text-left font-medium"><span>Immigration Appeals</span><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Judicial Review</a></li><li><a href="#" class="block py-1 hover:text-primary">Administrative Review</a></li><li><a href="#" class="block py-1 hover:text-primary">Appeal To The Tribunal</a></li></ul></div>
+                        </li>
+
+                         <li><a href="services.html" class="block py-1 mt-2 font-semibold text-primary">View All Services &rarr;</a></li>
+                    </ul>
+                </div>
+            </li>
               <li><a href="gallery.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Gallery</a></li>
               <li><a href="team.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Team</a></li>
               <li><a href="blog.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Blog</a></li>

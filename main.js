@@ -286,3 +286,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// --- Mobile Menu Accordion Logic ---
+document.addEventListener('DOMContentLoaded', () => {
+    const accordions = document.querySelectorAll('.mobile-accordion');
+
+    accordions.forEach(accordion => {
+        const trigger = accordion.querySelector('.mobile-accordion-trigger');
+        const content = accordion.querySelector('.mobile-accordion-content');
+
+        if (trigger && content) {
+            trigger.addEventListener('click', () => {
+                accordion.classList.toggle('active');
+                if (accordion.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    content.style.maxHeight = null;
+                }
+            });
+        }
+    });
+});

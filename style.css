@@ -405,3 +405,36 @@
     transform: rotate(45deg);
 }
 
+
+/* --- Mega Menu Styles --- */
+.mega-menu {
+    transform: translateY(10px) translateX(-50%);
+}
+.group:hover .mega-menu {
+    transform: translateY(0) translateX(-50%);
+}
+.mega-menu-link {
+    display: block;
+    color: #475569; /* slate-600 */
+    transition: color 0.2s;
+}
+.mega-menu-link:hover {
+    color: var(--tw-color-primary, #87550D);
+}
+
+
+
+/* --- Mobile Menu Accordion Styles --- */
+.mobile-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+.mobile-accordion.active .mobile-accordion-content {
+    /* max-height is set by JS */
+}
+
+.mobile-accordion.active .mobile-accordion-trigger svg {
+    transform: rotate(180deg);
+}
