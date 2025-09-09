@@ -177,7 +177,7 @@
                 </div>
                 <div>
                     <h4 class="font-heading text-xl text-slate-800 mb-2">Hassle-Free Invoicing</h4>
-                    <p class="text-slate-600 leading-relaxed text-sm">Automate invoice creation and tracking for seamless financial management.</p>
+                    <p class="text-slate-600 leading-relaxed text-sm">Automate invoice creation and tracking for seamless management.</p>
                 </div>
             </div>
 
