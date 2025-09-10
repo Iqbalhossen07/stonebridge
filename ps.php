@@ -132,7 +132,16 @@
         text-align: left;
     }
 }
+
+
+.tab-button { width: 100%; text-align: left; padding: 0.75rem 1rem; border-radius: 0.5rem; font-weight: 600; color: #475569; transition: all 0.2s; }
+.tab-button.active, .tab-button:hover { background-color: var(--tw-color-primary, #87550D); color: white; }
+.tab-panel { animation: fadeIn 0.5s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
 </style>
+
+<link rel="stylesheet" href="style.css">
   </head>
   <body class="bg-white text-slate-900 font-body antialiased selection:bg-primary/20 selection:text-primary">
     <!-- Background FX -->
@@ -378,8 +387,209 @@
         </div>
     </div>
 </section>
-        <section id="enquiry-form">
-            </section>
+    
+
+<section id="documents-tabbed" class="relative py-24 bg-slate-50/50 overflow-hidden">
+    
+    <div aria-hidden="true" class="absolute inset-0 z-0 opacity-60">
+        <svg class="absolute top-0 left-0 w-full h-auto" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <path d="M0 200C0 200 360 400 720 200C1080 0 1440 200 1440 200V900H0V200Z" fill="url(#paint0_linear_wave_docs)" />
+            <path d="M0 150C0 150 360 300 720 150C1080 0 1440 150 1440 150V900H0V150Z" fill="url(#paint1_linear_wave_docs)" style="mix-blend-mode: overlay" />
+            <defs>
+                <linearGradient id="paint0_linear_wave_docs" x1="720" y1="0" x2="720" y2="900" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#87550D" stop-opacity="0.05" />
+                    <stop offset="1" stop-color="#87550D" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_wave_docs" x1="720" y1="0" x2="720" y2="900" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#87550D" stop-opacity="0.1" />
+                    <stop offset="1" stop-color="#87550D" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2" data-aos="fade-up">CHECKLIST</h3>
+            <h2 class="font-heading text-3xl md:text-4xl text-slate-900" data-aos="fade-up" data-aos-delay="100">Required Documents</h2>
+            <p class="text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="200">
+                Tick through the essentials before you apply.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8 tab-component" data-aos="fade-up" data-aos-delay="300"> 
+            
+            <div class="lg:col-span-1">
+                <div class="space-y-2" role="tablist">
+                    <button class="tab-button" data-tab="personal" role="tab">Personal Documents</button>
+                    <button class="tab-button" data-tab="academic" role="tab">Academic Documents</button>
+                    <button class="tab-button" data-tab="financial" role="tab">Financial Proof</button>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2">
+                <div id="personal" class="tab-panel" role="tabpanel">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">Valid Passport</span></label>
+                        <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">BRP (if issued)</span></label>
+                        <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">TB Test (if required)</span></label>
+                    </div>
+                </div>
+                <div id="academic" class="tab-panel hidden" role="tabpanel">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">Degree Confirmation</span></label>
+                        <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">CAS Reference</span></label>
+                    </div>
+                </div>
+                 <div id="financial" class="tab-panel hidden" role="tabpanel">
+                     <div class="grid sm:grid-cols-2 gap-4">
+                        <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">Payment Card for Fees</span></label>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="mistakes-tips" class="relative py-24 bg-slate-50/50 overflow-hidden">
+    
+    <div aria-hidden="true" class="absolute inset-0 z-0 opacity-60">
+        <svg class="absolute top-0 left-0 w-full h-auto" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <path d="M0 200C0 200 360 400 720 200C1080 0 1440 200 1440 200V900H0V200Z" fill="url(#paint0_linear_wave_mistakes)" />
+            <path d="M0 150C0 150 360 300 720 150C1080 0 1440 150 1440 150V900H0V150Z" fill="url(#paint1_linear_wave_mistakes)" style="mix-blend-mode: overlay" />
+            <defs>
+                <linearGradient id="paint0_linear_wave_mistakes" x1="720" y1="0" x2="720" y2="900" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#87550D" stop-opacity="0.05" />
+                    <stop offset="1" stop-color="#87550D" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_wave_mistakes" x1="720" y1="0" x2="720" y2="900" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#87550D" stop-opacity="0.1" />
+                    <stop offset="1" stop-color="#87550D" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2" data-aos="fade-up">Guidance</h3>
+            <h2 class="font-heading text-4xl md:text-5xl text-slate-900 leading-tight" data-aos="fade-up" data-aos-delay="100">Common Mistakes & Pro Tips</h2>
+            <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">
+              Navigate your application with confidence by learning from common pitfalls and expert advice.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+            
+            <div class="space-y-8" data-aos="fade-right" data-aos-delay="300">
+                <div class="text-center lg:text-left">
+                    <h2 class="font-heading text-3xl md:text-4xl text-slate-900">Mistakes to Avoid</h2>
+                </div>
+                <div class="space-y-6">
+                    <div class="card-premium p-6 flex items-start gap-4">
+                        <div class="h-10 w-10 bg-red-100 text-red-500 flex items-center justify-center rounded-lg shrink-0">
+                           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-heading text-lg text-slate-800">Applying from Outside the UK</h4>
+                            <p class="text-slate-600 text-sm mt-1">You must be physically present in the UK to apply for the Graduate Route.</p>
+                        </div>
+                    </div>
+                    <div class="card-premium p-6 flex items-start gap-4">
+                         <div class="h-10 w-10 bg-red-100 text-red-500 flex items-center justify-center rounded-lg shrink-0">
+                           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-heading text-lg text-slate-800">Missing the Deadline</h4>
+                            <p class="text-slate-600 text-sm mt-1">You must apply before your current Student or Tier 4 visa expires.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-8" data-aos="fade-left" data-aos-delay="400">
+                <div class="text-center lg:text-left">
+                    <h2 class="font-heading text-3xl md:text-4xl text-slate-900">Tips for Success</h2>
+                </div>
+                <div class="space-y-6">
+                    <div class="card-premium p-6 flex items-start gap-4">
+                        <div class="h-10 w-10 bg-green-100 text-green-600 flex items-center justify-center rounded-lg shrink-0">
+                           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-heading text-lg text-slate-800">Apply Early</h4>
+                            <p class="text-slate-600 text-sm mt-1">Submit your application as soon as your university confirms your successful course completion.</p>
+                        </div>
+                    </div>
+                     <div class="card-premium p-6 flex items-start gap-4">
+                        <div class="h-10 w-10 bg-green-100 text-green-600 flex items-center justify-center rounded-lg shrink-0">
+                           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-heading text-lg text-slate-800">Double-Check Documents</h4>
+                            <p class="text-slate-600 text-sm mt-1">Ensure all your documents are up-to-date and meet the specific requirements before submission.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+       <!-- faq section start -->
+
+        <section id="faq" class="relative py-24 bg-slate-50/50 overflow-hidden">
+
+
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2" data-aos="fade-up">FAQ</h3>
+      <h2 class="font-heading text-4xl md:text-5xl text-slate-900 leading-tight" data-aos="fade-up" data-aos-delay="100">Frequently Asked Questions</h2>
+      <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">
+        Have questions? We've got answers. If you can't find what you're looking for, feel free to contact us.
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="300">
+      
+      <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-soft-1">
+        <button class="faq-trigger flex justify-between items-center w-full text-left p-6">
+          <span class="font-heading text-lg text-slate-800">What is a Sponsorship Licence?</span>
+          <div class="faq-icon h-6 w-6 text-slate-500 shrink-0">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+          </div>
+        </button>
+        <div class="faq-content">
+          <p class="px-6 pb-6 text-slate-600 leading-relaxed">
+            A Sponsorship Licence allows UK-based businesses to hire skilled workers from outside the European Economic Area (EEA). It is a mandatory requirement set by the Home Office for employers wishing to sponsor non-EEA nationals under routes like the Skilled Worker visa.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-soft-1">
+        <button class="faq-trigger flex justify-between items-center w-full text-left p-6">
+          <span class="font-heading text-lg text-slate-800">How long does an application take?</span>
+          <div class="faq-icon h-6 w-6 text-slate-500 shrink-0">
+             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+          </div>
+        </button>
+        <div class="faq-content">
+          <p class="px-6 pb-6 text-slate-600 leading-relaxed">
+            Application processing times can vary depending on the type of visa and the complexity of the case. Standard applications can take several weeks to a few months. We always provide an estimated timeline based on the specific circumstances of your case.
+          </p>
+        </div>
+      </div>
+      
+      </div>
+  </div>
+</section>
 
     </main>
 
@@ -387,9 +597,89 @@
     <!-- Footer -->
     <?php include('footer.php') ?>
 
+    <script>// --- Safe and Scoped Tab Component Logic ---
+document.addEventListener('DOMContentLoaded', () => {
+    const tabComponents = document.querySelectorAll('.tab-component');
+
+    tabComponents.forEach(component => {
+        const tabs = component.querySelectorAll('.tab-button');
+        const panels = component.querySelectorAll('.tab-panel');
+
+        if (tabs.length > 0 && panels.length > 0) {
+            // Set the first tab as active by default
+            tabs[0].classList.add('active');
+            panels.forEach((panel, index) => {
+                if (index !== 0) {
+                    panel.classList.add('hidden');
+                } else {
+                    panel.classList.remove('hidden');
+                }
+            });
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Deactivate all tabs within this component
+                    tabs.forEach(t => t.classList.remove('active'));
+                    // Activate the clicked tab
+                    tab.classList.add('active');
+
+                    // Get the target panel ID from the data attribute
+                    const targetPanelId = tab.dataset.tab;
+                    
+                    // Hide all panels within this component
+                    panels.forEach(p => p.classList.add('hidden'));
+                    
+                    // Show the target panel
+                    const targetPanel = component.querySelector(`#${targetPanelId}`);
+                    if (targetPanel) {
+                        targetPanel.classList.remove('hidden');
+                    }
+                });
+            });
+        }
+    });
+});
+
+
+    // --- FAQ Accordion Logic ---
+       document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const trigger = item.querySelector('.faq-trigger');
+        if (trigger) {
+            trigger.addEventListener('click', () => {
+                const content = item.querySelector('.faq-content');
+                const currentlyActive = item.classList.contains('active');
+
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-content').style.maxHeight = null;
+                    }
+                });
+
+                // Toggle the clicked item
+                if (currentlyActive) {
+                    item.classList.remove('active');
+                    content.style.maxHeight = null;
+                } else {
+                    item.classList.add('active');
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    });
+});
+
+</script>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
     <script src="main.js"></script>
+
+    
   </body>
 </html>
