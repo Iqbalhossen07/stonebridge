@@ -47,7 +47,7 @@
 
     <main>
       <!-- Hero -->
-       <section id="#" class="relative pt-32 md:pt-40 pb-24 overflow-hidden">
+       <section id="#" class="relative pt-32 md:pt-52 pb-24 overflow-hidden">
     <div aria-hidden="true" class="absolute inset-0 z-0 opacity-60">
         <svg class="absolute top-0 left-0 w-full h-auto" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
             <path d="M0 200C0 200 360 400 720 200C1080 0 1440 200 1440 200V900H0V200Z" fill="url(#paint0_linear_wave)" />
@@ -70,7 +70,7 @@
             <div data-aos="fade-right" class="space-y-6 lg:text-left text-center">
                 <span class="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs border border-primary/20">Premium Lawyer Studio</span>
                 <h1 class="font-heading text-2xl leading-tight md:text-4xl lg:text-4xl">Enabling improvement through targeted digital proficiency.</h1>
-                <p class="text-slate-600 max-w-2xl mx-auto lg:mx-0 text-lg text-justify">We Develop Contemporary Interfaces Employing Subtle Shadows, Gentle Gradients, and Seamless Animations, Constructed for Optimal Performance and Engineered to Impress. Each Element is Meticulously Crafted to Ensure Precision and Elegance. Our Solutions Uphold the Highest Standards of Functionality and Aesthetic Excellence.</p>
+                <p class="text-slate-600 max-w-2xl mx-auto lg:mx-0 text-lg text-justify">We Develop Contemporary Interfaces Employing Subtle Shadows and Seamless Animations, Constructed for Optimal Performance and Engineered to Impress.</p>
                 
                 <div class="flex flex-col sm:flex-row gap-3 pt-2 justify-center lg:justify-start">
                     <a href="#cta" class="btn-premium px-6 py-3 rounded-md">Get Started</a>
@@ -85,7 +85,7 @@
                         </div>
                         <div>
                             <h3 class="font-heading text-lg text-slate-800">Right to Work</h3>
-                            <p class="text-sm text-slate-600 mt-1">Verify eligibility and ensure with UK employment laws.</p>
+                            <p class="text-sm text-slate-600 mt-1">Verify eligibility.</p>
                         </div>
                     </div>
                     
@@ -95,7 +95,7 @@
                         </div>
                         <div>
                             <h3 class="font-heading text-lg text-slate-800">HRMS</h3>
-                            <p class="text-sm text-slate-600 mt-1">Streamline HR processes with our advanced management system.</p>
+                            <p class="text-sm text-slate-600 mt-1">Streamline HR processes .</p>
                         </div>
                     </div>
                     
@@ -105,7 +105,7 @@
                         </div>
                         <div>
                             <h3 class="font-heading text-lg text-slate-800">Skilled Worker Visa</h3>
-                            <p class="text-sm text-slate-600 mt-1">Navigate the application process with expert guidance.</p>
+                            <p class="text-sm text-slate-600 mt-1">Navigate the application process .</p>
                         </div>
                     </div>
                     
@@ -115,7 +115,7 @@
                         </div>
                         <div>
                             <h3 class="font-heading text-lg text-slate-800">Asylum</h3>
-                            <p class="text-sm text-slate-600 mt-1">Comprehensive support for asylum seekers and refugees.</p>
+                            <p class="text-sm text-slate-600 mt-1">Comprehensive support for asylum.</p>
                         </div>
                     </div>
                 </div>

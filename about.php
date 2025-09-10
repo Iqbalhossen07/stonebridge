@@ -47,7 +47,7 @@
 
     <main>
         <section class="relative pt-40 pb-24 bg-cover bg-center min-h-[400px] flex items-center justify-center" 
-            style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c7da?q=80&w=1600&auto=format&fit=crop');">
+            style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWJvdXQlMjB1c3xlbnwwfHwwfHx8MA%3D%3Dp');">
             <div class="absolute inset-0 bg-slate-900/60 z-0"></div>
             <div class="container mx-auto px-6 relative z-10 text-center text-white">
               <div class="space-y-4" data-aos="fade-up">

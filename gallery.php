@@ -46,7 +46,7 @@
     <?php include('header.php') ?> 
     <main>
         <section class="relative pt-40 pb-24 bg-cover bg-center min-h-[400px] flex items-center justify-center"
-            style="background-image: url('https://images.unsplash.com/photo-1511300636412-014a9a2a1de6?q=80&w=1600&auto=format&fit=crop');">
+            style="background-image: url('https://images.unsplash.com/photo-1606819717115-9159c900370b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D');">
             <div class="absolute inset-0 bg-slate-900/60 z-0"></div>
             <div class="container mx-auto px-6 relative z-10 text-center text-white">
                 <div class="space-y-4" data-aos="fade-up">
@@ -101,7 +101,7 @@
 
                     <a href="#" class="group relative block w-full h-80 overflow-hidden rounded-xl shadow-soft-2"
                         data-aos="fade-up" data-aos-delay="100">
-                        <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=800&auto=format&fit=crop"
+                        <img src="img/g1.jpeg"
                             alt="Gallery Image"
                             class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -117,7 +117,7 @@
 
                     <a href="#" class="group relative block w-full h-80 overflow-hidden rounded-xl shadow-soft-2"
                         data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://images.unsplash.com/photo-1521170665346-3f21e2291d8b?q=80&w=800&auto=format&fit=crop"
+                        <img src="img/g2.jpeg"
                             alt="Gallery Image"
                             class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -133,7 +133,7 @@
 
                     <a href="#" class="group relative block w-full h-80 overflow-hidden rounded-xl shadow-soft-2"
                         data-aos="fade-up" data-aos-delay="300">
-                        <img src="https://images.unsplash.com/photo-1523246205-1c1a1fd0d048?q=80&w=800&auto=format&fit=crop"
+                        <img src="img/g3.jpeg"
                             alt="Gallery Image"
                             class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -149,7 +149,7 @@
 
                     <a href="#" class="group relative block w-full h-80 overflow-hidden rounded-xl shadow-soft-2"
                         data-aos="fade-up" data-aos-delay="100">
-                        <img src="https://images.unsplash.com/photo-1526401485004-2fda9f4e2d93?q=80&w=800&auto=format&fit=crop"
+                        <img src="img/g4.jpeg"
                             alt="Gallery Image"
                             class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -165,7 +165,7 @@
 
                     <a href="#" class="group relative block w-full h-80 overflow-hidden rounded-xl shadow-soft-2"
                         data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://images.unsplash.com/photo-1520975922325-24b69be8492b?q=80&w=800&auto=format&fit=crop"
+                        <img src="img/g5.jpeg"
                             alt="Gallery Image"
                             class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -181,7 +181,37 @@
 
                     <a href="#" class="group relative block w-full h-80 overflow-hidden rounded-xl shadow-soft-2"
                         data-aos="fade-up" data-aos-delay="300">
-                        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800&auto=format&fit=crop"
+                        <img src="img/g6.jpeg"
+                            alt="Gallery Image"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div
+                            class="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="font-heading text-2xl">E-commerce Solution</h3>
+                            <p class="text-white/80 text-sm">Development</p>
+                        </div>
+                    </a>
+                    <a href="#" class="group relative block w-full h-80 overflow-hidden rounded-xl shadow-soft-2"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <img src="img/g7.jpeg"
+                            alt="Gallery Image"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div
+                            class="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="font-heading text-2xl">E-commerce Solution</h3>
+                            <p class="text-white/80 text-sm">Development</p>
+                        </div>
+                    </a>
+                    <a href="#" class="group relative block w-full h-80 overflow-hidden rounded-xl shadow-soft-2"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <img src="img/g8.jpeg"
                             alt="Gallery Image"
                             class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
