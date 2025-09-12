@@ -32,7 +32,16 @@
           </a>
           <ul class="hidden md:flex items-center gap-8 font-semibold">
             <li><a href="index.php" class="text-sm tracking-wide hover:text-primary  transition-colors">Home</a></li>
-            <li><a href="about.php" class="text-sm tracking-wide hover:text-primary  transition-colors">About</a></li>
+            <li class="relative group">
+    <a href="about.php" class="text-sm tracking-wide hover:text-primary transition-colors flex items-center gap-1">
+        About
+        <svg class="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+    </a>
+    <div class="absolute top-full left-0 w-48 bg-white shadow-soft-2 rounded-lg border mt-2 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+        <a href="about.php" class="block px-4 py-2 text-sm text-slate-700 hover:bg-primary/5 hover:text-primary">About Us</a>
+        <a href="team.php" class="block px-4 py-2 text-sm text-slate-700 hover:bg-primary/5 hover:text-primary">Our Team</a>
+    </div>
+</li>
               <li class="relative group">
             <a href="services.html" class="text-sm tracking-wide hover:text-primary transition-colors flex items-center gap-1">
                 Services
@@ -181,9 +190,9 @@
         </li>
             <li><a href="psw.php" class="text-sm tracking-wide hover:text-primary transition-colors">PSW</a></li>
             <li><a href="asylum.php" class="text-sm tracking-wide hover:text-primary transition-colors">Asylum</a></li>
+            <li><a href="sponsor-checker.php" class="text-sm tracking-wide hover:text-primary transition-colors">Sponsor Checker</a></li>
 
             <li><a href="gallery.php" class="text-sm tracking-wide hover:text-primary transition-colors">Gallery</a></li>
-            <li><a href="team.php" class="text-sm tracking-wide hover:text-primary transition-colors">Team</a></li>
             <li><a href="events.php" class="text-sm tracking-wide hover:text-primary transition-colors">Events</a></li>
             <li><a href="blog.php" class="text-sm tracking-wide hover:text-primary transition-colors">Blog</a></li>
             <li><a href="contact.php" class="text-sm tracking-wide hover:text-primary transition-colors">Contact</a></li>
@@ -197,7 +206,18 @@
           <div class="container mx-auto px-6 py-4">
             <ul class="grid gap-3">
               <li><a href="index.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Home</a></li>
-              <li><a href="about.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">About</a></li>
+           <li class="mobile-accordion">
+    <button class="mobile-accordion-trigger w-full flex justify-between items-center px-3 py-2 rounded-md hover:bg-slate-100">
+        <span class="font-semibold">About</span>
+        <svg class="h-4 w-4 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+    </button>
+    <div class="mobile-accordion-content pl-6 pt-2">
+        <ul class="grid gap-1 text-slate-700">
+            <li><a href="about.php" class="block py-1 hover:text-primary">About Us</a></li>
+            <li><a href="team.php" class="block py-1 hover:text-primary">Our Team</a></li>
+        </ul>
+    </div>
+</li>
                <li class="mobile-accordion">
                 <button class="mobile-accordion-trigger w-full flex justify-between items-center px-3 py-2 rounded-md hover:bg-slate-100">
                     <span class="font-semibold">Services</span>
@@ -273,9 +293,9 @@
             </li>
               <li><a href="psw.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">PSW</a></li>
               <li><a href="asylum.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Asylum</a></li>
+              <li><a href="sponsor-checker.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Sponsor Checker</a></li>
               <li><a href="gallery.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Gallery</a></li>
               <li><a href="events.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Events</a></li>
-              <li><a href="team.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Team</a></li>
               <li><a href="blog.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Blog</a></li>
               <li><a href="contact.php" class="block text-center px-3 py-2 rounded-md bg-primary text-white">Contact Us</a></li>
             </ul>

@@ -52,6 +52,10 @@
             <div class="absolute inset-0 bg-slate-900/60 z-0"></div>
             <div class="container mx-auto px-6 relative z-10 text-center text-white">
                 <div class="space-y-4" data-aos="fade-up">
+                  <p class="text-sm font-semibold text-slate-200">
+                  <a href="index.html" class="hover:text-primary transition-colors">Home</a> › 
+                  <span class="text-primary"> Blog Details</span>
+                </p>
                  
                     <h1 class="font-heading text-4xl md:text-5xl">Blog Details</h1>
                     <p class="max-w-2xl mx-auto text-slate-300">

@@ -77,7 +77,7 @@
 
 <!-- social media icon -->
 
-<div class="fixed bottom-8 right-8 z-50">
+<!-- <div class="fixed bottom-8 right-8 z-50">
   <div class="flex flex-col gap-4">
 
     <a href="#" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer" 
@@ -113,4 +113,4 @@
     </a>
 
   </div>
-</div>
+</div> -->
