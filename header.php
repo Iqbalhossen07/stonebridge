@@ -19,8 +19,7 @@
     </div>
 
     <div class="flex items-center gap-4">
-      <a href="#login" class="hover:opacity-80 transition-opacity">Login</a>
-      <a href="#register" class="px-3 py-1 text-xs border border-white/50 rounded-full hover:bg-white/10 transition-colors">Register</a>
+      <a href="#register" class="px-3 py-1 text-xs border border-white/50 rounded-full hover:bg-white/10 transition-colors">Book Appointment</a>
     </div>
 
   </div>
@@ -180,7 +179,8 @@
                 </div>
             </div>
         </li>
-            <li><a href="ps.php" class="text-sm tracking-wide hover:text-primary transition-colors">PSW</a></li>
+            <li><a href="psw.php" class="text-sm tracking-wide hover:text-primary transition-colors">PSW</a></li>
+            <li><a href="asylum.php" class="text-sm tracking-wide hover:text-primary transition-colors">Asylum</a></li>
 
             <li><a href="gallery.php" class="text-sm tracking-wide hover:text-primary transition-colors">Gallery</a></li>
             <li><a href="team.php" class="text-sm tracking-wide hover:text-primary transition-colors">Team</a></li>
@@ -189,7 +189,7 @@
             <li><a href="contact.php" class="text-sm tracking-wide hover:text-primary transition-colors">Contact</a></li>
           </ul>
           <div class="hidden md:flex items-center gap-3">
-            <a href="#cta" class="btn-premium">Get Started</a>
+            <a href="#cta" class="btn-premium">Contact Us</a>
           </div>
           <button id="menuBtn" class="md:hidden p-2 rounded-md border" aria-label="Toggle menu">☰</button>
         </nav>
@@ -271,11 +271,13 @@
                     </ul>
                 </div>
             </li>
+              <li><a href="psw.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">PSW</a></li>
+              <li><a href="asylum.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Asylum</a></li>
               <li><a href="gallery.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Gallery</a></li>
               <li><a href="events.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Events</a></li>
               <li><a href="team.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Team</a></li>
               <li><a href="blog.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Blog</a></li>
-              <li><a href="contact.php" class="block text-center px-3 py-2 rounded-md bg-primary text-white">Get Started</a></li>
+              <li><a href="contact.php" class="block text-center px-3 py-2 rounded-md bg-primary text-white">Contact Us</a></li>
             </ul>
           </div>
         </div>

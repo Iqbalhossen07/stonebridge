@@ -68,7 +68,6 @@
     <div class="container mx-auto px-6 relative z-10">
         <div class="grid gap-12 lg:grid-cols-2 items-start">
             <div data-aos="fade-right" class="space-y-6 lg:text-left text-center">
-                <span class="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs border border-primary/20">Premium Lawyer Studio</span>
                 <h1 class="font-heading text-2xl leading-tight md:text-4xl lg:text-4xl">Enabling improvement through targeted digital proficiency.</h1>
                 <p class="text-slate-600 max-w-2xl mx-auto lg:mx-0 text-lg text-justify">We Develop Contemporary Interfaces Employing Subtle Shadows and Seamless Animations, Constructed for Optimal Performance and Engineered to Impress.</p>
                 
@@ -124,7 +123,7 @@
             <div data-aos="fade-left" class="relative flex justify-center lg:justify-end lg:mt-0 mt-12">
                 <div class="absolute top-4 left-0 bg-white/80 backdrop-blur-md p-3 rounded-lg shadow-soft-1 border border-slate-200 flex items-center gap-2 animate-float-slow z-20">
                     <span class="h-4 w-4 rounded-full bg-green-500 block"></span>
-                    <span class="text-sm font-medium text-slate-700">Live Demo</span>
+                    <span class="text-sm font-medium text-slate-700">Stonebridge Live</span>
                 </div>
 
                 <div class="relative w-full max-w-2xl aspect-[4/3] bg-slate-200 rounded-xl flex items-center justify-center shadow-xl shadow-black/20 ring-1 ring-black/10">
