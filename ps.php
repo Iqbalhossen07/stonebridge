@@ -139,6 +139,36 @@
 .tab-panel { animation: fadeIn 0.5s; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
+
+/* --- Definitive Contact Form Input Styles --- */
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem; /* rounded-lg */
+    background-color: #ffffff; /* Clean white background */
+    border: 1px solid #cbd5e1; /* Visible slate-300 border */
+    transition: border-color 0.2s, box-shadow 0.2s;
+    -webkit-appearance: none; /* Removes default OS styling on select/date */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--tw-color-primary, #87550D); /* Primary color border on focus */
+    box-shadow: 0 0 0 3px rgba(135, 85, 13, 0.2); /* Primary color ring on focus */
+}
+
+/* Add custom arrow for select dropdown */
+select.form-input {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2364748b' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
 </style>
 
 <link rel="stylesheet" href="style.css">
@@ -179,7 +209,7 @@
                 <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                 UK Graduate Route (PSW)
             </p>
-            <h1 class="font-heading text-4xl md:text-5xl text-slate-900 leading-tight mb-6">
+            <h1 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight mb-6">
                 Launch your UK career <br> with confidence
             </h1>
             <p class="max-w-xl text-slate-700 text-lg mb-8">
@@ -226,40 +256,46 @@
     </div>
 </section>
 
-        <section class="py-24">
-            <div class="container mx-auto px-6">
-                <div class="grid lg:grid-cols-3 gap-12">
-                    
-                    <article class="lg:col-span-2 article-content space-y-12">
-                        
-                        <div id="what-is-psw" data-aos="fade-up">
-                            <h2 class="font-heading text-3xl text-slate-800 mb-4">What is the PSW (Graduate Route)?</h2>
-                            <div class="space-y-4 text-slate-600 leading-relaxed text-lg">
-                                <p>The Graduate Route, commonly known as the Post-Study Work (PSW) visa, allows international students who have successfully completed a degree in the UK to stay and work, or look for work, for a period of two years (three years for PhD graduates) after their studies.</p>
-                                <p>This visa offers a fantastic opportunity for graduates to gain valuable work experience in the UK, build professional networks, and potentially switch to a long-term work visa, such as the Skilled Worker visa, without needing a sponsor for this initial period.</p>
-                            </div>
-                        </div>
-
-                    
-                        
-                        </article>
-
-                    <aside class="lg:col-span-1 space-y-8 lg:sticky top-32">
-                        <div class="card-premium p-8" data-aos="fade-left">
-                            <h4 class="font-heading text-2xl text-slate-800 mb-6">On This Page</h4>
-                            <ul class="space-y-3">
-                                <li><a href="#what-is-psw" class="font-semibold text-slate-700 hover:text-primary transition-colors">What is PSW?</a></li>
-                                <li><a href="#eligibility" class="font-semibold text-slate-700 hover:text-primary transition-colors">Eligibility</a></li>
-                                <li><a href="#application-process" class="font-semibold text-slate-700 hover:text-primary transition-colors">Application Process</a></li>
-                                <li><a href="#documents" class="font-semibold text-slate-700 hover:text-primary transition-colors">Required Documents</a></li>
-                                <li><a href="#mistakes" class="font-semibold text-slate-700 hover:text-primary transition-colors">Common Mistakes</a></li>
-                                <li><a href="#faq" class="font-semibold text-slate-700 hover:text-primary transition-colors">FAQs</a></li>
-                            </ul>
-                        </div>
-                    </aside>
+<section id="what-is-psw" class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            
+            <div data-aos="fade-right">
+                <div class="rounded-xl overflow-hidden shadow-soft-3">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1600&auto=format&fit=crop" alt="International students celebrating graduation in the UK" class="w-full h-auto object-cover">
                 </div>
             </div>
-        </section>
+
+            <div data-aos="fade-left">
+                <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2">THE GRADUATE ROUTE</h3>
+                <h2 class="font-heading text-3xl md:text-4xl text-slate-900 leading-tight mb-6">What is the PSW Visa?</h2>
+                <div class="space-y-4 text-slate-600 leading-relaxed text-lg">
+                    <p>
+                        The Graduate Route, commonly known as the Post-Study Work (PSW) visa, allows international students who have successfully completed an eligible UK degree to stay and work, or look for work, for a period of two years (three years for PhD graduates) after their studies.
+                    </p>
+                    <p>
+                        This visa offers a fantastic opportunity for graduates to gain valuable work experience in the UK, build professional networks, and potentially switch to a long-term work visa without needing a sponsor for this initial period.
+                    </p>
+                    <ul class="space-y-3 pt-4">
+                        <li class="flex items-start gap-3">
+                            <svg class="h-6 w-6 text-primary shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-slate-700">Gain valuable UK work experience.</span>
+                        </li>
+                         <li class="flex items-start gap-3">
+                            <svg class="h-6 w-6 text-primary shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-slate-700">Work in almost any job at any skill level.</span>
+                        </li>
+                         <li class="flex items-start gap-3">
+                            <svg class="h-6 w-6 text-primary shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-slate-700">No job offer or sponsorship required to apply.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
 <section id="eligibility" class="relative py-24 bg-white overflow-hidden">
@@ -276,68 +312,55 @@
     </div>
 
     <div class="container mx-auto px-6 relative z-10">
-        <div class="grid lg:grid-cols-3 gap-12 items-center">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2" data-aos="fade-up">ELIGIBILITY</h3>
+            <h2 class="font-heading text-4xl text-slate-900 leading-tight" data-aos="fade-up" data-aos-delay="100">Who is eligible?</h2>
+            <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">A quick checklist to confirm you can apply.</p>
+        </div>
+        
+        <div class="max-w-8xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="300">
             
-            <div class="lg:col-span-1" data-aos="fade-right">
-                <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2">ELIGIBILITY</h3>
-                <h2 class="font-heading text-4xl text-slate-900 leading-tight">Who is eligible?</h2>
-                <p class="text-slate-600 mt-4 text-lg">A quick checklist to confirm you can apply.</p>
+            <div class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
+                <div class="text-primary mt-1 shrink-0"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                <p class="text-slate-700">Completed an eligible UK degree (e.g., Bachelor's, Master's, PhD)</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
+                <div class="text-primary mt-1 shrink-0"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                <p class="text-slate-700">Held a valid Student visa at the time of course completion</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
+                <div class="text-primary mt-1 shrink-0"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                <p class="text-slate-700">Applied from within the UK</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
+                <div class="text-primary mt-1 shrink-0"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                <p class="text-slate-700">University has reported your successful completion to the Home Office</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
+                <div class="text-primary mt-1 shrink-0"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                <p class="text-slate-700">Valid passport and BRP (if applicable)</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
+                <div class="text-primary mt-1 shrink-0"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                <p class="text-slate-700">No requirement for job offer or minimum salary</p>
             </div>
 
-            <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6" data-aos="fade-left" data-aos-delay="200">
-                
-                <div class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
-                    <div class="text-primary mt-1 shrink-0"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                    <p class="text-slate-700">Completed an eligible UK degree (e.g., Bachelor's, Master's, PhD)</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
-                    <div class="text-primary mt-1 shrink-0"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                    <p class="text-slate-700">Held a valid Student visa at the time of course completion</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
-                    <div class="text-primary mt-1 shrink-0"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                    <p class="text-slate-700">Applied from within the UK</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
-                    <div class="text-primary mt-1 shrink-0"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                    <p class="text-slate-700">University has reported your successful completion to the Home Office</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
-                    <div class="text-primary mt-1 shrink-0"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                    <p class="text-slate-700">Valid passport and BRP (if applicable)</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
-                    <div class="text-primary mt-1 shrink-0"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                    <p class="text-slate-700">No requirement for job offer or minimum salary</p>
-                </div>
-
-            </div>
         </div>
     </div>
 </section>
 
+
+
+
 <section id="application-process" class="relative py-24 bg-slate-50/50 overflow-hidden">
     
-    <div aria-hidden="true" class="absolute inset-0 z-0 opacity-60">
-        <svg class="absolute top-0 left-0 w-full h-auto" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-            <path d="M0 200C0 200 360 400 720 200C1080 0 1440 200 1440 200V900H0V200Z" fill="url(#paint0_linear_wave_application)" />
-            <path d="M0 150C0 150 360 300 720 150C1080 0 1440 150 1440 150V900H0V150Z" fill="url(#paint1_linear_wave_application)" style="mix-blend-mode: overlay" />
-            <defs>
-                <linearGradient id="paint0_linear_wave_application" x1="720" y1="0" x2="720" y2="900" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#87550D" stop-opacity="0.05" />
-                    <stop offset="1" stop-color="#87550D" stop-opacity="0" />
-                </linearGradient>
-                <linearGradient id="paint1_linear_wave_application" x1="720" y1="0" x2="720" y2="900" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#87550D" stop-opacity="0.1" />
-                    <stop offset="1" stop-color="#87550D" stop-opacity="0" />
-                </linearGradient>
-            </defs>
-        </svg>
-    </div>
+   
 
     <div class="container mx-auto px-6 relative z-10">
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="font-heading text-3xl md:text-4xl text-slate-900" data-aos="fade-up">Application Process</h2>
+                <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2">Process</h3>
+
+            <h2 class="font-heading text-2xl md:text-4xl text-slate-900" data-aos="fade-up">Application Process</h2>
             <p class="text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">
                 A step-by-step guide to navigating your Graduate Route application with ease.
             </p>
@@ -409,42 +432,40 @@
     </div>
 
     <div class="container mx-auto px-6 relative z-10">
+        
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2" data-aos="fade-up">CHECKLIST</h3>
-            <h2 class="font-heading text-3xl md:text-4xl text-slate-900" data-aos="fade-up" data-aos-delay="100">Required Documents</h2>
+            <h2 class="font-heading text-2xl md:text-4xl text-slate-900" data-aos="fade-up" data-aos-delay="100">Required Documents</h2>
             <p class="text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="200">
                 Tick through the essentials before you apply.
             </p>
         </div>
 
-        <div class="grid lg:grid-cols-3 gap-8 tab-component" data-aos="fade-up" data-aos-delay="300"> 
+        
+        <div class="grid lg:grid-cols-3 gap-8 max-w-8xl mx-auto" data-aos="fade-up" data-aos-delay="300">
             
-            <div class="lg:col-span-1">
-                <div class="space-y-2" role="tablist">
-                    <button class="tab-button" data-tab="personal" role="tab">Personal Documents</button>
-                    <button class="tab-button" data-tab="academic" role="tab">Academic Documents</button>
-                    <button class="tab-button" data-tab="financial" role="tab">Financial Proof</button>
+            <div class="space-y-4">
+                <h4 class="font-heading text-xl text-slate-800 border-b pb-2">Personal Documents</h4>
+                <div class="space-y-3">
+                    <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">Valid Passport</span></label>
+                    <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">BRP (if issued)</span></label>
+                    <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">TB Test (if required)</span></label>
+                    <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">Police Registration</span></label>
                 </div>
             </div>
 
-            <div class="lg:col-span-2">
-                <div id="personal" class="tab-panel" role="tabpanel">
-                    <div class="grid sm:grid-cols-2 gap-4">
-                        <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">Valid Passport</span></label>
-                        <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">BRP (if issued)</span></label>
-                        <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">TB Test (if required)</span></label>
-                    </div>
+            <div class="space-y-4">
+                <h4 class="font-heading text-xl text-slate-800 border-b pb-2">Academic Documents</h4>
+                 <div class="space-y-3">
+                    <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">Degree Confirmation</span></label>
+                    <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">CAS Reference</span></label>
                 </div>
-                <div id="academic" class="tab-panel hidden" role="tabpanel">
-                    <div class="grid sm:grid-cols-2 gap-4">
-                        <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">Degree Confirmation</span></label>
-                        <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">CAS Reference</span></label>
-                    </div>
-                </div>
-                 <div id="financial" class="tab-panel hidden" role="tabpanel">
-                     <div class="grid sm:grid-cols-2 gap-4">
-                        <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">Payment Card for Fees</span></label>
-                     </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-heading text-xl text-slate-800 border-b pb-2">Financial Proof</h4>
+                <div class="space-y-3">
+                    <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input type="checkbox" class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span class="text-slate-700">Payment Card for Fees</span></label>
                 </div>
             </div>
         </div>
@@ -477,67 +498,36 @@
         
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2" data-aos="fade-up">Guidance</h3>
-            <h2 class="font-heading text-4xl md:text-5xl text-slate-900 leading-tight" data-aos="fade-up" data-aos-delay="100">Common Mistakes & Pro Tips</h2>
+            <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up" data-aos-delay="100">Common Mistakes & Pro Tips</h2>
             <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">
               Navigate your application with confidence by learning from common pitfalls and expert advice.
             </p>
         </div>
 
-        <div class="grid lg:grid-cols-2 gap-16 items-start">
-            
-            <div class="space-y-8" data-aos="fade-right" data-aos-delay="300">
-                <div class="text-center lg:text-left">
-                    <h2 class="font-heading text-3xl md:text-4xl text-slate-900">Mistakes to Avoid</h2>
-                </div>
-                <div class="space-y-6">
-                    <div class="card-premium p-6 flex items-start gap-4">
-                        <div class="h-10 w-10 bg-red-100 text-red-500 flex items-center justify-center rounded-lg shrink-0">
-                           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                        </div>
-                        <div>
-                            <h4 class="font-heading text-lg text-slate-800">Applying from Outside the UK</h4>
-                            <p class="text-slate-600 text-sm mt-1">You must be physically present in the UK to apply for the Graduate Route.</p>
-                        </div>
-                    </div>
-                    <div class="card-premium p-6 flex items-start gap-4">
-                         <div class="h-10 w-10 bg-red-100 text-red-500 flex items-center justify-center rounded-lg shrink-0">
-                           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                        </div>
-                        <div>
-                            <h4 class="font-heading text-lg text-slate-800">Missing the Deadline</h4>
-                            <p class="text-slate-600 text-sm mt-1">You must apply before your current Student or Tier 4 visa expires.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="space-y-8" data-aos="fade-left" data-aos-delay="400">
-                <div class="text-center lg:text-left">
-                    <h2 class="font-heading text-3xl md:text-4xl text-slate-900">Tips for Success</h2>
-                </div>
-                <div class="space-y-6">
-                    <div class="card-premium p-6 flex items-start gap-4">
-                        <div class="h-10 w-10 bg-green-100 text-green-600 flex items-center justify-center rounded-lg shrink-0">
-                           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        </div>
-                        <div>
-                            <h4 class="font-heading text-lg text-slate-800">Apply Early</h4>
-                            <p class="text-slate-600 text-sm mt-1">Submit your application as soon as your university confirms your successful course completion.</p>
-                        </div>
-                    </div>
-                     <div class="card-premium p-6 flex items-start gap-4">
-                        <div class="h-10 w-10 bg-green-100 text-green-600 flex items-center justify-center rounded-lg shrink-0">
-                           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        </div>
-                        <div>
-                            <h4 class="font-heading text-lg text-slate-800">Double-Check Documents</h4>
-                            <p class="text-slate-600 text-sm mt-1">Ensure all your documents are up-to-date and meet the specific requirements before submission.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+       <div class="container mx-auto grid gap-6 md:grid-cols-2">
+      <div class="rounded-xl border border-green-500/30 bg-white shadow-sm" data-aos="fade-right">
+        <div class="p-6">
+          <div class="mb-4 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M2 12h3"/><path d="M19 12h3"/><path d="M12 2v4"/><path d="M5 22h14"/><path d="M8 12a4 4 0 1 1 8 0"/></svg><h3 class="text-2xl">Tips</h3></div>
+          <ul class="space-y-3">
+            <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7 10 17l-5-5"/></svg><span>Apply soon after results to avoid gaps.</span></li>
+            <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7 10 17l-5-5"/></svg><span>Keep your contact details updated with UKVI.</span></li>
+            <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7 10 17l-5-5"/></svg><span>Use the UK Immigration ID Check app if possible.</span></li>
+            <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7 10 17l-5-5"/></svg><span>Save all confirmations and receipts.</span></li>
+          </ul>
         </div>
+      </div>
+      <div class="rounded-xl border border-red-500/30 bg-white shadow-sm" data-aos="fade-left">
+        <div class="p-6">
+          <div class="mb-4 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg><h3 class="text-2xl">Common Mistakes</h3></div>
+          <ul class="space-y-3">
+            <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg><span>Applying before results are officially confirmed.</span></li>
+            <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg><span>Using an outdated CAS or wrong course details.</span></li>
+            <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg><span>Leaving the UK before a decision (if required to stay).</span></li>
+            <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg><span>Ignoring emails from UKVI or your university.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     </div>
 </section>
 
@@ -548,47 +538,121 @@
         <section id="faq" class="relative py-24 bg-slate-50/50 overflow-hidden">
 
 
-  <div class="container mx-auto px-6 relative z-10">
-    <div class="text-center max-w-3xl mx-auto mb-16">
-      <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2" data-aos="fade-up">FAQ</h3>
-      <h2 class="font-heading text-4xl md:text-5xl text-slate-900 leading-tight" data-aos="fade-up" data-aos-delay="100">Frequently Asked Questions</h2>
-      <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">
-        Have questions? We've got answers. If you can't find what you're looking for, feel free to contact us.
-      </p>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2" data-aos="fade-up">FAQ</h3>
+                <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up" data-aos-delay="100">Frequently Asked Questions</h2>
+                <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">
+                    Have questions? We've got answers. If you can't find what you're looking for, feel free to contact us.
+                </p>
+                </div>
+
+                <div class="max-w-4xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="300">
+                
+                <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-soft-1">
+                    <button class="faq-trigger flex justify-between items-center w-full text-left p-6">
+                    <span class="font-heading text-lg text-slate-800">What is a Sponsorship Licence?</span>
+                    <div class="faq-icon h-6 w-6 text-slate-500 shrink-0">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                    </div>
+                    </button>
+                    <div class="faq-content">
+                    <p class="px-6 pb-6 text-slate-600 leading-relaxed">
+                        A Sponsorship Licence allows UK-based businesses to hire skilled workers from outside the European Economic Area (EEA). It is a mandatory requirement set by the Home Office for employers wishing to sponsor non-EEA nationals under routes like the Skilled Worker visa.
+                    </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-soft-1">
+                    <button class="faq-trigger flex justify-between items-center w-full text-left p-6">
+                    <span class="font-heading text-lg text-slate-800">How long does an application take?</span>
+                    <div class="faq-icon h-6 w-6 text-slate-500 shrink-0">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                    </div>
+                    </button>
+                    <div class="faq-content">
+                    <p class="px-6 pb-6 text-slate-600 leading-relaxed">
+                        Application processing times can vary depending on the type of visa and the complexity of the case. Standard applications can take several weeks to a few months. We always provide an estimated timeline based on the specific circumstances of your case.
+                    </p>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </section>
+
+
+<section id="enquiry-form" class="relative py-24 bg-slate-50/50 overflow-hidden">
+    <div aria-hidden="true" class="absolute inset-0 z-0 opacity-60">
+        <svg class="absolute top-0 left-0 w-full h-auto" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <path d="M0 200C0 200 360 400 720 200C1080 0 1440 200 1440 200V900H0V200Z" fill="url(#paint0_linear_wave_enquiry)" />
+            <path d="M0 150C0 150 360 300 720 150C1080 0 1440 150 1440 150V900H0V150Z" fill="url(#paint1_linear_wave_enquiry)" style="mix-blend-mode: overlay" />
+            <defs>
+                <linearGradient id="paint0_linear_wave_enquiry" x1="720" y1="0" x2="720" y2="900" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#87550D" stop-opacity="0.05" />
+                    <stop offset="1" stop-color="#87550D" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_wave_enquiry" x1="720" y1="0" x2="720" y2="900" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#87550D" stop-opacity="0.1" />
+                    <stop offset="1" stop-color="#87550D" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+        </svg>
     </div>
 
-    <div class="max-w-4xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="300">
-      
-      <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-soft-1">
-        <button class="faq-trigger flex justify-between items-center w-full text-left p-6">
-          <span class="font-heading text-lg text-slate-800">What is a Sponsorship Licence?</span>
-          <div class="faq-icon h-6 w-6 text-slate-500 shrink-0">
-            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
-          </div>
-        </button>
-        <div class="faq-content">
-          <p class="px-6 pb-6 text-slate-600 leading-relaxed">
-            A Sponsorship Licence allows UK-based businesses to hire skilled workers from outside the European Economic Area (EEA). It is a mandatory requirement set by the Home Office for employers wishing to sponsor non-EEA nationals under routes like the Skilled Worker visa.
-          </p>
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-soft-2 border border-slate-200" data-aos="fade-up">
+            <div class="text-center mb-10">
+                <h2 class="font-heading text-3xl md:text-4xl text-slate-900">Need Help with Your PSW Application?</h2>
+                <p class="text-lg text-slate-600 mt-4">Fill out the form, and one of our specialists will get in touch with you shortly.</p>
+            </div>
+            
+            <form class="space-y-6">
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label for="fullName" class="block text-sm font-medium text-slate-700 mb-1">Full name</label>
+                        <input type="text" id="fullName" class="form-input" placeholder="Your name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="you@example.com" required>
+                    </div>
+                </div>
+                 <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-slate-700 mb-1">Phone</label>
+                        <input type="tel" id="phone" class="form-input" placeholder="+44" required>
+                    </div>
+                    <div>
+                        <label for="university" class="block text-sm font-medium text-slate-700 mb-1">University</label>
+                        <input type="text" id="university" class="form-input" placeholder="e.g. University of London" required>
+                    </div>
+                </div>
+                 <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label for="graduationDate" class="block text-sm font-medium text-slate-700 mb-1">Graduation date</label>
+                        <input type="date" id="graduationDate" class="form-input" required>
+                    </div>
+                    <div>
+                        <label for="visaStatus" class="block text-sm font-medium text-slate-700 mb-1">Visa status</label>
+                        <select id="visaStatus" class="form-input">
+                            <option>On PSW</option>
+                            <option>Student / Tier 4</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+                 <div>
+                    <label for="howCanWeHelp" class="block text-sm font-medium text-slate-700 mb-1">How can we help?</label>
+                    <textarea id="howCanWeHelp" rows="5" class="form-input" placeholder="Briefly describe your situation" required></textarea>
+                </div>
+                <div class="text-center pt-4">
+                    <p class="text-xs text-slate-500 mb-4">By submitting, you agree to be contacted about your enquiry.</p>
+                    <button type="submit" class="btn-premium">Submit Enquiry</button>
+                </div>
+            </form>
         </div>
-      </div>
-
-      <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden shadow-soft-1">
-        <button class="faq-trigger flex justify-between items-center w-full text-left p-6">
-          <span class="font-heading text-lg text-slate-800">How long does an application take?</span>
-          <div class="faq-icon h-6 w-6 text-slate-500 shrink-0">
-             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
-          </div>
-        </button>
-        <div class="faq-content">
-          <p class="px-6 pb-6 text-slate-600 leading-relaxed">
-            Application processing times can vary depending on the type of visa and the complexity of the case. Standard applications can take several weeks to a few months. We always provide an estimated timeline based on the specific circumstances of your case.
-          </p>
-        </div>
-      </div>
-      
-      </div>
-  </div>
+    </div>
 </section>
 
     </main>

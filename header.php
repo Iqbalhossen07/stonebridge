@@ -180,6 +180,8 @@
                 </div>
             </div>
         </li>
+            <li><a href="ps.php" class="text-sm tracking-wide hover:text-primary transition-colors">PSW</a></li>
+
             <li><a href="gallery.php" class="text-sm tracking-wide hover:text-primary transition-colors">Gallery</a></li>
             <li><a href="team.php" class="text-sm tracking-wide hover:text-primary transition-colors">Team</a></li>
             <li><a href="events.php" class="text-sm tracking-wide hover:text-primary transition-colors">Events</a></li>

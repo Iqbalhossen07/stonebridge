@@ -62,7 +62,7 @@
 
 
           <!-- About -->
-        <section id="about" class="py-24 bg-gradient-to-br from-slate-50/50 to-amber-50/50 overflow-hidden">
+        <!-- <section id="about" class="py-24 bg-gradient-to-br from-slate-50/50 to-amber-50/50 overflow-hidden">
         <div class="container mx-auto px-6">
             <div class="grid items-center gap-12 lg:grid-cols-2">
             
@@ -129,7 +129,7 @@
             </div>
             </div>
         </div>
-        </section>
+        </section> -->
 
 
            <section id="operations-optimize" class="py-24 bg-slate-50">
