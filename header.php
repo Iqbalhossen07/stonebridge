@@ -191,6 +191,7 @@
             <li><a href="psw.php" class="text-sm tracking-wide hover:text-primary transition-colors">PSW</a></li>
             <li><a href="asylum.php" class="text-sm tracking-wide hover:text-primary transition-colors">Asylum</a></li>
             <li><a href="sponsor-checker.php" class="text-sm tracking-wide hover:text-primary transition-colors">Sponsor Checker</a></li>
+            <li><a href="resources.php" class="text-sm tracking-wide hover:text-primary transition-colors">Resources</a></li>
 
             <li><a href="gallery.php" class="text-sm tracking-wide hover:text-primary transition-colors">Gallery</a></li>
             <li><a href="events.php" class="text-sm tracking-wide hover:text-primary transition-colors">Events</a></li>
@@ -292,6 +293,7 @@
               <li><a href="psw.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">PSW</a></li>
               <li><a href="asylum.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Asylum</a></li>
               <li><a href="sponsor-checker.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Sponsor Checker</a></li>
+              <li><a href="resources.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Resources</a></li>
               <li><a href="gallery.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Gallery</a></li>
               <li><a href="events.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Events</a></li>
               <li><a href="blog.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Blog</a></li>
