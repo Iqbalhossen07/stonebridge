@@ -269,7 +269,7 @@
                     </div>
 
                     <div data-aos="fade-left" class="space-y-6 lg:text-left text-center shadow-sm p-4">
-                        <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase">About Us
+                        <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase">ABOUT STONEBRIDGE LEGAL
                         </h3>
                         <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight">A Trusted Firm with a
                             Legacy of Success</h2>
@@ -1562,8 +1562,7 @@
                         </div>
                         <div class="flex md:justify-end items-center" data-aos="fade-left">
                             <a href="#"
-                                class="btn-premium bg-gradient-to-br from-white to-white text-primary hover:opacity-95">Start
-                                your project</a>
+                                class="btn-premium bg-gradient-to-br from-white to-white text-primary hover:opacity-95">Book Appointment Now</a>
                         </div>
                     </div>
                 </div>
