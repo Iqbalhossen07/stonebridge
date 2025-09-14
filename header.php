@@ -197,9 +197,7 @@
             <li><a href="blog.php" class="text-sm tracking-wide hover:text-primary transition-colors">Blog</a></li>
             <li><a href="contact.php" class="text-sm tracking-wide hover:text-primary transition-colors">Contact</a></li>
           </ul>
-          <div class="hidden md:flex items-center gap-3">
-            <a href="#cta" class="btn-premium">Contact Us</a>
-          </div>
+      
           <button id="menuBtn" class="md:hidden p-2 rounded-md border" aria-label="Toggle menu">☰</button>
         </nav>
         <div id="mobileMenu" class="hidden md:hidden border-t bg-white/80 backdrop-blur-xl">
@@ -287,7 +285,7 @@
                             <div class="mobile-sub-accordion-content pl-4 pt-1"><ul class="text-sm space-y-1"><li><a href="#" class="block py-1 hover:text-primary">Judicial Review</a></li><li><a href="#" class="block py-1 hover:text-primary">Administrative Review</a></li><li><a href="#" class="block py-1 hover:text-primary">Appeal To The Tribunal</a></li></ul></div>
                         </li>
 
-                         <li><a href="services.html" class="block py-1 mt-2 font-semibold text-primary">View All Services &rarr;</a></li>
+                         <li><a href="services.php" class="block py-1 mt-2 font-semibold text-primary">View All Services &rarr;</a></li>
                     </ul>
                 </div>
             </li>
@@ -297,7 +295,7 @@
               <li><a href="gallery.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Gallery</a></li>
               <li><a href="events.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Events</a></li>
               <li><a href="blog.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Blog</a></li>
-              <li><a href="contact.php" class="block text-center px-3 py-2 rounded-md bg-primary text-white">Contact Us</a></li>
+              <li><a href="contact.php" class="block px-3 py-2 rounded-md hover:bg-slate-100">Contact</a></li>
             </ul>
           </div>
         </div>
