@@ -85,21 +85,21 @@
     <?php include('header.php') ?> 
 
     <main>
-        <section class="relative pt-32 md:pt-48 pb-24 bg-slate-50/50 overflow-hidden">
-            <div class="container mx-auto px-6 relative z-10">
-                <div class="max-w-3xl">
-                    <nav class="text-sm font-semibold mb-4" aria-label="Breadcrumb" data-aos="fade-down">
-                        <ol class="inline-flex items-center space-x-1 md:space-x-3">
-                            <li><a href="index.php" class="text-slate-600 hover:text-primary">Home</a></li>
-                            <li><span class="text-slate-400">/</span></li>
-                            <li><a href="services.html" class="text-slate-600 hover:text-primary">Services</a></li>
-                            <li><span class="text-slate-400">/</span></li>
-                            <li class="text-primary" aria-current="page">Self-Sponsorship</li>
-                        </ol>
-                    </nav>
-                    <h1 class="font-heading text-3xl md:text-5xl text-slate-900 leading-tight" data-aos="fade-up">Pave
-                        Your Own Path: Self-Sponsorship in the UK</h1>
-                    <p class="mt-4 text-lg text-slate-600" data-aos="fade-up" data-aos-delay="100">
+
+
+        <section class="relative pt-40 pb-24 bg-cover bg-center min-h-[400px] flex items-center justify-center"
+            style="background-image: url('https://images.unsplash.com/photo-1733819109723-92a56f6872a5?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="absolute inset-0 bg-slate-900/60 z-0"></div>
+            <div class="container mx-auto px-6 relative z-10 text-center text-white">
+                <div class="space-y-4" data-aos="fade-up">
+                    <p class="text-sm font-semibold text-slate-200">
+                        <a href="index.html" class="hover:text-primary transition-colors">Home</a> &rsaquo;
+                        <span class="text-primary"> Self-Sponsorship
+                        </span>
+                    </p>
+                    <h1 class="font-heading text-4xl md:text-5xl"> Self-Sponsorship
+                    </h1>
+                    <p class="max-w-2xl mx-auto text-slate-300">
                         Take control of your UK business ambitions. The Self-Sponsorship route allows you to establish
                         and run your own business in the UK without needing a job offer from an existing company.
                     </p>
@@ -438,8 +438,8 @@
         </section>
 
 
-         <!-- CTA -->
-       <?php include('cta.php') ?>
+        <!-- CTA -->
+        <?php include('cta.php') ?>
     </main>
 
     <?php include('footer.php') ?>

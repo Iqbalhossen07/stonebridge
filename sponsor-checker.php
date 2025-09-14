@@ -49,7 +49,7 @@
                 <svg class="absolute top-0 left-0 w-full h-auto" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"><path d="M0 200C0 200 360 400 720 200C1080 0 1440 200 1440 200V900H0V200Z" fill="url(#paint0_linear_wave_checker)" /><defs><linearGradient id="paint0_linear_wave_checker" x1="720" y1="0" x2="720" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#87550D" stop-opacity="0.05" /><stop offset="1" stop-color="#87550D" stop-opacity="0" /></linearGradient></defs></svg>
             </div>
             <div class="container mx-auto px-6 relative z-10">
-                <h1 class="font-heading text-3xl md:text-5xl text-slate-900 leading-tight" data-aos="fade-up">UK Sponsor License Checker</h1>
+                <h1 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up">UK Sponsor License Checker</h1>
                 <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Enter a company name to verify their official sponsor license status.</p>
                 <div class="mt-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
                     <form @submit.prevent="performSearch" class="relative flex items-center">
@@ -72,7 +72,7 @@
                                 'bg-gradient-to-br from-green-600 to-green-500': stat.key === 'valid',
                                 'bg-gradient-to-br from-red-600 to-red-500': stat.key === 'expired',
                                 'bg-gradient-to-br from-amber-600 to-amber-500': stat.key === 'pending',
-                                'ring-4 ring-offset-2 ring-primary': activeFilter === stat.key,
+                                'ring-4 ring-offset-2 red': activeFilter === stat.key,
                                 'opacity-80 hover:opacity-100': activeFilter !== stat.key
                              }">
                             <div>

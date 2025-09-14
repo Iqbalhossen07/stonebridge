@@ -13,10 +13,10 @@
       
       <div class="space-y-4">
         <a href="#" class="inline-flex items-center gap-2">
-      <img class="w-1/3" src="img/logo.png" alt="">
+     <h4 class="font-heading text-lg text-white mb-4">About Stonebridge Legal</h4>
         </a>
         <p class="text-slate-400 max-w-xs">
-          Crafting modern digital experiences with elegant details and performance-first builds.
+          Stonebridge Legal is a renowned law firm dedicated to providing expert legal solutions with unwavering commitment to justice and client success. Your trusted partner in every legal challenge.
         </p>
         <div class="flex space-x-4 pt-2">
           <a href="#" aria-label="Twitter" class="social-link-footer"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 2.9,4.79C2.53,5.42 2.33,6.16 2.33,6.94C2.33,8.43 3.1,9.78 4.22,10.59C3.47,10.57 2.78,10.36 2.17,10.03C2.17,10.05 2.17,10.07 2.17,10.08C2.17,12.19 3.65,13.95 5.6,14.34C5.24,14.44 4.86,14.5 4.47,14.5C4.2,14.5 3.93,14.47 3.67,14.42C4.22,16.14 5.8,17.38 7.69,17.42C6.23,18.55 4.41,19.23 2.42,19.23C2.08,19.23 1.75,19.21 1.42,19.16C3.34,20.43 5.65,21.23 8.13,21.23C16,21.23 20.33,14.41 20.33,8.79C20.33,8.62 20.33,8.45 20.32,8.28C21.17,7.69 21.89,6.9 22.46,6Z"></path></svg></a>

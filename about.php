@@ -86,16 +86,15 @@
                     <div class="space-y-6" data-aos="fade-left">
                         <h2 class="text-2xl md:text-4xl font-heading text-slate-900">Our Story: A Journey of Excellence
                             and Trust</h2>
+                               <p class="text-slate-700 leading-relaxed">
+                         Stonebridge Legal was founded on a simple yet powerful principle: to offer clear and compassionate guidance in the often-complex world of UK immigration. We started as a small, dedicated team with a passion for helping people navigate their legal journeys, and have since grown into a trusted name for clients both in the UK and abroad.
+                        </p>
                         <p class="text-slate-700 leading-relaxed">
                             At Stonebridge Legal, our journey began with a clear vision: to provide unparalleled legal
                             guidance and support. Founded on the principles of integrity, expertise, and client-first
                             service, we've grown from a passionate team into a trusted name in the legal landscape.
                         </p>
-                        <p class="text-slate-700 leading-relaxed">
-                            We believe in building lasting relationships, grounded in transparency and mutual respect.
-                            Our commitment extends beyond legal advice; we strive to be a partner in your success,
-                            navigating complexities with clarity and confidence.
-                        </p>
+                     
                         <div>
                             <a href="#" class="btn-premium mt-4">Discover More</a>
                         </div>

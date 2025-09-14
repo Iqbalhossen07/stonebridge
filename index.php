@@ -81,11 +81,8 @@
             <div class="container mx-auto px-6 relative z-10">
                 <div class="grid gap-12 lg:grid-cols-2 items-start">
                     <div data-aos="fade-right" class="space-y-6 lg:text-left text-center">
-                        <h1 class="font-heading text-2xl leading-tight md:text-4xl lg:text-4xl">Enabling improvement
-                            through targeted digital proficiency.</h1>
-                        <p class="text-slate-600 max-w-2xl mx-auto lg:mx-0 text-lg text-justify">We Develop Contemporary
-                            Interfaces Employing Subtle Shadows and Seamless Animations, Constructed for Optimal
-                            Performance and Engineered to Impress.</p>
+                        <h1 class="font-heading text-2xl leading-tight md:text-4xl lg:text-4xl">Expert Guidance Through Complex UK Immigration Law.</h1>
+                        <p class="text-slate-600 max-w-2xl mx-auto lg:mx-0 text-lg text-justify">Stonebridge Legal provides clear, strategic, and compassionate legal advice to help you achieve your immigration goals. Your journey is our priority.</p>
 
                         <div class="flex flex-col sm:flex-row gap-3 pt-2 justify-center lg:justify-start">
                             <a href="#cta" class="btn-premium px-6 py-3 rounded-md">Our Services</a>
