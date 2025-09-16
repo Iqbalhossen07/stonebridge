@@ -55,7 +55,7 @@
 
     <main>
         <!-- Hero -->
-        <section id="#" class="relative pt-32 md:pt-52 pb-24 overflow-hidden">
+        <section id="#" class="relative pt-40 md:pt-52 pb-24 overflow-hidden">
             <div aria-hidden="true" class="absolute inset-0 z-0 opacity-60">
                 <svg class="absolute top-0 left-0 w-full h-auto" viewBox="0 0 1440 900" fill="none"
                     xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
@@ -81,8 +81,15 @@
             <div class="container mx-auto px-6 relative z-10">
                 <div class="grid gap-12 lg:grid-cols-2 items-start">
                     <div data-aos="fade-right" class="space-y-6 lg:text-left text-center">
-                        <h1 class="font-heading text-2xl leading-tight md:text-4xl lg:text-4xl">Expert Guidance Through Complex UK Immigration Law.</h1>
-                        <p class="text-slate-600 max-w-2xl mx-auto lg:mx-0 text-lg text-justify">Stonebridge Legal provides clear, strategic, and compassionate legal advice to help you achieve your immigration goals. Your journey is our priority.</p>
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs border border-primary/20">Welcome
+                            Stonebridge Legal</span>
+
+                        <h1 class="font-heading text-2xl leading-tight md:text-4xl lg:text-4xl">Expert Guidance Through
+                            Complex UK Immigration Law.</h1>
+                        <p class="text-slate-600 max-w-2xl mx-auto lg:mx-0 text-sm md:text-lg text-justify">Stonebridge Legal
+                            provides clear, strategic, and compassionate legal advice to help you achieve your
+                            immigration goals. Your journey is our priority.</p>
 
                         <div class="flex flex-col sm:flex-row gap-3 pt-2 justify-center lg:justify-start">
                             <a href="#cta" class="btn-premium px-6 py-3 rounded-md">Our Services</a>
@@ -91,9 +98,10 @@
                                 Appointment</a>
                         </div>
 
-                        <div class="grid gap-6 sm:grid-cols-2 mt-12">
+                        <div class="grid grid-cols-2 gap-4 md:gap-6 mt-12">
 
-                            <a href="#" class="card-premium p-6 flex items-start gap-4 text-left h-full"
+                            <a href="#"
+                                class="card-premium p-6 flex flex-col sm:flex-row items-start gap-4 text-left h-full"
                                 data-aos="zoom-in" data-aos-delay="100">
                                 <div
                                     class="h-12 w-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shadow-md ring-1 ring-primary/20 shrink-0">
@@ -106,13 +114,14 @@
                                 </div>
                                 <div>
                                     <h3
-                                        class="font-heading text-lg text-slate-800 group-hover:text-primary transition-colors">
+                                        class="font-heading md:text-lg text-slate-800 group-hover:text-primary transition-colors">
                                         Right to Work</h3>
                                     <p class="text-sm text-slate-600 mt-1">Verify eligibility.</p>
                                 </div>
                             </a>
 
-                            <a href="#" class="card-premium p-6 flex items-start gap-4 text-left h-full"
+                            <a href="#"
+                                class="card-premium p-6 flex flex-col sm:flex-row items-start gap-4 text-left h-full"
                                 data-aos="zoom-in" data-aos-delay="200">
                                 <div
                                     class="h-12 w-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shadow-md ring-1 ring-primary/20 shrink-0">
@@ -126,13 +135,14 @@
                                 </div>
                                 <div>
                                     <h3
-                                        class="font-heading text-lg text-slate-800 group-hover:text-primary transition-colors">
+                                        class="font-heading md:text-lg text-slate-800 group-hover:text-primary transition-colors">
                                         HRMS</h3>
                                     <p class="text-sm text-slate-600 mt-1">Streamline HR processes.</p>
                                 </div>
                             </a>
 
-                            <a href="#" class="card-premium p-6 flex items-start gap-4 text-left h-full"
+                            <a href="#"
+                                class="card-premium p-6 flex flex-col sm:flex-row items-start gap-4 text-left h-full"
                                 data-aos="zoom-in" data-aos-delay="300">
                                 <div
                                     class="h-12 w-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shadow-md ring-1 ring-primary/20 shrink-0">
@@ -147,13 +157,14 @@
                                 </div>
                                 <div>
                                     <h3
-                                        class="font-heading text-lg text-slate-800 group-hover:text-primary transition-colors">
+                                        class="font-heading md:text-lg text-slate-800 group-hover:text-primary transition-colors">
                                         Skilled Worker Visa</h3>
                                     <p class="text-sm text-slate-600 mt-1">Navigate the application process.</p>
                                 </div>
                             </a>
 
-                            <a href="#" class="card-premium p-6 flex items-start gap-4 text-left h-full"
+                            <a href="#"
+                                class="card-premium p-6 flex flex-col sm:flex-row items-start gap-4 text-left h-full"
                                 data-aos="zoom-in" data-aos-delay="400">
                                 <div
                                     class="h-12 w-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shadow-md ring-1 ring-primary/20 shrink-0">
@@ -164,7 +175,7 @@
                                 </div>
                                 <div>
                                     <h3
-                                        class="font-heading text-lg text-slate-800 group-hover:text-primary transition-colors">
+                                        class="font-heading md:text-lg text-slate-800 group-hover:text-primary transition-colors">
                                         Asylum</h3>
                                     <p class="text-sm text-slate-600 mt-1">Comprehensive support for asylum.</p>
                                 </div>
@@ -266,11 +277,12 @@
                     </div>
 
                     <div data-aos="fade-left" class="space-y-6 lg:text-left text-center shadow-sm p-4">
-                        <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase">ABOUT STONEBRIDGE LEGAL
+                        <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase">ABOUT
+                            STONEBRIDGE LEGAL
                         </h3>
                         <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight">A Trusted Firm with a
                             Legacy of Success</h2>
-                        <p class="text-slate-700 max-w-prose mx-auto lg:mx-0 text-lg leading-relaxed text-justify">
+                        <p class="text-slate-700 max-w-prose mx-auto lg:mx-0 text-sm md:text-lg leading-relaxed text-justify">
                             We are independent immigration advisors based in Stratford, London, with extensive
                             experience assisting clients across the UK and internationally. Our qualified lawyers,
                             regulated by the Office of Immigration Advice Authority (IAA), provide expert guidance on
@@ -283,7 +295,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-slate-700 text-lg">Reliable Advice.No Hidden Costs</span>
+                                <span class="text-slate-700 text-sm md:text-lg">Reliable Advice.No Hidden Costs</span>
                             </li>
                             <li class="flex items-start gap-3 ">
                                 <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor"
@@ -291,7 +303,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-slate-700 text-lg">Expert Legal Service.Highly Recommended</span>
+                                <span class="text-slate-700 text-sm md:text-lg">Expert Legal Service.Highly Recommended</span>
                             </li>
                             <li class="flex items-start gap-3 ">
                                 <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor"
@@ -299,7 +311,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-slate-700 text-lg">Fast Support.High Court Performance</span>
+                                <span class="text-slate-700 text-sm md:text-lg">Fast Support.High Court Performance</span>
                             </li>
                         </ul>
                         <div class="pt-6">
@@ -1544,7 +1556,7 @@
         </section>
 
         <!-- CTA -->
-       <?php include('cta.php') ?>
+        <?php include('cta.php') ?>
     </main>
 
     <!-- Footer -->
