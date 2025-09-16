@@ -183,7 +183,7 @@
                         <div
                             class="relative w-full max-w-2xl aspect-[4/3] bg-slate-200 rounded-xl flex items-center justify-center shadow-xl shadow-black/20 ring-1 ring-black/10">
                             <iframe id="heroVideoFrame" class="absolute inset-0 w-full h-full rounded-xl"
-                                src="https://www.youtube.com/embed/leic90VQwMM?si=5V-ZTJSpGY1SiA_i" title="Promo Video"
+                                src="https://www.youtube.com/embed/5eBoRi-362E?si=RHhTvhjk2gkva9S1" title="Promo Video"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div>

@@ -11,6 +11,7 @@
         const h = document.documentElement; const p = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100; progressBar.style.width = p + '%';
       });
 
+      
 
        // Hero Video Player Logic
    // Hero Video Player Logic
