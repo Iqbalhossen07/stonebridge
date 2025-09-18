@@ -87,15 +87,24 @@
 
                         <h1 class="font-heading text-2xl leading-tight md:text-4xl lg:text-4xl">Expert Guidance Through
                             Complex UK Immigration Law.</h1>
-                        <p class="text-slate-600 max-w-2xl mx-auto lg:mx-0 text-sm md:text-lg text-justify">Stonebridge Legal
+                        <p class="text-slate-600 max-w-2xl mx-auto lg:mx-0 text-sm md:text-lg text-justify">Stonebridge
+                            Legal
                             provides clear, strategic, and compassionate legal advice to help you achieve your
                             immigration goals. Your journey is our priority.</p>
 
-                        <div class="flex flex-col sm:flex-row gap-3 pt-2 justify-center lg:justify-start">
-                            <a href="#cta" class="btn-premium px-6 py-3 rounded-md">Our Services</a>
-                            <a href="#services"
-                                class="inline-flex items-center justify-center px-5 py-3 rounded-md border hover:bg-slate-100">Book
-                                Appointment</a>
+                        <div class="flex flex-col sm:flex-row gap-4 pt-2 justify-center lg:justify-start">
+
+                            <a href="#cta" class="px-6 py-3 rounded-md font-semibold text-center transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl hover:-translate-y-0.5  bg-gradient-to-br from-primary to-amber-700 text-white hover:bg-none hover:bg-white hover:text-primary border-2 border-transparent hover:border-primary">
+                                Book Appointment
+                            </a>
+
+                            <a href="#services" class="inline-flex items-center justify-center px-6 py-3 rounded-md font-semibold text-center transition-all duration-300 ease-in-out 
+              shadow-lg hover:shadow-xl hover:-translate-y-0.5 
+              bg-transparent text-primary border-2 border-primary 
+              hover:bg-gradient-to-br hover:from-primary hover:to-amber-700 hover:text-white hover:border-transparent">
+                                Our Services
+                            </a>
+
                         </div>
 
                         <div class="grid grid-cols-2 gap-4 md:gap-6 mt-12">
@@ -104,7 +113,7 @@
                                 class="card-premium p-6 flex flex-col sm:flex-row items-start gap-4 text-left h-full"
                                 data-aos="zoom-in" data-aos-delay="100">
                                 <div
-                                    class="h-12 w-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shadow-md ring-1 ring-primary/20 shrink-0">
+                                    class="h-8 w-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center shadow-md ring-1 ring-primary/20 shrink-0">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <path
@@ -282,7 +291,8 @@
                         </h3>
                         <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight">A Trusted Firm with a
                             Legacy of Success</h2>
-                        <p class="text-slate-700 max-w-prose mx-auto lg:mx-0 text-sm md:text-lg leading-relaxed text-justify">
+                        <p
+                            class="text-slate-700 max-w-prose mx-auto lg:mx-0 text-sm md:text-lg leading-relaxed text-justify">
                             We are independent immigration advisors based in Stratford, London, with extensive
                             experience assisting clients across the UK and internationally. Our qualified lawyers,
                             regulated by the Office of Immigration Advice Authority (IAA), provide expert guidance on
@@ -303,7 +313,8 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-slate-700 text-sm md:text-lg">Expert Legal Service.Highly Recommended</span>
+                                <span class="text-slate-700 text-sm md:text-lg">Expert Legal Service.Highly
+                                    Recommended</span>
                             </li>
                             <li class="flex items-start gap-3 ">
                                 <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none" stroke="currentColor"
@@ -311,7 +322,8 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-slate-700 text-sm md:text-lg">Fast Support.High Court Performance</span>
+                                <span class="text-slate-700 text-sm md:text-lg">Fast Support.High Court
+                                    Performance</span>
                             </li>
                         </ul>
                         <div class="pt-6">

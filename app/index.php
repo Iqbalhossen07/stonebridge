@@ -54,8 +54,8 @@
 
     <div class="flex h-screen bg-secondary overflow-hidden">
         <aside id="desktop-sidebar" class="w-64 flex-shrink-0 bg-gray-900 text-white hidden lg:flex flex-col">
-            <div class="h-20 flex items-center justify-center border-b border-white/10">
-                <img src="img/logo.png" alt="Logo" class="w-32 invert brightness-0">
+            <div class="h-20 flex items-center justify-center border-b border-white/10 bg-white">
+                <img src="../img/logo.png" alt="Logo" class="w-36 ">
             </div>
             <nav class="flex-1 px-4 py-6 space-y-2">
                 <a href="#" class="sidebar-link active flex items-center gap-3 px-6 py-3 rounded-lg"><i class="fas fa-tachometer-alt w-5"></i><span>Dashboard</span></a>
