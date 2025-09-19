@@ -327,7 +327,10 @@
                             </li>
                         </ul>
                         <div class="pt-6">
-                            <a href="#team" class="btn-premium">Meet Our Team</a>
+                               <a href="#cta" class="px-6 py-3 rounded-md font-semibold text-center transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl hover:-translate-y-0.5  bg-gradient-to-br from-primary to-amber-700 text-white hover:bg-none hover:bg-white hover:text-primary border-2 border-transparent hover:border-primary">
+                                Book Appointment
+                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -872,10 +875,11 @@
                 </div>
 
                 <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="600">
-                    <a href="#" id="viewMoreBtn"
-                        class="btn-premium px-8 py-4 text-lg rounded-md transform hover:-translate-y-1 transition-transform duration-300 ease-out inline-block">
-                        View All Our Services
-                    </a>
+                   
+                        <a href="#" id="viewMoreBtn" class="px-6 py-3 rounded-md font-semibold text-center transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl hover:-translate-y-0.5  bg-gradient-to-br from-primary to-amber-700 text-white hover:bg-none hover:bg-white hover:text-primary border-2 border-transparent hover:border-primary">
+                                 View All Services
+                            </a>
+
                 </div>
             </div>
         </section>
@@ -967,6 +971,12 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+                      <div class="text-center mt-16">
+               
+                            <a data-aos="fade-up" href="gallery.php" id="viewMoreBtn" class="px-6 py-3 rounded-md font-semibold text-center transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl hover:-translate-y-0.5  bg-gradient-to-br from-primary to-amber-700 text-white hover:bg-none hover:bg-white hover:text-primary border-2 border-transparent hover:border-primary">
+                                 View All Gallery
+                            </a>
                 </div>
             </div>
         </section>
@@ -1103,8 +1113,10 @@
                 </div>
 
                 <div class="text-center mt-16">
-                    <a href="#all-videos" class="btn-premium px-8 py-4 text-lg rounded-md" data-aos="fade-up">View All
-                        Videos</a>
+               
+                            <a data-aos="fade-up" href="video.php" id="viewMoreBtn" class="px-6 py-3 rounded-md font-semibold text-center transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl hover:-translate-y-0.5  bg-gradient-to-br from-primary to-amber-700 text-white hover:bg-none hover:bg-white hover:text-primary border-2 border-transparent hover:border-primary">
+                                 View All Videos
+                            </a>
                 </div>
             </div>
         </section>
@@ -1562,6 +1574,14 @@
                                 More &rarr;</a>
                         </div>
                     </article>
+
+                </div>
+                
+                <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="600">
+                   
+                        <a href="blog.php" id="viewMoreBtn" class="px-6 py-3 rounded-md font-semibold text-center transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl hover:-translate-y-0.5  bg-gradient-to-br from-primary to-amber-700 text-white hover:bg-none hover:bg-white hover:text-primary border-2 border-transparent hover:border-primary">
+                                 View All Blog
+                            </a>
 
                 </div>
             </div>

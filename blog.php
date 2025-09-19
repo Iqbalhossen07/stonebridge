@@ -98,8 +98,7 @@
 
             <div class="container mx-auto px-6 relative z-10">
                 <div class="text-center mb-16">
-                    <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2"
-                        data-aos="fade-up">From Our Blog</h3>
+                  
                     <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight mb-4" data-aos="fade-up"
                         data-aos-delay="100">Latest Insights & Articles</h2>
                     <p class="text-slate-600 max-w-2xl mx-auto text-lg" data-aos="fade-up" data-aos-delay="200">
