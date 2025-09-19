@@ -87,7 +87,7 @@
           <div class="text-center max-w-3xl mx-auto mb-16">
             <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2" data-aos="fade-up">Our Team</h3>
             <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up" data-aos-delay="100">The Experts Behind Our Success</h2>
-            <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-slate-600 mt-4 text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">
             Introducing the dedicated professionals committed to transforming your vision into reality with ingenuity and meticulous attention.
             </p>
           </div>

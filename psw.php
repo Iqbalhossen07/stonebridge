@@ -297,7 +297,7 @@
                     <h1 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight mb-6">
                         Launch your UK career <br> with confidence
                     </h1>
-                    <p class="max-w-xl text-slate-700 text-lg mb-8">
+                    <p class="max-w-xl text-slate-700 text-sm md:text-lg mb-8">
                         The Post-Study Work (Graduate Route) lets international students stay in the UK after
                         graduation to work, gain experience, and explore opportunities. Here's everything
                         you need—clear, concise, and student-friendly.
@@ -369,9 +369,9 @@
                     <div data-aos="fade-left">
                         <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2">THE
                             GRADUATE ROUTE</h3>
-                        <h2 class="font-heading text-3xl md:text-4xl text-slate-900 leading-tight mb-6">What is the PSW
+                        <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight mb-6">What is the PSW
                             Visa?</h2>
-                        <div class="space-y-4 text-slate-600 leading-relaxed text-lg">
+                        <div class="space-y-4 text-slate-600 leading-relaxed text-sm md:text-lg">
                             <p>
                                 The Graduate Route, commonly known as the Post-Study Work (PSW) visa, allows
                                 international students who have successfully completed an eligible UK degree to stay and
@@ -438,9 +438,9 @@
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2"
                         data-aos="fade-up">ELIGIBILITY</h3>
-                    <h2 class="font-heading text-4xl text-slate-900 leading-tight" data-aos="fade-up"
+                    <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up"
                         data-aos-delay="100">Who is eligible?</h2>
-                    <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">A quick checklist to
+                    <p class="text-slate-600 mt-4 text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">A quick checklist to
                         confirm you can apply.</p>
                 </div>
 
@@ -454,7 +454,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg></div>
-                        <p class="text-slate-700">Completed an eligible UK degree (e.g., Bachelor's, Master's, PhD)</p>
+                        <p class="text-slate-700 text-sm md:text-lg">Completed an eligible UK degree (e.g., Bachelor's, Master's, PhD)</p>
                     </div>
                     <div
                         class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
@@ -463,7 +463,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg></div>
-                        <p class="text-slate-700">Held a valid Student visa at the time of course completion</p>
+                        <p class="text-slate-700 text-sm md:text-lg">Held a valid Student visa at the time of course completion</p>
                     </div>
                     <div
                         class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
@@ -472,7 +472,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg></div>
-                        <p class="text-slate-700">Applied from within the UK</p>
+                        <p class="text-slate-700 text-sm md:text-lg">Applied from within the UK</p>
                     </div>
                     <div
                         class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
@@ -481,7 +481,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg></div>
-                        <p class="text-slate-700">University has reported your successful completion to the Home Office
+                        <p class="text-slate-700 text-sm md:text-lg">University has reported your successful completion to the Home Office
                         </p>
                     </div>
                     <div
@@ -491,7 +491,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg></div>
-                        <p class="text-slate-700">Valid passport and BRP (if applicable)</p>
+                        <p class="text-slate-700 text-sm md:text-lg">Valid passport and BRP (if applicable)</p>
                     </div>
                     <div
                         class="bg-white p-6 rounded-2xl shadow-soft-1 border border-slate-100 flex items-start gap-4 transition-transform hover:-translate-y-1">
@@ -500,7 +500,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7"></path>
                             </svg></div>
-                        <p class="text-slate-700">No requirement for job offer or minimum salary</p>
+                        <p class="text-slate-700 text-sm md:text-lg">No requirement for job offer or minimum salary</p>
                     </div>
 
                 </div>
@@ -521,7 +521,7 @@
 
                     <h2 class="font-heading text-2xl md:text-4xl text-slate-900" data-aos="fade-up">Application Process
                     </h2>
-                    <p class="text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">
+                    <p class="text-sm md:text-lg text-slate-600 mt-4 " data-aos="fade-up" data-aos-delay="100">
                         A step-by-step guide to navigating your Graduate Route application with ease.
                     </p>
                 </div>
@@ -531,7 +531,7 @@
                         <div class="timeline-content">
                             <span class="timeline-step">Step 1</span>
                             <h3 class="timeline-title">Check Eligibility</h3>
-                            <p class="timeline-text">Confirm you meet all the requirements, including your
+                            <p class="timeline-text text-sm md:text-lg">Confirm you meet all the requirements, including your
                                 qualification, visa status, and university's compliance.</p>
                         </div>
                     </div>
@@ -540,7 +540,7 @@
                         <div class="timeline-content">
                             <span class="timeline-step">Step 2</span>
                             <h3 class="timeline-title">Prepare Documents</h3>
-                            <p class="timeline-text">Gather all necessary documents, such as your passport, BRP, and
+                            <p class="timeline-text text-sm md:text-lg">Gather all necessary documents, such as your passport, BRP, and
                                 Confirmation of Acceptance for Studies (CAS).</p>
                         </div>
                     </div>
@@ -549,7 +549,7 @@
                         <div class="timeline-content">
                             <span class="timeline-step">Step 3</span>
                             <h3 class="timeline-title">Online Application</h3>
-                            <p class="timeline-text">Complete the online application form on the official UK government
+                            <p class="timeline-text text-sm md:text-lg">Complete the online application form on the official UK government
                                 website and pay the required fees.</p>
                         </div>
                     </div>
@@ -558,7 +558,7 @@
                         <div class="timeline-content">
                             <span class="timeline-step">Step 4</span>
                             <h3 class="timeline-title">Biometric Appointment</h3>
-                            <p class="timeline-text">Book and attend an appointment to provide your biometric
+                            <p class="timeline-text text-sm md:text-lg">Book and attend an appointment to provide your biometric
                                 information (fingerprints and photo).</p>
                         </div>
                     </div>
@@ -567,7 +567,7 @@
                         <div class="timeline-content">
                             <span class="timeline-step">Step 5</span>
                             <h3 class="timeline-title">Receive Decision</h3>
-                            <p class="timeline-text">Wait for the Home Office to process your application. You will be
+                            <p class="timeline-text text-sm md:text-lg">Wait for the Home Office to process your application. You will be
                                 notified of the decision via email.</p>
                         </div>
                     </div>
@@ -608,7 +608,7 @@
                         data-aos="fade-up">CHECKLIST</h3>
                     <h2 class="font-heading text-2xl md:text-4xl text-slate-900" data-aos="fade-up"
                         data-aos-delay="100">Required Documents</h2>
-                    <p class="text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-sm md:text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="200">
                         Tick through the essentials before you apply.
                     </p>
                 </div>
@@ -622,19 +622,19 @@
                             <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input
                                     type="checkbox"
                                     class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span
-                                    class="text-slate-700">Valid Passport</span></label>
+                                    class="text-slate-700 text-sm md:text-lg">Valid Passport</span></label>
                             <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input
                                     type="checkbox"
                                     class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span
-                                    class="text-slate-700">BRP (if issued)</span></label>
+                                    class="text-slate-700 text-sm md:text-lg">BRP (if issued)</span></label>
                             <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input
                                     type="checkbox"
                                     class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span
-                                    class="text-slate-700">TB Test (if required)</span></label>
+                                    class="text-slate-700 text-sm md:text-lg">TB Test (if required)</span></label>
                             <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input
                                     type="checkbox"
                                     class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span
-                                    class="text-slate-700">Police Registration</span></label>
+                                    class="text-slate-700 text-sm md:text-lg">Police Registration</span></label>
                         </div>
                     </div>
 
@@ -644,11 +644,11 @@
                             <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input
                                     type="checkbox"
                                     class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span
-                                    class="text-slate-700">Degree Confirmation</span></label>
+                                    class="text-slate-700 text-sm md:text-lg">Degree Confirmation</span></label>
                             <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input
                                     type="checkbox"
                                     class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span
-                                    class="text-slate-700">CAS Reference</span></label>
+                                    class="text-slate-700 text-sm md:text-lg">CAS Reference</span></label>
                         </div>
                     </div>
 
@@ -658,7 +658,7 @@
                             <label class="card-premium p-4 flex items-center gap-3 cursor-pointer select-none"><input
                                     type="checkbox"
                                     class="h-5 w-5 rounded border-slate-300 text-primary focus:ring-primary/50 shrink-0"><span
-                                    class="text-slate-700">Payment Card for Fees</span></label>
+                                    class="text-slate-700 text-sm md:text-lg">Payment Card for Fees</span></label>
                         </div>
                     </div>
                 </div>
@@ -699,7 +699,7 @@
                         data-aos="fade-up">Guidance</h3>
                     <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up"
                         data-aos-delay="100">Common Mistakes & Pro Tips</h2>
-                    <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-slate-600 mt-4 text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">
                         Navigate your application with confidence by learning from common pitfalls and expert advice.
                     </p>
                 </div>
@@ -721,25 +721,25 @@
                                 <h3 class="text-2xl">Tips</h3>
                             </div>
                             <ul class="space-y-3">
-                                <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                <li class="flex gap-3 text-sm md:text-lg"><svg xmlns="http://www.w3.org/2000/svg"
                                         class="mt-0.5 h-5 w-5 text-green-600" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
                                         <path d="M20 7 10 17l-5-5" />
                                     </svg><span>Apply soon after results to avoid gaps.</span></li>
-                                <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                <li class="flex gap-3 text-sm md:text-lg"><svg xmlns="http://www.w3.org/2000/svg"
                                         class="mt-0.5 h-5 w-5 text-green-600" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
                                         <path d="M20 7 10 17l-5-5" />
                                     </svg><span>Keep your contact details updated with UKVI.</span></li>
-                                <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                <li class="flex gap-3 text-sm md:text-lg"><svg xmlns="http://www.w3.org/2000/svg"
                                         class="mt-0.5 h-5 w-5 text-green-600" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
                                         <path d="M20 7 10 17l-5-5" />
                                     </svg><span>Use the UK Immigration ID Check app if possible.</span></li>
-                                <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                <li class="flex gap-3 text-sm md:text-lg"><svg xmlns="http://www.w3.org/2000/svg"
                                         class="mt-0.5 h-5 w-5 text-green-600" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -761,7 +761,7 @@
                                 <h3 class="text-2xl">Common Mistakes</h3>
                             </div>
                             <ul class="space-y-3">
-                                <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                <li class="flex gap-3 text-sm md:text-lg"><svg xmlns="http://www.w3.org/2000/svg"
                                         class="mt-0.5 h-5 w-5 text-red-600" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -770,7 +770,7 @@
                                         <line x1="12" x2="12" y1="9" y2="13" />
                                         <line x1="12" x2="12.01" y1="17" y2="17" />
                                     </svg><span>Applying before results are officially confirmed.</span></li>
-                                <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                <li class="flex gap-3 text-sm md:text-lg"><svg xmlns="http://www.w3.org/2000/svg"
                                         class="mt-0.5 h-5 w-5 text-red-600" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -779,7 +779,7 @@
                                         <line x1="12" x2="12" y1="9" y2="13" />
                                         <line x1="12" x2="12.01" y1="17" y2="17" />
                                     </svg><span>Using an outdated CAS or wrong course details.</span></li>
-                                <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                <li class="flex gap-3 text-sm md:text-lg"><svg xmlns="http://www.w3.org/2000/svg"
                                         class="mt-0.5 h-5 w-5 text-red-600" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -788,7 +788,7 @@
                                         <line x1="12" x2="12" y1="9" y2="13" />
                                         <line x1="12" x2="12.01" y1="17" y2="17" />
                                     </svg><span>Leaving the UK before a decision (if required to stay).</span></li>
-                                <li class="flex gap-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                <li class="flex gap-3 text-sm md:text-lg"><svg xmlns="http://www.w3.org/2000/svg"
                                         class="mt-0.5 h-5 w-5 text-red-600" viewBox="0 0 24 24" fill="none"
                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -817,7 +817,7 @@
                         data-aos="fade-up">FAQ</h3>
                     <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up"
                         data-aos-delay="100">Frequently Asked Questions</h2>
-                    <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-slate-600 mt-4 text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">
                         Have questions? We've got answers. If you can't find what you're looking for, feel free to
                         contact us.
                     </p>
@@ -836,7 +836,7 @@
                             </div>
                         </button>
                         <div class="faq-content">
-                            <p class="px-6 pb-6 text-slate-600 leading-relaxed">
+                            <p class="px-6 pb-6 text-slate-600 leading-relaxed text-sm md:text-lg">
                                 A Sponsorship Licence allows UK-based businesses to hire skilled workers from outside
                                 the European Economic Area (EEA). It is a mandatory requirement set by the Home Office
                                 for employers wishing to sponsor non-EEA nationals under routes like the Skilled Worker
@@ -856,7 +856,7 @@
                             </div>
                         </button>
                         <div class="faq-content">
-                            <p class="px-6 pb-6 text-slate-600 leading-relaxed">
+                            <p class="px-6 pb-6 text-slate-600 leading-relaxed text-sm md:text-lg">
                                 Application processing times can vary depending on the type of visa and the complexity
                                 of the case. Standard applications can take several weeks to a few months. We always
                                 provide an estimated timeline based on the specific circumstances of your case.
@@ -896,7 +896,7 @@
                 <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-soft-2 border border-slate-200"
                     data-aos="fade-up">
                     <div class="text-center mb-10">
-                        <h2 class="font-heading text-3xl md:text-4xl text-slate-900">Need Help with Your PSW
+                        <h2 class="font-heading text-2xl md:text-4xl text-slate-900">Need Help with Your PSW
                             Application?</h2>
                         <p class="text-lg text-slate-600 mt-4">Fill out the form, and one of our specialists will get in
                             touch with you shortly.</p>

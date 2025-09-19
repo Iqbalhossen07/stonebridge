@@ -50,10 +50,10 @@
             </div>
             <div class="container mx-auto px-6 relative z-10">
                 <h1 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up">UK Sponsor License Checker</h1>
-                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Enter a company name to verify their official sponsor license status.</p>
+                <p class="mt-4 text-sm md:text-lg text-slate-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Enter a company name to verify their official sponsor license status.</p>
                 <div class="mt-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
                     <form @submit.prevent="performSearch" class="relative flex items-center">
-                        <input type="text" x-model="searchQuery" @input.debounce.300ms="filterAndDisplayCompanies" placeholder="Search by company name..." class="w-full text-lg px-6 py-4 rounded-full border-2 border-slate-200 focus:ring-2 focus:ring-primary/50 focus:border-primary focus:outline-none shadow-soft-1">
+                        <input type="text" x-model="searchQuery" @input.debounce.300ms="filterAndDisplayCompanies" placeholder="Search by company name..." class="w-full text-sm md:text-lg px-6 py-4 rounded-full border-2 border-slate-200 focus:ring-2 focus:ring-primary/50 focus:border-primary focus:outline-none shadow-soft-1">
                         <button type="submit" class="absolute right-2 h-12 w-12 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition-opacity">
                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
                         </button>

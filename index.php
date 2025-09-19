@@ -110,10 +110,10 @@
                         <div class="grid grid-cols-2 gap-4 md:gap-6 mt-12">
 
                             <a href="#"
-                                class="card-premium p-6 flex flex-col sm:flex-row items-start gap-4 text-left h-full"
+                                class="card-premium p-4 flex flex-col sm:flex-row items-start gap-4 text-left h-full"
                                 data-aos="zoom-in" data-aos-delay="100">
                                 <div
-                                    class="h-8 w-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center shadow-md ring-1 ring-primary/20 shrink-0">
+                                    class="h-12 w-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shadow-md ring-1 ring-primary/20 shrink-0">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <path
@@ -130,7 +130,7 @@
                             </a>
 
                             <a href="#"
-                                class="card-premium p-6 flex flex-col sm:flex-row items-start gap-4 text-left h-full"
+                                class="card-premium p-4 flex flex-col sm:flex-row items-start gap-4 text-left h-full"
                                 data-aos="zoom-in" data-aos-delay="200">
                                 <div
                                     class="h-12 w-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shadow-md ring-1 ring-primary/20 shrink-0">
@@ -151,7 +151,7 @@
                             </a>
 
                             <a href="#"
-                                class="card-premium p-6 flex flex-col sm:flex-row items-start gap-4 text-left h-full"
+                                class="card-premium p-4 flex flex-col sm:flex-row items-start gap-4 text-left h-full"
                                 data-aos="zoom-in" data-aos-delay="300">
                                 <div
                                     class="h-12 w-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shadow-md ring-1 ring-primary/20 shrink-0">
@@ -173,7 +173,7 @@
                             </a>
 
                             <a href="#"
-                                class="card-premium p-6 flex flex-col sm:flex-row items-start gap-4 text-left h-full"
+                                class="card-premium p-4 flex flex-col sm:flex-row items-start gap-4 text-left h-full"
                                 data-aos="zoom-in" data-aos-delay="400">
                                 <div
                                     class="h-12 w-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shadow-md ring-1 ring-primary/20 shrink-0">
@@ -363,9 +363,9 @@
                 <div class="text-center mb-16">
                     <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2"
                         data-aos="fade-up">Our Services</h3>
-                    <h2 class="font-heading text-3xl md:text-4xl text-slate-900 leading-tight mb-4" data-aos="fade-up"
+                    <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight mb-4" data-aos="fade-up"
                         data-aos-delay="100">Complete Immigration Services</h2>
-                    <p class="text-slate-600 max-w-2xl mx-auto text-lg" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-slate-600 max-w-2xl mx-auto text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">
                         From sponsorship licenses to visa applications, we handle every aspect of your immigration
                         needs.
                     </p>
@@ -388,7 +388,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Sponsor Licence
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Sponsor Licence
                                         Application</a>
                                 </li>
                                 <li class="flex items-center gap-2">
@@ -397,7 +397,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Sponsor Licence Renewal</a>
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Sponsor Licence Renewal</a>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <svg class="h-5 w-5 text-primary shrink-0" fill="none" stroke="currentColor"
@@ -405,7 +405,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Licence Suspension
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Licence Suspension
                                         Support</a>
                                 </li>
                             </ul>
@@ -427,7 +427,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Civil Penalty Appeals</a>
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Civil Penalty Appeals</a>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <svg class="h-5 w-5 text-primary shrink-0" fill="none" stroke="currentColor"
@@ -435,7 +435,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Right to Work Checks</a>
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Right to Work Checks</a>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <svg class="h-5 w-5 text-primary shrink-0" fill="none" stroke="currentColor"
@@ -443,7 +443,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">HO Compliance Visit</a>
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">HO Compliance Visit</a>
                                 </li>
                             </ul>
                         </div>
@@ -464,7 +464,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Skilled Worker Visa</a>
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Skilled Worker Visa</a>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <svg class="h-5 w-5 text-primary shrink-0" fill="none" stroke="currentColor"
@@ -472,7 +472,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Health & Care Visa</a>
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Health & Care Visa</a>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <svg class="h-5 w-5 text-primary shrink-0" fill="none" stroke="currentColor"
@@ -480,7 +480,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Minister of Religion
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Minister of Religion
                                         Visa</a>
                                 </li>
                             </ul>
@@ -502,7 +502,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Sponsor Licence
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Sponsor Licence
                                         Application</a>
                                 </li>
                                 <li class="flex items-center gap-2">
@@ -511,7 +511,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Sponsor Licence Renewal</a>
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Sponsor Licence Renewal</a>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <svg class="h-5 w-5 text-primary shrink-0" fill="none" stroke="currentColor"
@@ -519,7 +519,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Licence Suspension
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Licence Suspension
                                         Support</a>
                                 </li>
                             </ul>
@@ -541,7 +541,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Civil Penalty Appeals</a>
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Civil Penalty Appeals</a>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <svg class="h-5 w-5 text-primary shrink-0" fill="none" stroke="currentColor"
@@ -549,7 +549,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Right to Work Checks</a>
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Right to Work Checks</a>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <svg class="h-5 w-5 text-primary shrink-0" fill="none" stroke="currentColor"
@@ -557,7 +557,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">HO Compliance Visit</a>
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">HO Compliance Visit</a>
                                 </li>
                             </ul>
                         </div>
@@ -578,7 +578,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Skilled Worker Visa</a>
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Skilled Worker Visa</a>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <svg class="h-5 w-5 text-primary shrink-0" fill="none" stroke="currentColor"
@@ -586,7 +586,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Health & Care Visa</a>
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Health & Care Visa</a>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <svg class="h-5 w-5 text-primary shrink-0" fill="none" stroke="currentColor"
@@ -594,7 +594,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
-                                    <a href="#" class="hover:text-primary transition-colors">Minister of Religion
+                                    <a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Minister of Religion
                                         Visa</a>
                                 </li>
                             </ul>
@@ -614,18 +614,18 @@
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Tourist Visa</a></li>
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Tourist Visa</a></li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Business Visit</a>
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Business Visit</a>
                                 </li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">UK Fiancé Visa</a>
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">UK Fiancé Visa</a>
                                 </li>
                             </ul>
                         </div>
@@ -643,18 +643,18 @@
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Student Visa</a></li>
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Student Visa</a></li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Child Student
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Child Student
                                         Visa</a></li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Graduate Visa</a>
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Graduate Visa</a>
                                 </li>
                             </ul>
                         </div>
@@ -672,19 +672,19 @@
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Self-Sponsorship in
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Self-Sponsorship in
                                         UK</a></li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Innovator Founder
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Innovator Founder
                                         Visa</a></li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Turkish
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Turkish
                                         Businessperson Visa</a></li>
                             </ul>
                         </div>
@@ -702,19 +702,19 @@
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Scale-up Visa</a>
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Scale-up Visa</a>
                                 </li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Scale-up Sponsor
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Scale-up Sponsor
                                         Licence</a></li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Scale up Business</a>
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Scale up Business</a>
                                 </li>
                             </ul>
                         </div>
@@ -732,19 +732,19 @@
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Compliant HR
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Compliant HR
                                         Software</a></li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Sponsorship
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Sponsorship
                                         Duties</a></li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">HO Compliance Audit
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">HO Compliance Audit
                                         in UK</a></li>
                             </ul>
                         </div>
@@ -762,19 +762,19 @@
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">EU Pre-Settled
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">EU Pre-Settled
                                         Status</a></li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">EU Settled Status</a>
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">EU Settled Status</a>
                                 </li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">EU Family Permit</a>
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">EU Family Permit</a>
                                 </li>
                             </ul>
                         </div>
@@ -792,19 +792,19 @@
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">20 Year Private Life
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">20 Year Private Life
                                         Route</a></li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">ILR (5 year
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">ILR (5 year
                                         route)</a></li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">ILR (10 year
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">ILR (10 year
                                         route)</a></li>
                             </ul>
                         </div>
@@ -822,18 +822,18 @@
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Naturalisation</a>
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Naturalisation</a>
                                 </li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">BNO Status</a></li>
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">BNO Status</a></li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Registration</a></li>
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Registration</a></li>
                             </ul>
                         </div>
                     </div>
@@ -850,19 +850,19 @@
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Judicial Review</a>
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Judicial Review</a>
                                 </li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Administrative
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Administrative
                                         Review</a></li>
                                 <li class="flex items-center gap-2"><svg class="h-5 w-5 text-primary shrink-0"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg><a href="#" class="hover:text-primary transition-colors">Appeal To The
+                                    </svg><a href="#" class="hover:text-primary transition-colors text-sm md:text-lg">Appeal To The
                                         Tribunal</a></li>
                             </ul>
                         </div>
@@ -917,7 +917,7 @@
                         data-aos="fade-up">Our Gallery</h3>
                     <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up"
                         data-aos-delay="100">A Glimpse into Our Creative World</h2>
-                    <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-slate-600 mt-4 text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">
                         Discover a carefully selected showcase of our premier projects and defining moments that embody
                         our commitment to excellence.
                     </p>
@@ -986,7 +986,7 @@
                         data-aos="fade-up">Videos</h3>
                     <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up"
                         data-aos-delay="100">Our Work in Motion</h2>
-                    <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-slate-600 mt-4 text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">
                         Witness the conversion of concepts into reality through our curated collection of case studies,
                         tutorials, and brand narratives.
                     </p>
@@ -1159,7 +1159,7 @@
                         data-aos="fade-up">Our Team</h3>
                     <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up"
                         data-aos-delay="100">The Experts Behind Our Success</h2>
-                    <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-slate-600 mt-4 text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">
                         Introducing the dedicated professionals committed to transforming your vision into reality with
                         ingenuity and meticulous attention.
                     </p>
@@ -1314,7 +1314,7 @@
                             <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 p-4">
                                 <div class="h-full bg-white rounded-xl shadow-lg p-8 flex flex-col justify-between">
                                     <div>
-                                        <p class="text-slate-700 text-lg leading-relaxed mb-6">
+                                        <p class="text-slate-700 text-sm md:text-lg leading-relaxed mb-6">
                                             "Sonjoy dada you are such a very nice person.Who help me not only in my
                                             legal issues also help me to control my emotions.How to deal with my mental
                                             situation. Dada love you. Like a guardian you guide me to sortout my
@@ -1339,7 +1339,7 @@
                             <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 p-4">
                                 <div class="h-full bg-white rounded-xl shadow-lg p-8 flex flex-col justify-between">
                                     <div>
-                                        <p class="text-slate-700 text-lg leading-relaxed mb-6">
+                                        <p class="text-slate-700 text-sm md:text-lg leading-relaxed mb-6">
                                             "Sonjoy dada you are such a very nice person. When i came in this country,
                                             facing so many problems ,donâ€™t no what to do at that time i find sonjoy
                                             dada .A man who have such a big heart ."
@@ -1363,7 +1363,7 @@
                             <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 p-4">
                                 <div class="h-full bg-white rounded-xl shadow-lg p-8 flex flex-col justify-between">
                                     <div>
-                                        <p class="text-slate-700 text-lg leading-relaxed mb-6">
+                                        <p class="text-slate-700 text-sm md:text-lg leading-relaxed mb-6">
                                             "The doctors here are incredibly knowledgeable and caring. I always feel
                                             heard and understood during my appointments. Highly recommend MediCare Plus
                                             to anyone looking for top-notch medical care."
@@ -1387,7 +1387,7 @@
                             <div class="testimonial-card flex-shrink-0 w-full md:w-1/2 p-4">
                                 <div class="h-full bg-white rounded-xl shadow-lg p-8 flex flex-col justify-between">
                                     <div>
-                                        <p class="text-slate-700 text-lg leading-relaxed mb-6">
+                                        <p class="text-slate-700 text-sm md:text-lg leading-relaxed mb-6">
                                             "From scheduling to follow-ups, everything is seamless. The staff is
                                             friendly, efficient, and truly cares about patient well-being. A truly
                                             exceptional healthcare experience."
@@ -1468,7 +1468,7 @@
                         data-aos="fade-up">From Our Blog</h3>
                     <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up"
                         data-aos-delay="100">Latest Insights & Articles</h2>
-                    <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-slate-600 mt-4 text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">
                         Stay updated with the latest industry trends, design principles, and company news.
                     </p>
                 </div>

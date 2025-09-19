@@ -132,8 +132,8 @@
 
             <div class="container mx-auto px-6 relative z-10">
                 <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                    <h2 class="font-heading text-3xl md:text-4xl text-slate-900">The Self-Sponsorship Route</h2>
-                    <p class="text-lg text-slate-600 mt-4">Understanding the core concepts of establishing your UK
+                    <h2 class="font-heading text-2xl md:text-4xl text-slate-900">The Self-Sponsorship Route</h2>
+                    <p class="text-sm md:text-lg text-slate-600 mt-4">Understanding the core concepts of establishing your UK
                         business venture.</p>
                 </div>
 
@@ -156,7 +156,7 @@
                                     </div>
                                     <div>
                                         <h3 class="font-heading text-2xl text-slate-800"> What</h3>
-                                        <p class="text-slate-600 mt-1">A route allowing you to set up a UK company which
+                                        <p class="text-slate-600 mt-1 text-sm md:text-lg">A route allowing you to set up a UK company which
                                             then sponsors you as a Skilled Worker. You become your own employer.</p>
                                     </div>
                                 </div>
@@ -177,7 +177,7 @@
                                     </div>
                                     <div>
                                         <h3 class="font-heading text-2xl text-slate-800">Who</h3>
-                                        <p class="text-slate-600 mt-1">Entrepreneurs, business owners, and senior
+                                        <p class="text-slate-600 mt-1 text-sm md:text-lg">Entrepreneurs, business owners, and senior
                                             managers with a viable business idea and sufficient funds to establish a UK
                                             company.</p>
                                     </div>
@@ -199,7 +199,7 @@
                                     </div>
                                     <div>
                                         <h3 class="font-heading text-2xl text-slate-800">When</h3>
-                                        <p class="text-slate-600 mt-1">When you have a solid business plan and are ready
+                                        <p class="text-slate-600 mt-1 text-sm md:text-lg">When you have a solid business plan and are ready
                                             to take the next step in incorporating and funding your UK-based enterprise.
                                         </p>
                                     </div>
@@ -215,9 +215,9 @@
         <section class="py-24 bg-slate-50/50">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="font-heading text-3xl md:text-4xl text-slate-900" data-aos="fade-up">The Self-Sponsorship
+                    <h2 class="font-heading text-2xl md:text-4xl text-slate-900" data-aos="fade-up">The Self-Sponsorship
                         Process</h2>
-                    <p class="text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">We guide you through
+                    <p class="text-sm md:text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">We guide you through
                         each critical stage of setting up your company and securing your visa.</p>
                 </div>
 
@@ -227,7 +227,7 @@
                                 src="img/s1.png" alt="Company Formation"></div>
                         <div>
                             <span class="font-heading text-6xl text-primary/20">01</span>
-                            <h3 class="font-heading text-3xl text-slate-800 mt-2">Company Formation</h3>
+                            <h3 class="font-heading text-3xl text-slate-800 mt-2 text-sm md:text-lg">Company Formation</h3>
                             <p class="text-slate-600 mt-4">The first step is to legally incorporate your business in the
                                 UK. We assist with all aspects of company registration, ensuring it meets Home Office
                                 requirements for sponsorship.</p>
@@ -238,7 +238,7 @@
                                 src="img/s2.png" class="h-96 w-full" alt="Sponsor License Application"></div>
                         <div class="lg:text-right">
                             <span class="font-heading text-6xl text-primary/20">02</span>
-                            <h3 class="font-heading text-3xl text-slate-800 mt-2">Sponsor License Application</h3>
+                            <h3 class="font-heading text-3xl text-slate-800 mt-2 text-sm md:text-lg">Sponsor License Application</h3>
                             <p class="text-slate-600 mt-4">Once your company is formed, it must apply to the Home Office
                                 for a Sponsor License. We prepare and submit a robust application, including all
                                 necessary documentation.</p>
@@ -249,7 +249,7 @@
                                 class="h-96 w-full" alt="Visa Application"></div>
                         <div>
                             <span class="font-heading text-6xl text-primary/20">03</span>
-                            <h3 class="font-heading text-3xl text-slate-800 mt-2">Skilled Worker Visa Application</h3>
+                            <h3 class="font-heading text-3xl text-slate-800 mt-2 text-sm md:text-lg">Skilled Worker Visa Application</h3>
                             <p class="text-slate-600 mt-4">After the license is granted, your new company can issue a
                                 Certificate of Sponsorship (CoS) to you. We then handle your personal Skilled Worker
                                 visa application.</p>
@@ -286,8 +286,8 @@
 
             <div class="container mx-auto px-6 relative z-10">
                 <div class="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
-                    <h2 class="font-heading text-3xl md:text-4xl text-slate-900">The Advantages of Self-Sponsorship</h2>
-                    <p class="text-lg text-slate-600 mt-4">This route offers unparalleled freedom and a direct path to
+                    <h2 class="font-heading text-2xl md:text-4xl text-slate-900">The Advantages of Self-Sponsorship</h2>
+                    <p class="text-lg text-slate-600 mt-4 text-sm md:text-lg">This route offers unparalleled freedom and a direct path to
                         building your legacy in the UK. Scroll to see the benefits.</p>
                 </div>
 
@@ -298,7 +298,7 @@
                                 class="lg:hidden w-full h-auto rounded-xl shadow-soft-2 mb-8">
                             <span class="font-heading text-7xl text-primary/20">01</span>
                             <h3 class="font-heading text-3xl text-slate-800 mt-2">Complete Autonomy</h3>
-                            <p class="text-slate-600 mt-4 text-lg leading-relaxed">You are the director of your own
+                            <p class="text-slate-600 mt-4 text-lg leading-relaxed text-sm md:text-lg">You are the director of your own
                                 company, giving you complete control over your business decisions, your role, and your
                                 career trajectory in the UK. This is the ultimate freedom for any entrepreneur.</p>
                         </div>
@@ -315,7 +315,7 @@
                             <img src="img/ss3.png" alt="Long-term settlement in the UK"
                                 class="lg:hidden w-full h-auto rounded-xl shadow-soft-2 mb-8">
                             <span class="font-heading text-7xl text-primary/20">03</span>
-                            <h3 class="font-heading text-3xl text-slate-800 mt-2">Pathway to Settlement</h3>
+                            <h3 class="font-heading text-3xl text-slate-800 mt-2 text-sm md:text-lg">Pathway to Settlement</h3>
                             <p class="text-slate-600 mt-4 text-lg leading-relaxed">This visa route provides a clear and
                                 direct path to settling in the UK. After 5 years of continuous residence, you can be
                                 eligible to apply for Indefinite Leave to Remain (ILR).</p>
@@ -370,9 +370,9 @@
                 <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-soft-2 border border-slate-200"
                     data-aos="fade-up">
                     <div class="text-center mb-10">
-                        <h2 class="font-heading text-3xl md:text-4xl text-slate-900">Need Help with Your PSW
+                        <h2 class="font-heading text-2xl md:text-4xl text-slate-900">Need Help with Your PSW
                             Application?</h2>
-                        <p class="text-lg text-slate-600 mt-4">Fill out the form, and one of our specialists will get in
+                        <p class="text-sm md:text-lg text-slate-600 mt-4">Fill out the form, and one of our specialists will get in
                             touch with you shortly.</p>
                     </div>
 

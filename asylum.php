@@ -111,11 +111,11 @@
             <div class="container mx-auto px-6 relative z-10 text-center text-white">
                 <div class="space-y-4" data-aos="fade-up">
                     <p class="text-sm font-semibold text-slate-200">
-                        <a href="index.html" class="hover:text-primary transition-colors">Home</a> &rsaquo;
+                        <a href="index.php" class="hover:text-primary transition-colors">Home</a> &rsaquo;
                         <span class="text-primary">Asylum</span>
                     </p>
-                    <h1 class="font-heading text-4xl md:text-5xl">Asylum in the UK</h1>
-                    <p class="max-w-2xl mx-auto text-slate-300">
+                    <h1 class="font-heading text-2xl md:text-4xl">Asylum in the UK</h1>
+                    <p class="max-w-2xl mx-auto text-slate-300 text-sm md:text-lg">
                         Seeking protection and a new beginning. We are here to guide you through every step of the
                         asylum process with expertise and compassion.
                     </p>
@@ -173,24 +173,24 @@
 
                         <div>
                             <div id="what" class="tab-panel">
-                                <p class="text-lg text-slate-600 leading-relaxed">Asylum is a form of protection granted
+                                <p class="text-sm md:text-lg text-slate-600 leading-relaxed">Asylum is a form of protection granted
                                     by a country to someone who has left their home country as a refugee. Under the 1951
                                     Refugee Convention, it is designed for those who have a well-founded fear of
                                     persecution and are unable or unwilling to seek protection from their own state.</p>
                             </div>
                             <div id="who" class="tab-panel hidden">
-                                <p class="text-lg text-slate-600 leading-relaxed">You can claim asylum in the UK if you
+                                <p class="text-sm md:text-lg text-slate-600 leading-relaxed">You can claim asylum in the UK if you
                                     fear persecution in your home country because of your:</p>
                                 <ul class="mt-4 space-y-3">
-                                    <li class="flex items-center gap-3"><svg class="h-6 w-6 text-primary shrink-0"
+                                    <li class="flex items-center gap-3 text-sm md:text-lg"><svg class="h-6 w-6 text-primary shrink-0"
                                             fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                         </svg><span>Race or Religion</span></li>
-                                    <li class="flex items-center gap-3"><svg class="h-6 w-6 text-primary shrink-0"
+                                    <li class="flex items-center gap-3 text-sm md:text-lg"><svg class="h-6 w-6 text-primary shrink-0"
                                             fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                         </svg><span>Nationality or Political Opinion</span></li>
-                                    <li class="flex items-center gap-3"><svg class="h-6 w-6 text-primary shrink-0"
+                                    <li class="flex items-center gap-3 text-sm md:text-lg"><svg class="h-6 w-6 text-primary shrink-0"
                                             fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                         </svg><span>Membership of a particular social group</span></li>
@@ -201,11 +201,11 @@
                         <div class="mt-8 pt-6 border-t border-slate-200">
                             <h4 class="font-heading text-xl text-slate-800 mb-4">Key Principles of an Asylum Claim</h4>
                             <div class="space-y-3 text-slate-600">
-                                <p><strong class="font-semibold text-slate-700">Credibility:</strong> Your account must
+                                <p><strong class="font-semibold text-slate-700 text-sm md:text-lg">Credibility:</strong> Your account must
                                     be believable and consistent.</p>
-                                <p><strong class="font-semibold text-slate-700">Evidence:</strong> Providing evidence
+                                <p><strong class="font-semibold text-slate-700 text-sm md:text-lg">Evidence:</strong> Providing evidence
                                     strengthens your claim significantly.</p>
-                                <p><strong class="font-semibold text-slate-700">Timeliness:</strong> It is crucial to
+                                <p><strong class="font-semibold text-slate-700 text-sm md:text-lg">Timeliness:</strong> It is crucial to
                                     claim asylum as soon as it is safe to do so.</p>
                             </div>
                         </div>
@@ -233,9 +233,9 @@
             </div>
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="font-heading text-3xl md:text-4xl text-slate-900" data-aos="fade-up">The Asylum
+                    <h2 class="font-heading text-2xl md:text-4xl text-slate-900" data-aos="fade-up">The Asylum
                         Application Process</h2>
-                    <p class="text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">A clear, step-by-step
+                    <p class="text-sm md:text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">A clear, step-by-step
                         guide to navigating your asylum claim from start to finish.</p>
                 </div>
                 <div class="grid md:grid-cols-3 gap-8">
@@ -284,7 +284,7 @@
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h2 class="font-heading text-3xl md:text-4xl text-slate-900" data-aos="fade-up">Your Rights &
                         Support</h2>
-                    <p class="text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">While your asylum
+                    <p class="text-sm md:text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">While your asylum
                         claim is being considered, you have certain fundamental rights and may be eligible for support
                         from the UK government.</p>
                 </div>
@@ -473,9 +473,9 @@
 
                     <div class="lg:col-span-4 lg:sticky lg:top-32" data-aos="fade-right">
                         <div class="space-y-4">
-                            <h2 class="font-heading text-3xl md:text-4xl text-slate-900 leading-tight">Required
+                            <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight">Required
                                 Documents & Evidence</h2>
-                            <p class="text-slate-600">A strong claim is supported by credible evidence. Gather as much
+                            <p class="text-slate-600 text-sm md:text-lg">A strong claim is supported by credible evidence. Gather as much
                                 proof as possible to support your case.</p>
 
                             <div class="p-4">
@@ -515,29 +515,29 @@
                                                 d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                                         </svg>
                                     </div>
-                                    <h3 class="font-heading text-2xl text-slate-800">Personal & Identity Documents</h3>
+                                    <h3 class="font-heading text:xl md:text-2xl text-slate-800">Personal & Identity Documents</h3>
                                 </div>
                                 <ul class="space-y-4">
                                     <li
-                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0">
+                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0 text-sm md:text-lg">
                                         <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                         </svg><span>Passport and any other travel documents.</span></li>
                                     <li
-                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0">
+                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0 text-sm md:text-lg">
                                         <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                         </svg><span>National identity cards.</span></li>
                                     <li
-                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0">
+                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0 text-sm md:text-lg">
                                         <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                         </svg><span>Birth and marriage certificates.</span></li>
                                     <li
-                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0">
+                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0 text-sm md:text-lg">
                                         <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
@@ -554,29 +554,29 @@
                                                 d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
                                         </svg>
                                     </div>
-                                    <h3 class="font-heading text-2xl text-slate-800">Evidence of Persecution</h3>
+                                    <h3 class="font-heading text-xl md:text-2xl text-slate-800">Evidence of Persecution</h3>
                                 </div>
                                 <ul class="space-y-4">
                                     <li
-                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0">
+                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0 text-sm md:text-lg">
                                         <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                         </svg><span>Witness statements from people who know your situation.</span></li>
                                     <li
-                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0">
+                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0 text-sm md:text-lg">
                                         <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                         </svg><span>Police or court documents from your home country.</span></li>
                                     <li
-                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0">
+                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0 text-sm md:text-lg">
                                         <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                         </svg><span>Medical reports detailing injuries from persecution.</span></li>
                                     <li
-                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0">
+                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0 text-sm md:text-lg">
                                         <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
@@ -593,24 +593,24 @@
                                                 d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1.5-1.5m1.5 1.5l1.5-1.5m0 0l-1.5 1.5m1.5-1.5l1.5 1.5M3.75 5.25h16.5" />
                                         </svg>
                                     </div>
-                                    <h3 class="font-heading text-2xl text-slate-800">Proof of Background</h3>
+                                    <h3 class="font-heading text:xl md:text-2xl text-slate-800">Proof of Background</h3>
                                 </div>
                                 <ul class="space-y-4">
                                     <li
-                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0">
+                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0 text-sm md:text-lg">
                                         <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                         </svg><span>Membership cards for political parties, unions, or other
                                             organisations.</span></li>
                                     <li
-                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0">
+                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0 text-sm md:text-lg">
                                         <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                                         </svg><span>Proof of your employment or education.</span></li>
                                     <li
-                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0">
+                                        class="flex items-start gap-3 pb-4 border-b border-slate-200/80 last:border-b-0 text-sm md:text-lg">
                                         <svg class="h-6 w-6 text-primary shrink-0 mt-0.5" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
@@ -630,9 +630,9 @@
 
             <div class="container mx-auto px-6 relative z-10">
                 <div class="text-center max-w-3xl mx-auto mb-20">
-                    <h2 class="font-heading text-3xl md:text-4xl text-slate-900" data-aos="fade-up">The Path Forward
+                    <h2 class="font-heading text-2xl md:text-4xl text-slate-900" data-aos="fade-up">The Path Forward
                         After a Refusal</h2>
-                    <p class="text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">A refusal is not the
+                    <p class="text-sm md:text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">A refusal is not the
                         final verdict. Understanding the appeal process is your next critical step.</p>
                 </div>
 
@@ -654,7 +654,7 @@
                             <div
                                 class="bg-white rounded-xl shadow-soft-1 -mt-12 p-6 pt-16 transition-all duration-300 hover:shadow-soft-2 hover:bg-primary/5">
                                 <h3 class="font-heading text-xl text-slate-800">Legal Review</h3>
-                                <p class="text-sm text-slate-600 mt-2">Immediately have our expert lawyers analyze your
+                                <p class="text-sm text-slate-600 mt-2 text-sm md:text-lg">Immediately have our expert lawyers analyze your
                                     refusal letter to identify grounds for appeal.</p>
                             </div>
                         </div>
@@ -671,7 +671,7 @@
                             <div
                                 class="bg-white rounded-xl shadow-soft-1 -mt-12 p-6 pt-16 transition-all duration-300 hover:shadow-soft-2 hover:bg-primary/5">
                                 <h3 class="font-heading text-xl text-slate-800">Observe Deadlines</h3>
-                                <p class="text-sm text-slate-600 mt-2">There are strict time limits (usually 14 days) to
+                                <p class="text-sm text-slate-600 mt-2 text-sm md:text-lg">There are strict time limits (usually 14 days) to
                                     submit your appeal, so acting fast is essential.</p>
                             </div>
                         </div>
@@ -718,9 +718,9 @@
         <section id="faqs" class="w-full py-24 bg-white overflow-hidden">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="font-heading text-3xl md:text-4xl text-slate-900" data-aos="fade-up">Frequently Asked
+                    <h2 class="font-heading text-2xl md:text-4xl text-slate-900" data-aos="fade-up">Frequently Asked
                         Questions</h2>
-                    <p class="text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">Find quick answers to
+                    <p class="text-sm md:text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">Find quick answers to
                         the most common questions about asylum claims and the appeal process.</p>
                 </div>
 
@@ -742,7 +742,7 @@
                                     d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="accordion-content text-slate-600 pt-4 pl-9">
+                        <div class="accordion-content text-slate-600 pt-4 pl-9 text-sm md:text-lg">
                             <p>Asylum is protection granted by a nation to someone who has left their native country as
                                 a political refugee. You can apply if you fear persecution in your home country based on
                                 race, religion, nationality, political opinion, or membership in a particular social
@@ -766,7 +766,7 @@
                                     d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="accordion-content text-slate-600 pt-4 pl-9">
+                        <div class="accordion-content text-slate-600 pt-4 pl-9 text-sm md:text-lg">
                             <p>You'll need identity documents (passport, national ID), evidence of persecution (police
                                 reports, medical records, witness statements), and proof of your background or
                                 affiliations (membership cards, employment records).</p>
@@ -789,7 +789,7 @@
                                     d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="accordion-content text-slate-600 pt-4 pl-9">
+                        <div class="accordion-content text-slate-600 pt-4 pl-9 text-sm md:text-lg">
                             <p>If refused, you usually have the right to appeal the decision to the First-tier Tribunal.
                                 It's crucial to seek legal advice immediately as there are strict time limits.</p>
                         </div>
@@ -811,7 +811,7 @@
                                     d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="accordion-content text-slate-600 pt-4 pl-9">
+                        <div class="accordion-content text-slate-600 pt-4 pl-9 text-sm md:text-lg">
                             <p>The duration varies significantly based on individual circumstances, tribunal workload,
                                 and the complexity of your case. It can range from several months to over a year.</p>
                         </div>
@@ -833,7 +833,7 @@
                                     d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="accordion-content text-slate-600 pt-4 pl-9">
+                        <div class="accordion-content text-slate-600 pt-4 pl-9 text-sm md:text-lg">
                             <p>Generally, asylum seekers are not permitted to work. However, if your appeal has been
                                 pending for more than 12 months through no fault of your own, you might be eligible to
                                 apply for permission to work in jobs on the Shortage Occupation List.</p>
@@ -873,12 +873,12 @@
                 <div class="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
 
                     <div data-aos="fade-right">
-                        <h2 class="font-heading text-3xl md:text-4xl text-slate-900 leading-tight">Need Urgent Help with
+                        <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight">Need Urgent Help with
                             Your Asylum Claim?</h2>
-                        <p class="text-lg text-slate-700 mt-4">Don't navigate the complex asylum process alone. Our
+                        <p class="text-sm md:text-lg text-slate-700 mt-4">Don't navigate the complex asylum process alone. Our
                             expert legal team is here to provide dedicated support, clear guidance, and strong
                             representation.</p>
-                        <p class="text-lg text-slate-700 mt-4">Fill out the form to schedule a confidential
+                        <p class="text-sm md:text-lg text-slate-700 mt-4">Fill out the form to schedule a confidential
                             consultation. We are committed to protecting your rights and securing your future.</p>
 
                         <div class="mt-8 space-y-4">

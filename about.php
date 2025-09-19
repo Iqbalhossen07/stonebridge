@@ -112,7 +112,7 @@
                     <h2 class="font-heading text-3xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up">
                         Our Core Values
                     </h2>
-                    <p class="text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">
+                    <p class="text-sm md:text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">
                         RoadSyster simplifies the critical workflows of your business.
                     </p>
                 </div>
@@ -327,7 +327,7 @@
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h2 class="font-heading text-3xl md:text-4xl text-slate-900" data-aos="fade-up">Why Stonebridge?
                     </h2>
-                    <p class="text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">Discover the core
+                    <p class="text-sm md:text-lg text-slate-600 mt-4" data-aos="fade-up" data-aos-delay="100">Discover the core
                         reasons why clients trust Stonebridge for their legal and advisory needs.</p>
                 </div>
 
@@ -344,7 +344,7 @@
                             </svg>
                         </div>
                         <h4 class="font-heading text-xl text-slate-800 mb-3">Expert Guidance</h4>
-                        <p class="text-slate-600 leading-relaxed flex-grow">Benefit from the knowledge of our highly
+                        <p class="text-slate-600 leading-relaxed flex-grow text-sm md:text-lg">Benefit from the knowledge of our highly
                             accredited and experienced legal professionals.</p>
                     </div>
 
@@ -358,7 +358,7 @@
                             </svg>
                         </div>
                         <h4 class="font-heading text-xl text-slate-800 mb-3">Tailored Solutions</h4>
-                        <p class="text-slate-600 leading-relaxed flex-grow">We provide personalized strategies designed
+                        <p class="text-slate-600 leading-relaxed flex-grow text-sm md:text-lg">We provide personalized strategies designed
                             to meet your specific needs and goals.</p>
                     </div>
 
@@ -372,7 +372,7 @@
                                 </path>
                             </svg>
                         </div>
-                        <h4 class="font-heading text-xl text-slate-800 mb-3">Proven Track Record</h4>
+                        <h4 class="font-heading text-xl text-slate-800 mb-3 text-sm md:text-lg">Proven Track Record</h4>
                         <p class="text-slate-600 leading-relaxed flex-grow">A history of successful outcomes and
                             satisfied clients speaks for itself.</p>
                     </div>
@@ -387,7 +387,7 @@
                             </svg>
                         </div>
                         <h4 class="font-heading text-xl text-slate-800 mb-3">Client-Centric Approach</h4>
-                        <p class="text-slate-600 leading-relaxed flex-grow">Your success is our priority. We are
+                        <p class="text-slate-600 leading-relaxed flex-grow text-sm md:text-lg">Your success is our priority. We are
                             dedicated to providing attentive and responsive service.</p>
                     </div>
 
@@ -402,7 +402,7 @@
                             </svg>
                         </div>
                         <h4 class="font-heading text-xl text-slate-800 mb-3">Transparent Process</h4>
-                        <p class="text-slate-600 leading-relaxed flex-grow">We believe in clear communication and
+                        <p class="text-slate-600 leading-relaxed flex-grow text-sm md:text-lg">We believe in clear communication and
                             provide honest advice every step of the way.</p>
                     </div>
 
@@ -417,7 +417,7 @@
                             </svg>
                         </div>
                         <h4 class="font-heading text-xl text-slate-800 mb-3">Utmost Confidentiality</h4>
-                        <p class="text-slate-600 leading-relaxed flex-grow">Your privacy is paramount. We handle all
+                        <p class="text-slate-600 leading-relaxed flex-grow text-sm md:text-lg">Your privacy is paramount. We handle all
                             cases with the strictest confidentiality.</p>
                     </div>
                 </div>
@@ -456,9 +456,9 @@
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h3 class="font-heading text-lg font-semibold text-primary tracking-widest uppercase mb-2"
                         data-aos="fade-up">FAQ</h3>
-                    <h2 class="font-heading text-4xl md:text-5xl text-slate-900 leading-tight" data-aos="fade-up"
+                    <h2 class="font-heading text-2xl md:text-4xl text-slate-900 leading-tight" data-aos="fade-up"
                         data-aos-delay="100">Frequently Asked Questions</h2>
-                    <p class="text-slate-600 mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-slate-600 mt-4 text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">
                         Have questions? We've got answers. If you can't find what you're looking for, feel free to
                         contact us.
                     </p>
@@ -477,7 +477,7 @@
                             </div>
                         </button>
                         <div class="faq-content">
-                            <p class="px-6 pb-6 text-slate-600 leading-relaxed">
+                            <p class="px-6 pb-6 text-slate-600 leading-relaxed text-sm md:text-lg">
                                 A Sponsorship Licence allows UK-based businesses to hire skilled workers from outside
                                 the European Economic Area (EEA). It is a mandatory requirement set by the Home Office
                                 for employers wishing to sponsor non-EEA nationals under routes like the Skilled Worker
@@ -497,7 +497,7 @@
                             </div>
                         </button>
                         <div class="faq-content">
-                            <p class="px-6 pb-6 text-slate-600 leading-relaxed">
+                            <p class="px-6 pb-6 text-slate-600 leading-relaxed text-sm md:text-lg">
                                 Application processing times can vary depending on the type of visa and the complexity
                                 of the case. Standard applications can take several weeks to a few months. We always
                                 provide an estimated timeline based on the specific circumstances of your case.
