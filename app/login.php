@@ -1,3 +1,4 @@
+<?php include('db.php') ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -77,8 +78,14 @@
             <img src="../img/logo.png" alt="Stonebridge Legal Logo" class="w-36 mx-auto mb-6">
             <h2 class="font-heading text-3xl font-bold mb-3 text-slate-900">Sign In to Your Account</h2>
             <p class="text-slate-600 mb-8">Welcome back! Please enter your details.</p>
+               <?php 
+                if (isset($_SESSION['error'])) {
+                    echo "<p id='error-msg' style='color:red;'>".$_SESSION['error']."</p>";
+                    unset($_SESSION['error']); // সেশন থেকে এরর মুছে ফেলা
+                }
+            ?>
 
-            <form action="#" method="POST" class="space-y-6">
+            <form action="logics.php" method="POST" class="space-y-6">
                 <div>
                     <label for="email" class="sr-only">Email Address</label>
                     <div class="relative">
@@ -99,7 +106,7 @@
                
 
                 <div>
-                    <button type="submit" class="btn-primary-gradient w-full py-3 rounded-full font-semibold text-white text-lg focus:outline-none focus:ring-4 focus:ring-primary/40">
+                    <button type="submit" name="adminlogin" class="btn-primary-gradient w-full py-3 rounded-full font-semibold text-white text-lg focus:outline-none focus:ring-4 focus:ring-primary/40">
                         Sign In
                     </button>
                 </div>
