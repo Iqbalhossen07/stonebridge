@@ -49,6 +49,12 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <i class="fas fa-images w-5"></i>
              <span>Gallery</span>
          </a>
+         <a href="video.php"
+             class="sidebar-link flex items-center gap-3 px-6 py-3 rounded-lg <?php if ($current_page == 'video.php') echo 'active'; ?>">
+          <i
+                        class="fas fa-video w-5"></i>
+             <span>Videos</span>
+         </a>
 
      </nav>
      <div class="p-4 border-t border-white/10">

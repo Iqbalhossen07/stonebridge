@@ -593,6 +593,117 @@ if (isset($_GET['gallery_delete_id'])) {
 }
 
 
+// --------------- video crud start ---------------------
+
+
+// Add video Logic
+if (isset($_POST['add_video'])) {
+    $v_title        = $_POST['v_title'];
+    $v_link = $_POST['v_link'];
+    $v_des         = $_POST['v_des'];
+
+   
+
+    // --- Database Insert using Prepared Statements (নিরাপদ পদ্ধতি) ---
+    $query = "INSERT INTO videos (v_title, v_link, v_des) VALUES (?, ?, ?)";
+    
+    // 1. স্টেটমেন্ট প্রস্তুত করা
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        // 2. প্যারামিটার বাইন্ড করা (এখানে সবগুলোই স্ট্রিং, তাই "ssss")
+        $stmt->bind_param("sss", $v_title, $v_link, $v_des);
+
+        // 3. স্টেটমেন্ট এক্সিকিউট করা
+        if ($stmt->execute()) {
+            // ডেটাবেসে সফলভাবে যোগ হলেই কেবল ছবিটি ফোল্ডারে সরানো হবে
+            move_uploaded_file($tmpName, $folder);
+            
+            $_SESSION['message'] = "Video has been added successfully!";
+            $_SESSION['message_type'] = 'success';
+        } else {
+            // যদি কোনো সমস্যা হয়
+            $_SESSION['message'] = "Error: Could not add the testimonial.";
+            $_SESSION['message_type'] = 'error';
+        }
+        
+        // 4. স্টেটমেন্ট বন্ধ করা
+        $stmt->close();
+    } else {
+        $_SESSION['message'] = "Error: Database query could not be prepared.";
+        $_SESSION['message_type'] = 'error';
+    }
+
+    header("location:video.php");
+    exit();
+}
+
+
+// Update video  Logic
+
+
+if (isset($_POST['update_video'])) {
+    $video_update_id = $_POST['id'];
+    $v_title         = $_POST['v_title'];
+    $v_link          = $_POST['v_link'];
+    $v_des           = $_POST['v_des'];
+
+    // নিরাপদ UPDATE কোয়েরি প্রস্তুত করা
+    $query = "UPDATE `videos` SET `v_title`=?, `v_link`=?, `v_des`=? WHERE `id`=?";
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        // প্যারামিটার বাইন্ড করা (s = string, i = integer)
+        $stmt->bind_param("sssi", $v_title, $v_link, $v_des, $video_update_id);
+        
+        // স্টেটমেন্ট এক্সিকিউট করা
+        if ($stmt->execute()) {
+            $_SESSION['message'] = "Video has been updated successfully!";
+            $_SESSION['message_type'] = 'success';
+        } else {
+            // মেসেজটি এখানে ঠিক করা হয়েছে
+            $_SESSION['message'] = "Failed to update the video.";
+            $_SESSION['message_type'] = 'error';
+        }
+        $stmt->close();
+    }
+    
+    header('location:video.php');
+    exit();
+}
+
+
+
+// Delete testimonial  Logic
+
+
+
+if (isset($_GET['video_delete_id'])) {
+    $id = $_GET['video_delete_id'];
+
+    // Prepared Statement ব্যবহার করে নিরাপদ ডিলিট কোয়েরি
+    $query = "DELETE FROM videos WHERE id = ?";
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        // 'i' মানে হলো id একটি Integer (পূর্ণ সংখ্যা)
+        $stmt->bind_param("i", $id);
+        
+        if ($stmt->execute()) {
+            $_SESSION['message'] = "Video has been deleted successfully!";
+            $_SESSION['message_type'] = 'success'; // সফলতার জন্য 'success' ব্যবহার করা ভালো
+        } else {
+            $_SESSION['message'] = "Could not delete the blog.";
+            $_SESSION['message_type'] = 'error';
+        }
+        $stmt->close();
+    }
+    
+    header("location:video.php");
+    exit();
+}
+
+// --------------- video crud end ---------------------
 
 
 // Add contact  Logic

@@ -3,6 +3,22 @@ if (!isset($_SESSION['email'])) {
     header('Location: login.php');
 }
 
+
+if (isset($_GET['video_update_id'])) {
+    $video_update_id = $_GET['video_update_id'];
+    $video_update_id_result = $mysqli->query("SELECT * FROM videos WHERE id='$video_update_id' ");
+    if (!empty($video_update_id_result)) {
+        $row = $video_update_id_result->fetch_array();
+
+        $v_title = $row['v_title'];
+        $v_link = $row['v_link'];
+        $v_des = $row['v_des'];
+     
+     
+    }
+
+   
+}
 ?>
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -10,7 +26,7 @@ if (!isset($_SESSION['email'])) {
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Add New Video - Dashboard</title>
+    <title>Update Video - Dashboard</title>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Merriweather:wght@700;800&display=swap"
@@ -84,12 +100,14 @@ if (!isset($_SESSION['email'])) {
 
         <main class="flex-1 p-6">
             <div class="bg-white rounded-xl shadow-soft-1 p-6 lg:p-8 max-w-4xl mx-auto">
-                <form action="logics.php" method="POST" class="space-y-6" >
+                <form action="logics.php" method="POST" class="space-y-6">
+                    <input type="hidden" name="id" value="<?php echo $video_update_id ?>">
+
 
                     <div>
                         <label for="video-title" class="block text-sm font-medium text-slate-700 mb-2">Video
                             Title</label>
-                        <input type="text" id="video-title" name="v_title"
+                        <input type="text" id="video-title" name="v_title" value="<?php echo $v_title ?>"
                             class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
                             placeholder="Enter video title...">
                     </div>
@@ -97,7 +115,7 @@ if (!isset($_SESSION['email'])) {
                     <div>
                         <label for="video-link" class="block text-sm font-medium text-slate-700 mb-2">YouTube Video
                             Link</label>
-                        <input type="url" id="video-link" name="v_link"
+                        <input type="url" id="video-link" name="v_link" value="<?php echo $v_link ?>"
                             class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
                             placeholder="e.g., https://www.youtube.com/watch?v=5eBoRi-362E">
                         <p class="mt-2 text-xs text-slate-500">Paste the full YouTube video URL here. The thumbnail will
@@ -110,15 +128,15 @@ if (!isset($_SESSION['email'])) {
                             class="block text-sm font-medium text-slate-700 mb-2">Description</label>
                         <textarea id="video-description" rows="4" name="v_des"
                             class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
-                            placeholder="Write a short description for the video..."></textarea>
+                            placeholder="Write a short description for the video..."><?php echo $v_des ?></textarea>
                     </div>
 
                     <div class="pt-5 flex items-center justify-end gap-3">
                         <a href="video.php" type="button"
                             class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-2 px-4 rounded-lg transition-colors duration-300">
                             Cancel</a>
-                        <button type="submit" name="add_video"
-                            class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Submit
+                        <button type="submit" name="update_video"
+                            class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Update
                             Video</button>
                     </div>
                 </form>
