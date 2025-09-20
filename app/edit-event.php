@@ -3,6 +3,23 @@ if (!isset($_SESSION['email'])) {
     header('Location: login.php');
 }
 
+
+if (isset($_GET['event_update_id'])) {
+    $event_update_id = $_GET['event_update_id'];
+    $event_update_id_result = $mysqli->query("SELECT * FROM events WHERE id='$event_update_id' ");
+    if (!empty($event_update_id_result)) {
+        $row = $event_update_id_result->fetch_array();
+
+        $e_title = $row['e_title'];
+        $e_des = $row['e_des'];
+        $e_date = $row['e_date'];
+        $e_time = $row['e_time'];
+        $e_location = $row['e_location'];
+        $e_image = $row['e_image'];
+    }
+
+   
+}
 ?>
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -10,7 +27,7 @@ if (!isset($_SESSION['email'])) {
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Add New Event - Dashboard</title>
+    <title>Update Event - Dashboard</title>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Merriweather:wght@700;800&display=swap"
@@ -85,12 +102,13 @@ if (!isset($_SESSION['email'])) {
         <main class="flex-1 p-6">
             <div class="bg-white rounded-xl shadow-soft-1 p-6 lg:p-8">
                 <form action="logics.php" method="POST" class="grid grid-cols-1 lg:grid-cols-3 gap-8" enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="<?php echo $event_update_id ?>">
 
                     <div class="lg:col-span-2 space-y-6">
                         <div>
                             <label for="event-title" class="block text-sm font-medium text-slate-700 mb-2">Event
                                 Title</label>
-                            <input type="text" id="event-title" name="e_title"
+                            <input type="text" id="event-title" name="e_title" value="<?php echo $e_title ?>"
                                 class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
                                 placeholder="Enter the name of the event">
                         </div>
@@ -99,7 +117,7 @@ if (!isset($_SESSION['email'])) {
                                 class="block text-sm font-medium text-slate-700 mb-2">Description</label>
                             <textarea id="event-description" rows="8" name="e_des"
                                 class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Write a short description about the event..."></textarea>
+                                placeholder="Write a short description about the event..."><?php echo $e_des ?></textarea>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-slate-700 mb-2">Event Image</label>
@@ -118,7 +136,9 @@ if (!isset($_SESSION['email'])) {
                                         <div class="flex text-sm text-slate-600"><label for="file-upload"
                                                 class="relative cursor-pointer bg-white rounded-md font-medium text-primary hover:text-primary-dark"><span>Upload
                                                     a file</span><input id="file-upload" name="e_image" type="file"
-                                                    class="sr-only"></label>
+                                                    class="sr-only">
+                                                    <input type="hidden" name="old_image" value="<?php echo $e_image ?>">
+                                                </label>
                                             <p class="pl-1">or drag and drop</p>
                                         </div>
                                         <p class="text-xs text-slate-500">PNG, JPG, GIF up to 10MB</p>
@@ -133,13 +153,13 @@ if (!isset($_SESSION['email'])) {
                             <div>
                                 <label for="start-date" class="block text-sm font-medium text-slate-700 mb-2">Start
                                     Date</label>
-                                <input type="date" id="start-date" name="e_date"
+                                <input type="date" id="start-date" name="e_date" value="<?php echo $e_date ?>"
                                     class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm">
                             </div>
                             <div>
                                 <label for="start-time" class="block text-sm font-medium text-slate-700 mb-2">Start
                                     Time</label>
-                                <input type="time" id="start-time" name="e_time"
+                                <input type="time" id="start-time" name="e_time" value="<?php echo $e_time ?>"
                                     class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm">
                             </div>
                         </div>
@@ -147,7 +167,7 @@ if (!isset($_SESSION['email'])) {
                         <div>
                             <label for="location" class="block text-sm font-medium text-slate-700 mb-2">Location /
                                 Venue</label>
-                            <input type="text" id="location" name="e_location"
+                            <input type="text" id="location" name="e_location" value="<?php echo $e_location ?>"
                                 class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
                                 placeholder="e.g., Online (Zoom)">
                         </div>
@@ -155,8 +175,8 @@ if (!isset($_SESSION['email'])) {
                         <div class="border-t border-slate-200 pt-6 flex items-center justify-end gap-3">
                             <a type="button" href="event.php"
                                 class="bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-2 px-4 rounded-lg transition-colors duration-300">Cancel</a>
-                            <button type="submit" name="add_event"
-                                class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Publish
+                            <button type="submit" name="update_event"
+                                class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Update
                                 Event</button>
                         </div>
                     </div>

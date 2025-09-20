@@ -706,6 +706,151 @@ if (isset($_GET['video_delete_id'])) {
 // --------------- video crud end ---------------------
 
 
+
+// ----------------- event crud start -----------------
+
+
+// Add event Logic
+if (isset($_POST['add_event'])) {
+    $e_title        = $_POST['e_title'];
+    $e_des = $_POST['e_des'];
+    $e_date         = $_POST['e_date'];
+    $e_time    = $_POST['e_time'];
+    $e_location     = $_POST['e_location'];
+
+
+    // --- Image Upload Logic ---
+    $e_image = $_FILES['e_image']['name'];
+    $tmpName = $_FILES['e_image']['tmp_name'];
+    $folder  = 'event_image/' . $e_image;
+
+    // --- Database Insert using Prepared Statements (নিরাপদ পদ্ধতি) ---
+    $query = "INSERT INTO events (e_title, e_des, e_date, e_time, e_location, e_image) VALUES (?, ?, ?, ?, ?, ?)";
+    
+    // 1. স্টেটমেন্ট প্রস্তুত করা
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        // 2. প্যারামিটার বাইন্ড করা (এখানে ৭টিই স্ট্রিং, তাই "sssssss")
+        $stmt->bind_param("ssssss", $e_title, $e_des, $e_date, $e_time, $e_location, $e_image);
+
+        // 3. স্টেটমেন্ট এক্সিকিউট করা
+        if ($stmt->execute()) {
+            // ডেটাবেসে সফলভাবে যোগ হলেই কেবল ছবিটি ফোল্ডারে সরানো হবে
+            move_uploaded_file($tmpName, $folder);
+            
+            $_SESSION['message'] = "Event has been added successfully!";
+            $_SESSION['message_type'] = 'success';
+        } else {
+            $_SESSION['message'] = "Error: Could not add the team member.";
+            $_SESSION['message_type'] = 'error';
+        }
+        
+        // 4. স্টেটমেন্ট বন্ধ করা
+        $stmt->close();
+    } else {
+        $_SESSION['message'] = "Error: Database query could not be prepared.";
+        $_SESSION['message_type'] = 'error';
+    }
+
+    header("location:event.php");
+    exit();
+}
+
+
+
+// Update event  Logic
+
+
+if (isset($_POST['update_event'])) {
+    $event_update_id = $_POST['id'];
+    $e_title         = $_POST['e_title'];
+    $e_des  = $_POST['e_des'];
+    $e_date          = $_POST['e_date'];
+    $e_time     = $_POST['e_time'];
+    $e_location      = $_POST['e_location'];
+    $old_image      = $_POST['old_image'];
+    $new_image      = $_FILES['e_image']['name'];
+
+    $update_filename = "";
+    // যদি নতুন ছবি আপলোড করা হয়
+    if ($new_image != '') {
+        $update_filename = $new_image;
+    } 
+    // অন্যথায়, পুরনো ছবির নামটিই থাকবে
+    else {
+        $update_filename = $old_image;
+    }
+
+    // নিরাপদ UPDATE কোয়েরি প্রস্তুত করা
+    $query = "UPDATE `events` SET `e_title`=?, `e_des`=?, `e_date`=?, `e_time`=?, `e_location`=?, `e_image`=? WHERE `id`=?";
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        // প্যারামিটার বাইন্ড করা (s = string, i = integer)
+        $stmt->bind_param("ssssssi", $e_title, $e_des, $e_date, $e_time, $e_location, $update_filename, $event_update_id);
+        
+        // স্টেটমেন্ট এক্সিকিউট করা
+        if ($stmt->execute()) {
+            // কোয়েরি সফল হলে, নতুন ছবি আপলোড এবং পুরনো ছবি ডিলিট করা হবে
+            if ($new_image != '') {
+                // নতুন ছবিটি নির্দিষ্ট ফোল্ডারে সরানো হচ্ছে
+                move_uploaded_file($_FILES['e_image']['tmp_name'], 'event_image/' . $new_image);
+                
+                // যদি পুরনো ছবিটি সার্ভারে থাকে, তবে তা ডিলিট করা হচ্ছে
+                if (file_exists('e_image/' . $old_image)) {
+                    unlink('e_image/' . $old_image);
+                }
+            }
+            $_SESSION['message'] = "Event has been updated successfully!";
+            $_SESSION['message_type'] = 'success';
+        } else {
+            $_SESSION['message'] = "Failed to update the team member.";
+            $_SESSION['message_type'] = 'error';
+        }
+        $stmt->close();
+    }
+    
+    header('location:event.php');
+    exit();
+}
+
+
+
+// Delete team  Logic
+
+
+if (isset($_GET['event_delete_id'])) {
+    $id = $_GET['event_delete_id'];
+
+    // Prepared Statement ব্যবহার করে নিরাপদ ডিলিট কোয়েরি
+    $query = "DELETE FROM events WHERE id = ?";
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        // 'i' মানে হলো id একটি Integer (পূর্ণ সংখ্যা)
+        $stmt->bind_param("i", $id);
+        
+        if ($stmt->execute()) {
+            $_SESSION['message'] = "Event has been deleted successfully!";
+            $_SESSION['message_type'] = 'success'; // সফলতার জন্য 'success' ব্যবহার করা ভালো
+        } else {
+            $_SESSION['message'] = "Could not delete the blog.";
+            $_SESSION['message_type'] = 'error';
+        }
+        $stmt->close();
+    }
+    
+    header("location:event.php");
+    exit();
+}
+
+// ----------------- event crud end -----------------
+
+
+
+
+
 // Add contact  Logic
 if (isset($_POST['contact_added'])) {
   $email = $_POST['email'];

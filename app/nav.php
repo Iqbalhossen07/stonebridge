@@ -55,6 +55,11 @@ $current_page = basename($_SERVER['PHP_SELF']);
                         class="fas fa-video w-5"></i>
              <span>Videos</span>
          </a>
+         <a href="event.php"
+             class="sidebar-link flex items-center gap-3 px-6 py-3 rounded-lg <?php if ($current_page == 'event.php') echo 'active'; ?>">
+       <i class="fas fa-calendar-alt w-5"></i>
+             <span>Event</span>
+         </a>
 
      </nav>
      <div class="p-4 border-t border-white/10">
