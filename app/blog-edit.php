@@ -3,6 +3,22 @@ if (!isset($_SESSION['email'])) {
     header('Location: login.php');
 }
 
+
+if (isset($_GET['blog_update_id'])) {
+    $blog_update_id = $_GET['blog_update_id'];
+    $blog_update_id_result = $mysqli->query("SELECT * FROM blog_table WHERE id='$blog_update_id' ");
+    if (!empty($blog_update_id_result)) {
+        $row = $blog_update_id_result->fetch_array();
+
+        $b_title = $row['b_title'];
+        $b_author = $row['b_author'];
+        $b_date = $row['b_date'];
+        $b_des = $row['b_des'];
+        $b_image = $row['b_image'];
+    }
+
+   
+}
 ?>
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -10,7 +26,7 @@ if (!isset($_SESSION['email'])) {
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Add New Testimonial - Dashboard</title>
+    <title>Edit Blog - Dashboard</title>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Merriweather:wght@700;800&display=swap"
@@ -39,7 +55,7 @@ if (!isset($_SESSION['email'])) {
         }
     }
     </script>
-    <style>
+ <style>
     ::-webkit-scrollbar {
         width: 8px;
     }
@@ -51,6 +67,10 @@ if (!isset($_SESSION['email'])) {
     ::-webkit-scrollbar-thumb {
         background-color: #c4c4c4;
         border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #a17b3f;
     }
 
     .sidebar-link {
@@ -68,12 +88,15 @@ if (!isset($_SESSION['email'])) {
         border-left: 4px solid #f59e0b;
     }
 
-    .input-final {
-        @apply block w-full rounded-md border-slate-300 bg-white py-2 px-3 shadow-sm placeholder: text-slate-400;
+    .form-card {
+        background-color: white;
     }
 
-    .input-final:focus {
-        @apply border-primary ring-1 ring-primary/50;
+    @media (min-width: 768px) {
+        .form-card {
+            background-color: rgba(255, 255, 255, 0.80);
+            backdrop-filter: blur(10px);
+        }
     }
     </style>
 </head>
@@ -83,22 +106,26 @@ if (!isset($_SESSION['email'])) {
         <?php include('nav.php') ?>
 
         <main class="flex-1 p-6">
-            <div class="bg-white rounded-xl shadow-soft-1 p-6 lg:p-8">
-                <form action="logics.php" method="POST" class="space-y-6" enctype="multipart/form-data">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="form-card rounded-xl shadow-soft-1 p-6 lg:p-8">
+                <form action="logics.php" method="POST" class="grid grid-cols-1 lg:grid-cols-3 gap-8"
+                    enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="<?php echo $blog_update_id ?>">
+
+                    <div class="lg:col-span-2 space-y-6">
                         <div>
-                            <label for="author-name" class="block text-sm font-medium text-slate-700 mb-2">Author's
-                                Name</label>
-                            <input type="text" id="author-name" name="t_name"
-                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm "
-                                placeholder="e.g., Sheldon Jackson">
+                            <label for="post-title" class="block text-sm font-medium text-slate-700 mb-1">Blog
+                                Title</label>
+                            <input type="text" id="post-title" name="b_title" value="<?php echo $b_title ?>"
+                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
+                                placeholder="Enter post title...">
+
                         </div>
                         <div>
-                            <label for="author-designation"
-                                class="block text-sm font-medium text-slate-700 mb-2">Author's Designation</label>
-                            <input type="text" id="author-designation" name="t_desgination"
+                            <label for="post-content" class="block text-sm font-medium text-slate-700 mb-1">Blog
+                                Content</label>
+                            <textarea id="post-content" rows="12" name="b_des"
                                 class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="e.g., Software Engineer">
+                                placeholder="Write your blog post here..."><?php echo $b_des ?></textarea>
                         </div>
                     </div>
 
@@ -113,7 +140,8 @@ if (!isset($_SESSION['email'])) {
                                         <label for="file-upload"
                                             class="relative cursor-pointer bg-transparent rounded-md font-medium text-primary hover:text-primary-dark focus-within:outline-none">
                                             <span>Upload a file</span>
-                                            <input id="file-upload" name="t_image" type="file" class="sr-only">
+                                            <input id="file-upload" name="b_image" type="file" class="sr-only">
+                                            <input type="hidden" name="old_image" value="<?php echo $b_image ?>">
                                         </label>
                                         <p class="pl-1">or drag and drop</p>
                                     </div>
@@ -122,23 +150,25 @@ if (!isset($_SESSION['email'])) {
                             </div>
                         </div>
 
-
                         <div>
-                            <label for="testimonial-content"
-                                class="block text-sm font-medium text-slate-700 mb-2">Testimonial Content</label>
-                            <textarea id="testimonial-content" rows="6" name="t_des"
+                            <label for="post-tags" class="block text-sm font-medium text-slate-700 mb-1">Date</label>
+                            <input type="date" id="post-tags" name="b_date" value="<?php echo $b_date ?>"
                                 class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Write the testimonial here..."></textarea>
+                                placeholder="e.g., visa, settlement, law">
                         </div>
-
-
-
-                        <div class="pt-5 flex items-center justify-end gap-3">
-                        
-                            <button type="submit" name="add_testimonial"
-                                class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Add
-                                Testimonial</button>
+                        <div>
+                            <label for="post-tags" class="block text-sm font-medium text-slate-700 mb-1">Author
+                                Name</label>
+                            <input type="text" id="post-tags" name="b_author" value="<?php echo $b_author ?>"
+                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
+                                placeholder="e.g., John doe">
                         </div>
+                        <div class="border-t border-slate-200 pt-6 flex items-center justify-end gap-3">
+
+                            <button type="submit" name="update_blog"
+                                class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Update Blog</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </main>
@@ -146,42 +176,14 @@ if (!isset($_SESSION['email'])) {
     </div>
 
     <script>
-    // --- Star Rating Functionality ---
-    document.addEventListener('DOMContentLoaded', function() {
-        const stars = document.querySelectorAll('#star-rating i');
-        const ratingValueInput = document.getElementById('rating-value');
-        let currentRating = 0;
-
-        function highlightStars(rating) {
-            stars.forEach(star => {
-                star.classList.toggle('text-accent', parseInt(star.dataset.value) <= rating);
-                star.classList.toggle('text-slate-300', parseInt(star.dataset.value) > rating);
-            });
-        }
-
-        stars.forEach(star => {
-            star.addEventListener('mouseover', () => highlightStars(parseInt(star.dataset.value)));
-            star.addEventListener('mouseout', () => highlightStars(currentRating));
-            star.addEventListener('click', () => {
-                currentRating = parseInt(star.dataset.value);
-                ratingValueInput.value = currentRating;
-                highlightStars(currentRating);
-            });
-        });
-    });
-
-    // --- Image Preview Functionality ---
     const fileUpload = document.getElementById('file-upload');
-    const imagePreview = document.getElementById('image-preview');
-    if (fileUpload && imagePreview) {
+    const fileNameDisplay = document.getElementById('file-name');
+    if (fileUpload) {
         fileUpload.addEventListener('change', (e) => {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(event) {
-                    imagePreview.src = event.target.result;
-                }
-                reader.readAsDataURL(file);
+            if (e.target.files.length > 0) {
+                fileNameDisplay.textContent = e.target.files[0].name;
+            } else {
+                fileNameDisplay.textContent = 'PNG, JPG, GIF up to 10MB';
             }
         });
     }

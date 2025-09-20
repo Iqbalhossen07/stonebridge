@@ -15,10 +15,10 @@ $current_page = basename($_SERVER['PHP_SELF']);
              <span>Dashboard</span>
          </a>
 
-         <a href="cases.php"
-             class="sidebar-link flex items-center gap-3 px-6 py-3 rounded-lg <?php if ($current_page == 'cases.php') echo 'active'; ?>">
-             <i class="fas fa-gavel w-5"></i>
-             <span>My Cases</span>
+         <a href="blog.php"
+             class="sidebar-link flex items-center gap-3 px-6 py-3 rounded-lg <?php if ($current_page == 'blog.php') echo 'active'; ?>">
+            <i class="fas fa-blog w-5"></i>
+             <span>Blog</span>
          </a>
 
          <a href="clients.php"
@@ -27,10 +27,10 @@ $current_page = basename($_SERVER['PHP_SELF']);
              <span>Clients</span>
          </a>
 
-         <a href="appointments.php"
-             class="sidebar-link flex items-center gap-3 px-6 py-3 rounded-lg <?php if ($current_page == 'appointments.php') echo 'active'; ?>">
-             <i class="fas fa-calendar-alt w-5"></i>
-             <span>Appointments</span>
+         <a href="testimonial.php"
+             class="sidebar-link flex items-center gap-3 px-6 py-3 rounded-lg <?php if ($current_page == 'testimonial.php') echo 'active'; ?>">
+             <i class="fas fa-comment-dots w-5"></i>
+             <span>Testimonial</span>
          </a>
 
          <a href="messages.php"
@@ -39,10 +39,10 @@ $current_page = basename($_SERVER['PHP_SELF']);
              <span>Messages</span>
          </a>
 
-         <a href="settings.php"
-             class="sidebar-link flex items-center gap-3 px-6 py-3 rounded-lg <?php if ($current_page == 'settings.php') echo 'active'; ?>">
-             <i class="fas fa-cog w-5"></i>
-             <span>Settings</span>
+         <a href="team.php"
+             class="sidebar-link flex items-center gap-3 px-6 py-3 rounded-lg <?php if ($current_page == 'team.php') echo 'active'; ?>">
+            <i class="fas fa-users-cog w-5"></i>
+             <span>Team</span>
          </a>
 
      </nav>

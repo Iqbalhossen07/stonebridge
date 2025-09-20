@@ -94,82 +94,148 @@ if (isset($_GET['gallery_delete_id'])) {
 
 
 
+// --------------- Blog crud start ---------------------
 
-// Add Blog  Logic
+// Add Blog Logic
 if (isset($_POST['add_blog'])) {
-  $b_title = $_POST['b_title'];
-  $b_author = $_POST['b_author'];
-  $b_date = $_POST['b_date'];
-  $b_des = mysqli_real_escape_string($mysqli, $_POST['b_des']);
-  $b_category = $_POST['b_category'];
+    // ডেটাবেস কানেকশন ভ্যারিয়েবল ($mysqli) এখানে আছে বলে ধরে নেওয়া হচ্ছে
+    
+    $b_title = $_POST['b_title'];
+    $b_author = $_POST['b_author'];
+    $b_date = $_POST['b_date'];
+    $b_des = $_POST['b_des']; // mysqli_real_escape_string এর প্রয়োজন নেই এখানে
 
-  // Image upload
-  $b_image = $_FILES['b_image']['name'];
-  $tmpName = $_FILES['b_image']['tmp_name'];
-  $folder  = 'blogImage/' . $b_image;
-
-  // Insert query
-  $mysqli->query("INSERT INTO blogs (b_title, b_author, b_date, b_des, b_category, b_image) 
-                  VALUES ('$b_title', '$b_author', '$b_date', '$b_des', '$b_category', '$b_image')");
-
-  // Move uploaded file
-  move_uploaded_file($tmpName, $folder);
-
-  // Flash message
-  $_SESSION['message'] = "Blog has been added successfully!";
-  $_SESSION['message_type'] = 'success';
-
-  header("location:blog.php");
-  exit();
-}
-
-
-// Update Blog  Logic
-
-if (isset($_POST['update_blog'])) {
-  $blog_update_id = $_POST['id'];
-
-  $b_title    = $_POST['b_title'];
-  $b_author   = $_POST['b_author'];
-  $b_date     = $_POST['b_date'];
-  $b_des      = mysqli_real_escape_string($mysqli, $_POST['b_des']);
-  $b_category = $_POST['b_category'];
-
-
-  $b_image = $_FILES['b_image']['name'];
-  $old_image = $_POST['old_image'];
-
-  if ($b_image != '') {
+    // --- Image Upload Logic ---
     $b_image = $_FILES['b_image']['name'];
-  } else {
-    $b_image = $old_image;
-  }
-  $tmpName = $_FILES['b_image']['tmp_name'];
-  $folder = 'blogImage/' . $b_image;
+    $tmpName = $_FILES['b_image']['tmp_name'];
+    $folder  = 'blogImage/' . $b_image;
 
+    // --- Database Insert using Prepared Statements (নিরাপদ পদ্ধতি) ---
+    $query = "INSERT INTO blog_table (b_title, b_author, b_date, b_des, b_image) VALUES (?, ?, ?, ?, ?)";
+    
+    // 1. স্টেটমেন্ট প্রস্তুত করা
+    $stmt = $mysqli->prepare($query);
 
-  $mysqli->query("UPDATE `blogs` SET `b_title` = '$b_title', `b_author` = '$b_author', `b_date` = '$b_date', `b_des` = '$b_des', `b_category` = '$b_category', `b_image` = '$b_image' WHERE id=$blog_update_id");
+    if ($stmt) {
+        // 2. প্যারামিটার বাইন্ড করা (s = string)
+        // ডেটার ধরন অনুযায়ী 's' (string), 'i' (integer), 'd' (double), 'b' (blob) ব্যবহার হয়
+        $stmt->bind_param("sssss", $b_title, $b_author, $b_date, $b_des, $b_image);
 
-  move_uploaded_file($tmpName, $folder);
-  $_SESSION['message'] = "Blog has been updated";
-  $_SESSION['message_type'] = 'warning';
-  header('location:blog.php');
+        // 3. স্টেটমেন্ট এক্সিকিউট করা
+        if ($stmt->execute()) {
+            // সফলভাবে ডেটা ইনসার্ট হলে
+            move_uploaded_file($tmpName, $folder); // ছবিটি ফোল্ডারে সরানো হচ্ছে
+            
+            $_SESSION['message'] = "Blog has been added successfully!";
+            $_SESSION['message_type'] = 'success';
+        } else {
+            // যদি কোনো সমস্যা হয়
+            $_SESSION['message'] = "Error: Could not add the blog.";
+            $_SESSION['message_type'] = 'danger';
+        }
+        
+        // 4. স্টেটমেন্ট বন্ধ করা
+        $stmt->close();
+
+    } else {
+        $_SESSION['message'] = "Error: Database query could not be prepared.";
+        $_SESSION['message_type'] = 'danger';
+    }
+
+    header("location:blog.php");
+    exit();
 }
+
+
+
+
+// Update Blog Logic
+if (isset($_POST['update_blog'])) {
+    $blog_update_id = $_POST['id'];
+    $b_title        = $_POST['b_title'];
+    $b_author       = $_POST['b_author'];
+    $b_date         = $_POST['b_date'];
+    $b_des          = $_POST['b_des']; // Prepared statement এ mysqli_real_escape_string এর প্রয়োজন নেই
+    $old_image      = $_POST['old_image'];
+    $new_image      = $_FILES['b_image']['name'];
+
+    $update_filename = "";
+
+    // যদি নতুন ছবি আপলোড করা হয়
+    if ($new_image != '') {
+        $update_filename = $new_image;
+    } 
+    // যদি নতুন ছবি না দেওয়া হয়, তবে পুরনোটিই থাকবে
+    else {
+        $update_filename = $old_image;
+    }
+
+    // UPDATE কোয়েরি প্রস্তুত করা
+    $query = "UPDATE `blog_table` SET `b_title`=?, `b_author`=?, `b_date`=?, `b_des`=?, `b_image`=? WHERE `id`=?";
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        // প্যারামিটার বাইন্ড করা (s = string, i = integer)
+        $stmt->bind_param("sssssi", $b_title, $b_author, $b_date, $b_des, $update_filename, $blog_update_id);
+        
+        // স্টেটমেন্ট এক্সিকিউট করা
+        if ($stmt->execute()) {
+            // কোয়েরি সফল হলে, নতুন ছবি আপলোড এবং পুরনো ছবি ডিলিট করা হবে
+            if ($new_image != '') {
+                // নতুন ছবিটি নির্দিষ্ট ফোল্ডারে সরানো হচ্ছে
+                move_uploaded_file($_FILES['b_image']['tmp_name'], 'blogImage/' . $new_image);
+                
+                // যদি পুরনো ছবিটি সার্ভারে থাকে, তবে তা ডিলিট করে দেওয়া হচ্ছে
+                if (file_exists('blogImage/' . $old_image)) {
+                    unlink('blogImage/' . $old_image);
+                }
+            }
+            $_SESSION['message'] = "Blog has been updated successfully!";
+            $_SESSION['message_type'] = 'success'; // সফল আপডেটের জন্য 'success' ব্যবহার করা ভালো
+        } else {
+            $_SESSION['message'] = "Failed to update the blog.";
+            $_SESSION['message_type'] = 'error';
+        }
+        $stmt->close();
+    }
+    
+    header('location:blog.php');
+    exit();
+}
+
 
 
 // Delete Blog  Logic
 
+
+// Delete Blog Logic
 if (isset($_GET['blog_delete_id'])) {
-  $id = $_GET['blog_delete_id'];
+    $id = $_GET['blog_delete_id'];
 
-  $mysqli->query("DELETE FROM blogs WHERE id=$id");
+    // Prepared Statement ব্যবহার করে নিরাপদ ডিলিট কোয়েরি
+    $query = "DELETE FROM blog_table WHERE id = ?";
+    $stmt = $mysqli->prepare($query);
 
-  $_SESSION['message'] = "Blog has been deleted";
-  $_SESSION['message_type'] = 'danger';
-  header("location:blog.php");
+    if ($stmt) {
+        // 'i' মানে হলো id একটি Integer (পূর্ণ সংখ্যা)
+        $stmt->bind_param("i", $id);
+        
+        if ($stmt->execute()) {
+            $_SESSION['message'] = "Blog has been deleted successfully!";
+            $_SESSION['message_type'] = 'success'; // সফলতার জন্য 'success' ব্যবহার করা ভালো
+        } else {
+            $_SESSION['message'] = "Could not delete the blog.";
+            $_SESSION['message_type'] = 'error';
+        }
+        $stmt->close();
+    }
+    
+    header("location:blog.php");
+    exit();
 }
 
 
+// --------------- Blog crud end ---------------------
 
 
 
@@ -178,75 +244,134 @@ if (isset($_GET['blog_delete_id'])) {
 
 
 
-// Add Testimonial  Logic
+// Add Testimonial Logic
 if (isset($_POST['add_testimonial'])) {
-  $t_name    = $_POST['t_name'];
-  $t_desgination   = $_POST['t_desgination'];
-  $t_des      = mysqli_real_escape_string($mysqli, $_POST['t_des']);
+    $t_name        = $_POST['t_name'];
+    $t_desgination = $_POST['t_desgination'];
+    $t_des         = $_POST['t_des'];
 
-  // Image upload
-  $t_image = $_FILES['t_image']['name'];
-  $tmpName = $_FILES['t_image']['tmp_name'];
-  $folder  = 'testimonial_image/' . $t_image;
+    // --- Image Upload Logic ---
+    $t_image = $_FILES['t_image']['name'];
+    $tmpName = $_FILES['t_image']['tmp_name'];
+    $folder  = 'testimonial_image/' . $t_image;
 
-  // Insert query
-  $mysqli->query("INSERT INTO testimonials (t_name, t_desgination, t_des, t_image ) 
-                  VALUES ('$t_name', '$t_desgination', '$t_des', '$t_image')");
+    // --- Database Insert using Prepared Statements (নিরাপদ পদ্ধতি) ---
+    $query = "INSERT INTO testimonials (t_name, t_desgination, t_des, t_image) VALUES (?, ?, ?, ?)";
+    
+    // 1. স্টেটমেন্ট প্রস্তুত করা
+    $stmt = $mysqli->prepare($query);
 
-  // Move uploaded file
-  move_uploaded_file($tmpName, $folder);
+    if ($stmt) {
+        // 2. প্যারামিটার বাইন্ড করা (এখানে সবগুলোই স্ট্রিং, তাই "ssss")
+        $stmt->bind_param("ssss", $t_name, $t_desgination, $t_des, $t_image);
 
-  // Flash message
-  $_SESSION['message'] = "Testimonial has been added successfully!";
-  $_SESSION['message_type'] = 'success';
+        // 3. স্টেটমেন্ট এক্সিকিউট করা
+        if ($stmt->execute()) {
+            // ডেটাবেসে সফলভাবে যোগ হলেই কেবল ছবিটি ফোল্ডারে সরানো হবে
+            move_uploaded_file($tmpName, $folder);
+            
+            $_SESSION['message'] = "Testimonial has been added successfully!";
+            $_SESSION['message_type'] = 'success';
+        } else {
+            // যদি কোনো সমস্যা হয়
+            $_SESSION['message'] = "Error: Could not add the testimonial.";
+            $_SESSION['message_type'] = 'error';
+        }
+        
+        // 4. স্টেটমেন্ট বন্ধ করা
+        $stmt->close();
+    } else {
+        $_SESSION['message'] = "Error: Database query could not be prepared.";
+        $_SESSION['message_type'] = 'error';
+    }
 
-  header("location:testimonial.php");
-  exit();
+    header("location:testimonial.php");
+    exit();
 }
 
 
 // Update Testimonial  Logic
 
 if (isset($_POST['update_testimonial'])) {
-  $testimonial_update_id = $_POST['id'];
-  $t_name = $_POST['t_name'];
-  $t_desgination  = $_POST['t_desgination'];
-  $t_des = mysqli_real_escape_string($mysqli, $_POST['t_des']);
+    $testimonial_update_id = $_POST['id'];
+    $t_name        = $_POST['t_name'];
+    $t_desgination = $_POST['t_desgination'];
+    $t_des         = $_POST['t_des'];
+    $old_image     = $_POST['old_image'];
+    $new_image     = $_FILES['t_image']['name'];
 
+    $update_filename = "";
+    // যদি নতুন ছবি আপলোড করা হয়, তবে তার নাম ব্যবহার করা হবে
+    if ($new_image != '') {
+        $update_filename = $new_image;
+    } 
+    // অন্যথায়, পুরনো ছবির নামটিই থাকবে
+    else {
+        $update_filename = $old_image;
+    }
 
-  $t_image = $_FILES['t_image']['name'];
-  $old_image = $_POST['old_image'];
+    // নিরাপদ UPDATE কোয়েরি প্রস্তুত করা
+    $query = "UPDATE `testimonials` SET `t_name`=?, `t_desgination`=?, `t_des`=?, `t_image`=? WHERE `id`=?";
+    $stmt = $mysqli->prepare($query);
 
-  if ($t_image != '') {
-    $t_image = $_FILES['t_image']['name'];
-  } else {
-    $t_image = $old_image;
-  }
-  $tmpName = $_FILES['t_image']['tmp_name'];
-  $folder = 'testimonial_image/' . $t_image;
-
-
-  $mysqli->query("UPDATE `testimonials` SET `t_name` = '$t_name', `t_desgination` = '$t_desgination', `t_des` = '$t_des', `t_image` = '$t_image' WHERE id=$testimonial_update_id");
-
-  move_uploaded_file($tmpName, $folder);
-  $_SESSION['message'] = "Testimonial has been updated";
-  $_SESSION['message_type'] = 'warning';
-  header('location:testimonial.php');
+    if ($stmt) {
+        // প্যারামিটার বাইন্ড করা (s = string, i = integer)
+        $stmt->bind_param("ssssi", $t_name, $t_desgination, $t_des, $update_filename, $testimonial_update_id);
+        
+        // স্টেটমেন্ট এক্সিকিউট করা
+        if ($stmt->execute()) {
+            // কোয়েরি সফল হলে, নতুন ছবি আপলোড এবং পুরনো ছবি ডিলিট করা হবে
+            if ($new_image != '') {
+                // নতুন ছবিটি নির্দিষ্ট ফোল্ডারে সরানো হচ্ছে
+                move_uploaded_file($_FILES['t_image']['tmp_name'], 'testimonial_image/' . $new_image);
+                
+                // যদি পুরনো ছবিটি সার্ভারে থাকে, তবে তা ডিলিট করা হচ্ছে
+                if (file_exists('testimonial_image/' . $old_image)) {
+                    unlink('testimonial_image/' . $old_image);
+                }
+            }
+            $_SESSION['message'] = "Testimonial has been updated successfully!";
+            $_SESSION['message_type'] = 'success';
+        } else {
+            $_SESSION['message'] = "Failed to update the testimonial.";
+            $_SESSION['message_type'] = 'error';
+        }
+        $stmt->close();
+    }
+    
+    header('location:testimonial.php');
+    exit();
 }
 
 
 // Delete testimonial  Logic
 
+
+
 if (isset($_GET['testimonial_delete_id'])) {
-  $id = $_GET['testimonial_delete_id'];
+    $id = $_GET['testimonial_delete_id'];
 
-  $mysqli->query("DELETE FROM testimonials WHERE id=$id");
+    // Prepared Statement ব্যবহার করে নিরাপদ ডিলিট কোয়েরি
+    $query = "DELETE FROM testimonials WHERE id = ?";
+    $stmt = $mysqli->prepare($query);
 
-  $_SESSION['message'] = "Testimonial has been deleted";
-  $_SESSION['message_type'] = 'danger';
-  header("location:testimonial.php");
+    if ($stmt) {
+        // 'i' মানে হলো id একটি Integer (পূর্ণ সংখ্যা)
+        $stmt->bind_param("i", $id);
+        
+        if ($stmt->execute()) {
+            $_SESSION['message'] = "Testimonial has been deleted successfully!";
+            $_SESSION['message_type'] = 'success'; // সফলতার জন্য 'success' ব্যবহার করা ভালো
+        } else {
+            $_SESSION['message'] = "Could not delete the blog.";
+            $_SESSION['message_type'] = 'error';
+        }
+        $stmt->close();
+    }
+    
+    header("location:testimonial.php");
+    exit();
 }
-
 
 
 
@@ -256,64 +381,113 @@ if (isset($_GET['testimonial_delete_id'])) {
 
 
 // Add team  Logic
+
+// Add Team Member Logic
 if (isset($_POST['add_team'])) {
-  $t_name = $_POST['t_name'];
-  $t_designation = $_POST['t_designation'];
-  $t_des = mysqli_real_escape_string($mysqli, $_POST['t_des']);
-  $t_linkedln = mysqli_real_escape_string($mysqli, $_POST['t_linkedln']);
-  $t_github = mysqli_real_escape_string($mysqli, $_POST['t_github']);
+    $t_name        = $_POST['t_name'];
+    $t_designation = $_POST['t_designation'];
+    $t_des         = $_POST['t_des'];
+    $t_linkedln    = $_POST['t_linkedln'];
+    $t_twitter     = $_POST['t_twitter'];
+    $t_facebook    = $_POST['t_facebook'];
 
-  // Image upload
-  $t_image = $_FILES['t_image']['name'];
-  $tmpName = $_FILES['t_image']['tmp_name'];
-  $folder  = 'team_image/' . $t_image;
+    // --- Image Upload Logic ---
+    $t_image = $_FILES['t_image']['name'];
+    $tmpName = $_FILES['t_image']['tmp_name'];
+    $folder  = 'team_image/' . $t_image;
 
-  // Insert query
-  $mysqli->query("INSERT INTO teams (t_name, t_designation, t_des, t_linkedln, t_github, t_image ) 
-                  VALUES ('$t_name', '$t_designation', '$t_des', '$t_linkedln', '$t_github', '$t_image')");
+    // --- Database Insert using Prepared Statements (নিরাপদ পদ্ধতি) ---
+    $query = "INSERT INTO teams (t_name, t_designation, t_des, t_linkedln, t_twitter, t_facebook, t_image) VALUES (?, ?, ?, ?, ?, ?, ?)";
+    
+    // 1. স্টেটমেন্ট প্রস্তুত করা
+    $stmt = $mysqli->prepare($query);
 
-  // Move uploaded file
-  move_uploaded_file($tmpName, $folder);
+    if ($stmt) {
+        // 2. প্যারামিটার বাইন্ড করা (এখানে ৭টিই স্ট্রিং, তাই "sssssss")
+        $stmt->bind_param("sssssss", $t_name, $t_designation, $t_des, $t_linkedln, $t_twitter, $t_facebook, $t_image);
 
-  // Flash message
-  $_SESSION['message'] = "Team has been added successfully!";
-  $_SESSION['message_type'] = 'success';
+        // 3. স্টেটমেন্ট এক্সিকিউট করা
+        if ($stmt->execute()) {
+            // ডেটাবেসে সফলভাবে যোগ হলেই কেবল ছবিটি ফোল্ডারে সরানো হবে
+            move_uploaded_file($tmpName, $folder);
+            
+            $_SESSION['message'] = "Team member has been added successfully!";
+            $_SESSION['message_type'] = 'success';
+        } else {
+            $_SESSION['message'] = "Error: Could not add the team member.";
+            $_SESSION['message_type'] = 'error';
+        }
+        
+        // 4. স্টেটমেন্ট বন্ধ করা
+        $stmt->close();
+    } else {
+        $_SESSION['message'] = "Error: Database query could not be prepared.";
+        $_SESSION['message_type'] = 'error';
+    }
 
-  header("location:team.php");
-  exit();
+    header("location:team.php");
+    exit();
 }
+
 
 
 // Update team  Logic
 
+
 if (isset($_POST['update_team'])) {
-  $team_update_id = $_POST['id'];
-  $t_name = $_POST['t_name'];
-  $t_designation = $_POST['t_designation'];
-  $t_des = mysqli_real_escape_string($mysqli, $_POST['t_des']);
-  $t_linkedln = mysqli_real_escape_string($mysqli, $_POST['t_linkedln']);
-  $t_github = mysqli_real_escape_string($mysqli, $_POST['t_github']);
+    $team_update_id = $_POST['id'];
+    $t_name         = $_POST['t_name'];
+    $t_designation  = $_POST['t_designation'];
+    $t_des          = $_POST['t_des'];
+    $t_linkedln     = $_POST['t_linkedln'];
+    $t_twitter      = $_POST['t_twitter'];
+    $t_facebook     = $_POST['t_facebook'];
+    $old_image      = $_POST['old_image'];
+    $new_image      = $_FILES['t_image']['name'];
 
+    $update_filename = "";
+    // যদি নতুন ছবি আপলোড করা হয়
+    if ($new_image != '') {
+        $update_filename = $new_image;
+    } 
+    // অন্যথায়, পুরনো ছবির নামটিই থাকবে
+    else {
+        $update_filename = $old_image;
+    }
 
-  $t_image = $_FILES['t_image']['name'];
-  $old_image = $_POST['old_image'];
+    // নিরাপদ UPDATE কোয়েরি প্রস্তুত করা
+    $query = "UPDATE `teams` SET `t_name`=?, `t_designation`=?, `t_des`=?, `t_linkedln`=?, `t_twitter`=?, `t_facebook`=?, `t_image`=? WHERE `id`=?";
+    $stmt = $mysqli->prepare($query);
 
-  if ($t_image != '') {
-    $t_image = $_FILES['t_image']['name'];
-  } else {
-    $t_image = $old_image;
-  }
-  $tmpName = $_FILES['t_image']['tmp_name'];
-  $folder = 'team_image/' . $t_image;
-
-
-  $mysqli->query("UPDATE `teams` SET `t_name` = '$t_name', `t_designation` = '$t_designation', `t_des` = '$t_des', `t_linkedln` = '$t_linkedln', `t_github` = '$t_github', `t_image` = '$t_image' WHERE id=$team_update_id");
-
-  move_uploaded_file($tmpName, $folder);
-  $_SESSION['message'] = "Team has been updated";
-  $_SESSION['message_type'] = 'warning';
-  header('location:team.php');
+    if ($stmt) {
+        // প্যারামিটার বাইন্ড করা (s = string, i = integer)
+        $stmt->bind_param("sssssssi", $t_name, $t_designation, $t_des, $t_linkedln, $t_twitter, $t_facebook, $update_filename, $team_update_id);
+        
+        // স্টেটমেন্ট এক্সিকিউট করা
+        if ($stmt->execute()) {
+            // কোয়েরি সফল হলে, নতুন ছবি আপলোড এবং পুরনো ছবি ডিলিট করা হবে
+            if ($new_image != '') {
+                // নতুন ছবিটি নির্দিষ্ট ফোল্ডারে সরানো হচ্ছে
+                move_uploaded_file($_FILES['t_image']['tmp_name'], 'team_image/' . $new_image);
+                
+                // যদি পুরনো ছবিটি সার্ভারে থাকে, তবে তা ডিলিট করা হচ্ছে
+                if (file_exists('team_image/' . $old_image)) {
+                    unlink('team_image/' . $old_image);
+                }
+            }
+            $_SESSION['message'] = "Team member has been updated successfully!";
+            $_SESSION['message_type'] = 'success';
+        } else {
+            $_SESSION['message'] = "Failed to update the team member.";
+            $_SESSION['message_type'] = 'error';
+        }
+        $stmt->close();
+    }
+    
+    header('location:team.php');
+    exit();
 }
+
 
 
 // Delete team  Logic

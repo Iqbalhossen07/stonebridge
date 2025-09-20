@@ -3,6 +3,22 @@ if (!isset($_SESSION['email'])) {
     header('Location: login.php');
 }
 
+
+if (isset($_GET['testimonial_update_id'])) {
+    $testimonial_update_id = $_GET['testimonial_update_id'];
+    $testimonial_update_id_result = $mysqli->query("SELECT * FROM testimonials WHERE id='$testimonial_update_id' ");
+    if (!empty($testimonial_update_id_result)) {
+        $row = $testimonial_update_id_result->fetch_array();
+
+        $t_name = $row['t_name'];
+        $t_desgination = $row['t_desgination'];
+        $t_des = $row['t_des'];
+        $t_image = $row['t_image'];
+     
+    }
+
+   
+}
 ?>
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -85,18 +101,19 @@ if (!isset($_SESSION['email'])) {
         <main class="flex-1 p-6">
             <div class="bg-white rounded-xl shadow-soft-1 p-6 lg:p-8">
                 <form action="logics.php" method="POST" class="space-y-6" enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="<?php echo $testimonial_update_id ?>">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label for="author-name" class="block text-sm font-medium text-slate-700 mb-2">Author's
                                 Name</label>
-                            <input type="text" id="author-name" name="t_name"
+                            <input type="text" id="author-name" name="t_name" value="<?php echo $t_name ?>"
                                 class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm "
                                 placeholder="e.g., Sheldon Jackson">
                         </div>
                         <div>
                             <label for="author-designation"
                                 class="block text-sm font-medium text-slate-700 mb-2">Author's Designation</label>
-                            <input type="text" id="author-designation" name="t_desgination"
+                            <input type="text" id="author-designation" name="t_desgination" value="<?php echo $t_desgination ?>"
                                 class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
                                 placeholder="e.g., Software Engineer">
                         </div>
@@ -114,6 +131,7 @@ if (!isset($_SESSION['email'])) {
                                             class="relative cursor-pointer bg-transparent rounded-md font-medium text-primary hover:text-primary-dark focus-within:outline-none">
                                             <span>Upload a file</span>
                                             <input id="file-upload" name="t_image" type="file" class="sr-only">
+                                            <input type="hidden" name="old_image" value="<?php echo $t_image ?>">
                                         </label>
                                         <p class="pl-1">or drag and drop</p>
                                     </div>
@@ -128,15 +146,15 @@ if (!isset($_SESSION['email'])) {
                                 class="block text-sm font-medium text-slate-700 mb-2">Testimonial Content</label>
                             <textarea id="testimonial-content" rows="6" name="t_des"
                                 class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
-                                placeholder="Write the testimonial here..."></textarea>
+                                placeholder="Write the testimonial here..."><?php echo $t_des ?></textarea>
                         </div>
 
 
 
                         <div class="pt-5 flex items-center justify-end gap-3">
                         
-                            <button type="submit" name="add_testimonial"
-                                class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Add
+                            <button type="submit" name="update_testimonial"
+                                class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Update
                                 Testimonial</button>
                         </div>
                 </form>
