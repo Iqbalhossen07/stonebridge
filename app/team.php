@@ -136,11 +136,11 @@ if (isset($_SESSION['message']) && $_SESSION['message'] != '') {
                                 class="h-8 w-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shadow-md hover:shadow-lg hover:bg-blue-200 hover:-translate-y-0.5 transition-all duration-300"><i
                                     class="fas fa-eye text-sm"></i></a>
 
-                            <a href="edit-team-member.php?team_update_id=<?php echo $row['id']; ?>" title="Edit Post"
+                            <a href="edit-team-member.php?team_update_id=<?php echo $row['id']; ?>" title="Edit team"
                                 class="h-8 w-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center shadow-md hover:shadow-lg hover:bg-green-200 hover:-translate-y-0.5 transition-all duration-300"><i
                                     class="fas fa-pencil-alt text-sm"></i></a>
 
-                            <a href="#" onclick="confirmDelete(<?php echo $row['id']; ?>)" title="Delete Post"
+                            <a href="#" onclick="confirmDelete(<?php echo $row['id']; ?>)" title="Delete team"
                                 class="h-8 w-8 rounded-full bg-red-100 text-red-600 flex items-center justify-center shadow-md hover:shadow-lg hover:bg-red-200 hover:-translate-y-0.5 transition-all duration-300">
                                 <i class="fas fa-trash-alt text-sm"></i>
                             </a>
@@ -174,7 +174,7 @@ if (isset($_SESSION['message']) && $_SESSION['message'] != '') {
             // যদি ব্যবহারকারী 'Yes' বাটনে ক্লিক করে
             if (result.isConfirmed) {
                 // তাহলে ডিলিট করার জন্য logics.php ফাইলে রিডাইরেক্ট করা হবে
-                window.location.href = 'logics.php?blog_delete_id=' + id;
+                window.location.href = 'logics.php?team_delete_id=' + id;
             }
         })
     }

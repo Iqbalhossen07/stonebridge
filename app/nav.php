@@ -44,6 +44,11 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <i class="fas fa-users-cog w-5"></i>
              <span>Team</span>
          </a>
+         <a href="gallery.php"
+             class="sidebar-link flex items-center gap-3 px-6 py-3 rounded-lg <?php if ($current_page == 'gallery.php') echo 'active'; ?>">
+            <i class="fas fa-images w-5"></i>
+             <span>Gallery</span>
+         </a>
 
      </nav>
      <div class="p-4 border-t border-white/10">

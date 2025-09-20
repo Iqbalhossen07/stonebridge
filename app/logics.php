@@ -492,14 +492,104 @@ if (isset($_POST['update_team'])) {
 
 // Delete team  Logic
 
+
 if (isset($_GET['team_delete_id'])) {
-  $id = $_GET['team_delete_id'];
+    $id = $_GET['team_delete_id'];
 
-  $mysqli->query("DELETE FROM teams WHERE id=$id");
+    // Prepared Statement ব্যবহার করে নিরাপদ ডিলিট কোয়েরি
+    $query = "DELETE FROM teams WHERE id = ?";
+    $stmt = $mysqli->prepare($query);
 
-  $_SESSION['message'] = "Team has been deleted";
-  $_SESSION['message_type'] = 'danger';
-  header("location:team.php");
+    if ($stmt) {
+        // 'i' মানে হলো id একটি Integer (পূর্ণ সংখ্যা)
+        $stmt->bind_param("i", $id);
+        
+        if ($stmt->execute()) {
+            $_SESSION['message'] = "Team Member has been deleted successfully!";
+            $_SESSION['message_type'] = 'success'; // সফলতার জন্য 'success' ব্যবহার করা ভালো
+        } else {
+            $_SESSION['message'] = "Could not delete the blog.";
+            $_SESSION['message_type'] = 'error';
+        }
+        $stmt->close();
+    }
+    
+    header("location:team.php");
+    exit();
+}
+
+
+
+
+// Add  gallery Logic
+if (isset($_POST['add_image'])) {
+    $g_name        = $_POST['g_name'];
+
+
+    // --- Image Upload Logic ---
+    $g_image = $_FILES['g_image']['name'];
+    $tmpName = $_FILES['g_image']['tmp_name'];
+    $folder  = 'gallery_image/' . $g_image;
+
+    // --- Database Insert using Prepared Statements (নিরাপদ পদ্ধতি) ---
+    $query = "INSERT INTO gallery_images (g_name, g_image) VALUES (?, ?)";
+    
+    // 1. স্টেটমেন্ট প্রস্তুত করা
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        // 2. প্যারামিটার বাইন্ড করা (এখানে 2টিই স্ট্রিং, তাই "ss")
+        $stmt->bind_param("ss", $g_name, $g_image);
+
+        // 3. স্টেটমেন্ট এক্সিকিউট করা
+        if ($stmt->execute()) {
+            // ডেটাবেসে সফলভাবে যোগ হলেই কেবল ছবিটি ফোল্ডারে সরানো হবে
+            move_uploaded_file($tmpName, $folder);
+            
+            $_SESSION['message'] = "Gallery picture has been added successfully!";
+            $_SESSION['message_type'] = 'success';
+        } else {
+            $_SESSION['message'] = "Error: Could not add the team member.";
+            $_SESSION['message_type'] = 'error';
+        }
+        
+        // 4. স্টেটমেন্ট বন্ধ করা
+        $stmt->close();
+    } else {
+        $_SESSION['message'] = "Error: Database query could not be prepared.";
+        $_SESSION['message_type'] = 'error';
+    }
+
+    header("location:gallery.php");
+    exit();
+}
+
+// Delete gallery  Logic
+
+
+if (isset($_GET['gallery_delete_id'])) {
+    $id = $_GET['gallery_delete_id'];
+
+    // Prepared Statement ব্যবহার করে নিরাপদ ডিলিট কোয়েরি
+    $query = "DELETE FROM gallery_images WHERE id = ?";
+    $stmt = $mysqli->prepare($query);
+
+    if ($stmt) {
+        // 'i' মানে হলো id একটি Integer (পূর্ণ সংখ্যা)
+        $stmt->bind_param("i", $id);
+        
+        if ($stmt->execute()) {
+            $_SESSION['message'] = "Gallery Picture has been deleted successfully!";
+            $_SESSION['message_type'] = 'success'; // সফলতার জন্য 'success' ব্যবহার করা ভালো
+        } else {
+            $_SESSION['message'] = "Could not delete the blog.";
+            $_SESSION['message_type'] = 'error';
+        }
+        $stmt->close();
+    }
+    
+    header("location:gallery.php");
+    exit();
 }
 
 
@@ -524,7 +614,7 @@ if (isset($_POST['contact_added'])) {
 }
 
 
-// Delete team  Logic
+// Delete contact  Logic
 
 if (isset($_GET['contact_delete_id'])) {
   $id = $_GET['contact_delete_id'];
